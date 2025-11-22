@@ -1,0 +1,185 @@
+{
+   "Navbar": {
+    "logo": "Efraim IDO",
+    "home":"home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Hire Me"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "badge": "System Architect & AI",
+    "title_line1": "I BUILD",
+    "title_line2": "SYSTEMS.",
+    "description": "I don't just code. I design <bold>robust, scalable, and intelligent</bold> digital infrastructures to solve complex problems.",
+    "cta_primary": "MY PROJECTS",
+    "cta_secondary": "CONTACT ME",
+    "stat_1_value": "3+",
+    "stat_1_label": "Years Exp.",
+    "stat_1_desc": "In critical production",
+    "stat_2_label": "Dual Competence",
+    "footer_routine": "Code / Deploy / Repeat",
+    "footer_loc": "Based in West Africa",
+    "footer_stack": "Next.js • Python • Cloud"
+  },
+  "Philosophy": {
+    "header_title": "MY",
+    "header_subtitle": "MINDSET",
+    "system_status": "SYSTEM_STATUS: OPTIMAL",
+    "block_1_title": "THE ORIGIN",
+    "block_1_text": "It all starts with a deep understanding of the problem. I deconstruct complexity to find <bold>architectural elegance</bold>.",
+    "block_2_title": "THE METHOD",
+    "block_2_text": "Rigor, Discipline, Iteration. I code like an aeronautical engineer: every line has a purpose. No room for randomness.",
+    "block_3_title": "THE TARGET",
+    "block_3_text": "Real impact. I don't chase hype, I chase <highlight>sustainable performance</highlight> and added value for the end user.",
+    "link_read_more": "READ MY STORY"
+  },
+  "Categories": {
+    "header_title": "AREAS OF",
+    "header_highlight": "EXPERTISE",
+    "select_module": "SELECT A MODULE",
+    "action_access": "ACCESS >",
+    "cat_1_title": "Web Engineering",
+    "cat_1_sub": "Scalable & Robust",
+    "cat_1_desc": "Design of complex, high-performance, and SEO-friendly web applications (Next.js, React).",
+    "cat_2_title": "Mobile Dev",
+    "cat_2_sub": "Cross-Platform",
+    "cat_2_desc": "Fluid native applications for iOS and Android with a unified codebase (Flutter/React Native).",
+    "cat_3_title": "AI Solutions",
+    "cat_3_sub": "Machine Learning",
+    "cat_3_desc": "Integration of predictive models and intelligent agents to automate processes.",
+    "cat_4_title": "Data Science",
+    "cat_4_sub": "Analytics & Big Data",
+    "cat_4_desc": "Massive data processing, ETL pipelines, and visualization for decision making."
+  },
+  "HookProject": {
+  "badge": "FEATURED PROJECT",
+  "title": "AgriConnect",
+  "subtitle": "How I connected farmers to intelligent data.",
+  "stat_1_label": "Impact",
+  "stat_1_desc": "Optimized harvests",
+  "stat_2_label": "Stack",
+  "stat_2_desc": "AI & Cloud",
+  "description": "A major technical challenge: delivering reliable forecasts to farmers in rural areas with low connectivity. The solution? A robust 'Offline-First' platform powered by AI to analyze agricultural data and guide decisions.",
+  "cta_inspect": "EXPLORE CASE"
+},
+  "FinalCTA": {
+    "title_line1": "READY TO LAUNCH",
+    "title_line2": "YOUR SYSTEM?",
+    "description": "I am available for freelance missions or technical consulting.",
+    "cmd_init": "> _initiate_collaboration",
+    "btn_calendar": "BOOK A CALL",
+    "btn_cv": "DOWNLOAD RESUME",
+    "connect_label": "SECURE CONNECTION VIA:"
+  },
+"About": {
+  "title": "SYSTEM LOGS",
+  "subtitle": "Log: /root/user/efraim/history",
+  "intro": "A robust system architecture is forged under constraint. Here are the patches and updates that built my current kernel.",
+  "step_1_year": "2015 - 2019",
+  "step_1_title": "Kernel_Init (Discipline)",
+  "step_1_place": "Petit Séminaire de Pabré (Boarding)",
+  "step_1_desc": "Kernel initialization. Learning strict rigor and community protocols. <bold>Acquiring fault tolerance:</bold> accepting others' flaws for global system stability.",
+  "step_2_year": "Self-Taught",
+  "step_2_title": "Daemon_Process (Code)",
+  "step_2_place": "Binary Exploration",
+  "step_2_desc": "Background process started in 7th grade (Theory, Word, Excel). Effective coding start at 15. <highlight>Intensive Multitasking:</highlight> juggling complex science homework and late-night coding tutorials.",
+  "step_3_year": "2019 - 2021",
+  "step_3_title": "Stress_Test (Resilience)",
+  "step_3_place": "Lycée Mixte (Public)",
+  "step_3_desc": "High-density environment (100 instances/class). Limited resources (oxygen, space). <highlight>Result:</highlight> Development of extreme resilience and ability to perform under high pressure.",
+  "step_4_year": "2022",
+  "step_4_title": "System_Upgrade (Excellence)",
+  "step_4_place": "Maarif Int. High School (Scholarship)",
+  "step_4_desc": "Migration to elite environment (Grade 12 Math Major). Top of the class in Mathematics. Logic optimization. Awarded the Türkiye Maarif Foundation scholarship.",
+  "step_5_year": "Current",
+  "step_5_title": "Production_Runtime",
+  "step_5_place": "ENSA Berrechid, Morocco",
+  "step_5_desc": "Deployed via State Scholarship. Currently in Preparatory Classes (CP1). Compiling theoretical knowledge (Adv. Math) and application passion (Dev)."
+},
+  "ContactPage": {
+    "title": "Contact",
+    "subtitle": "Get in touch",
+    "status": "Available",
+    "email_label": "Email",
+    "socials_label": "Socials",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_message": "Message",
+    "btn_send": "Send"
+  },
+  "ProjectsIndex": {
+    "title": "SYSTEM_REGISTRY",
+    "subtitle": "Index of deployed architectures.",
+    "status_deployed": "Deployed",
+    "status_building": "Building",
+    "view_project": "ACCESS SYSTEM >",
+    "items": {
+      "1": {
+        "title": "Sahel_AI_Platform",
+        "desc": "Agricultural predictive analysis platform for arid zones via satellite imagery."
+      },
+      "2": {
+        "title": "Faso_Fintech_App",
+        "desc": "High-security mobile banking architecture for decentralized payments."
+      },
+      "3": {
+        "title": "EduTrack_LMS",
+        "desc": "Scalable school management system capable of handling 50k+ students."
+      },
+      "4": {
+        "title": "Ouaga_Smart_Traffic",
+        "desc": "Computer vision ML model for real-time urban traffic analysis."
+      }
+    }
+  },
+  "ProjectDetails": {
+    "back_index": "< RETURN TO REGISTRY",
+    "mission_brief": "Mission Brief",
+    "architecture": "Architecture & Stack",
+    "challenge_title": "01. The Challenge",
+    "solution_title": "02. The Solution",
+    "impact_title": "03. System Impact",
+    "links": "Access & Source",
+    "btn_live": "VIEW SITE",
+    "btn_repo": "SOURCE CODE"
+  },
+  "Project_edutrack": {
+    "title": "EduTrack LMS",
+    "subtitle": "Scalable school management system for West Africa.",
+    "description": "A complete solution to digitize student tracking, grades, and attendance in low-connectivity areas.",
+    "challenge": "Schools lacked reliable infrastructure. The system had to work Offline-First and synchronize seamlessly when the network became available.",
+    "solution": "Used PWA (Progressive Web App) with a local database (IndexedDB) synchronized with PostgreSQL via an optimized GraphQL API.",
+    "impact": "Deployed in 15 schools, managing 50,000+ students, reducing administrative paperwork by 80%."
+  },
+  "Project_faso_fintech": {
+    "title": "Faso Fintech App",
+    "subtitle": "Decentralized mobile banking for financial inclusion.",
+    "description": "A cross-platform mobile application allowing P2P money transfers and bill payments without a traditional bank account.",
+    "challenge": "Securing transactions on unstable mobile networks (2G/3G) while ensuring a smooth and reassuring UX for first-time digital users.",
+    "solution": "Flutter architecture with end-to-end encryption. 'Lite' mode to save data and aggressive caching system for fluidity.",
+    "impact": "Adopted by 10,000 users in the first month. Monthly transaction volume exceeded forecasts by 200%."
+  },
+  "Project_sahel_ai": {
+    "title": "Sahel AI Platform",
+    "subtitle": "Agricultural predictive analysis via satellite imagery.",
+    "description": "An AI platform that analyzes satellite data (Sentinel-2) to predict crop yields and detect early drought zones.",
+    "challenge": "Processing terabytes of multispectral images with minimal latency and providing accurate predictions despite the scarcity of local Ground Truth data.",
+    "solution": "Computer Vision pipeline (Custom ResNet) with synthetic data augmentation. Deployment of optimized models (ONNX) on local servers.",
+    "impact": "Prevention of crop loss in 3 pilot regions. 30% yield increase thanks to targeted irrigation advice."
+  },
+  "Project_ouaga_traffic": {
+    "title": "Ouaga Smart Traffic",
+    "subtitle": "Urban flow optimization via Computer Vision.",
+    "description": "An intelligent monitoring system deployed at critical intersections to analyze traffic density in real-time and dynamically adjust traffic lights.",
+    "challenge": "Existing infrastructures are static. The challenge was processing unstable video streams at the edge (Edge Computing) with near-zero latency.",
+    "solution": "Deployment of optimized YOLOv8 models on NVIDIA Jetson Nano units. Lightweight MQTT communication to a centralized dashboard for the municipality.",
+    "impact": "20% reduction in average wait times at equipped intersections. Generation of unique datasets for future urban planning."
+  }
+}

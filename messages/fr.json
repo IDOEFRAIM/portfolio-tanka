@@ -1,0 +1,186 @@
+{
+  "Navbar": {
+    "logo": "Efraim IDO",
+    "home":"Accueil",
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact",
+    "cta": "Engagez-moi"
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "badge": "Architecte Système & IA",
+    "title_line1": "JE CONSTRUIS",
+    "title_line2": "DES SYSTÈMES.",
+    "description": "Je ne fais pas que coder. Je conçois des infrastructures numériques <bold>robustes, scalables et intelligentes</bold> pour résoudre des problèmes complexes.",
+    "cta_primary": "MES PROJETS",
+    "cta_secondary": "ME CONTACTER",
+    "stat_1_value": "3+",
+    "stat_1_label": "Années d'Exp.",
+    "stat_1_desc": "En production critique",
+    "stat_2_label": "Double compétence",
+    "footer_routine": "Code / Deploy / Repeat",
+    "footer_loc": "Basé en Afrique de l'Ouest",
+    "footer_stack": "Next.js • Python • Cloud"
+  },
+  "Philosophy": {
+    "header_title": "MON",
+    "header_subtitle": "MINDSET",
+    "system_status": "SYSTEM_STATUS: OPTIMAL",
+    "block_1_title": "L'ORIGINE",
+    "block_1_text": "Tout commence par une compréhension profonde du problème. Je déconstruis la complexité pour trouver <bold>l'élégance architecturale</bold>.",
+    "block_2_title": "LA MÉTHODE",
+    "block_2_text": "Rigueur, Discipline, Itération. Je code comme un ingénieur en aéronautique : chaque ligne a sa raison d'être. Pas de place pour le hasard.",
+    "block_3_title": "LA CIBLE",
+    "block_3_text": "L'impact réel. Je ne cherche pas la hype, je cherche la <highlight>performance durable</highlight> et la valeur ajoutée pour l'utilisateur final.",
+    "link_read_more": "LIRE MON HISTOIRE"
+  },
+  "Categories": {
+    "header_title": "DOMAINES",
+    "header_highlight": "D'EXPERTISE",
+    "select_module": "SÉLECTIONNEZ UN MODULE",
+    "action_access": "ACCÉDER >",
+    "cat_1_title": "Web Engineering",
+    "cat_1_sub": "Scalable & Robuste",
+    "cat_1_desc": "Conception d'applications web complexes, performantes et SEO-friendly (Next.js, React).",
+    "cat_2_title": "Mobile Dev",
+    "cat_2_sub": "Cross-Platform",
+    "cat_2_desc": "Applications natives fluides pour iOS et Android avec une base de code unifiée (Flutter/React Native).",
+    "cat_3_title": "AI Solutions",
+    "cat_3_sub": "Machine Learning",
+    "cat_3_desc": "Intégration de modèles prédictifs et d'agents intelligents pour automatiser les processus.",
+    "cat_4_title": "Data Science",
+    "cat_4_sub": "Analytics & Big Data",
+    "cat_4_desc": "Traitement de données massives, pipelines ETL et visualisation pour la prise de décision."
+  },
+  "HookProject": {
+  "badge": "PROJET VEDETTE",
+  "title": "AgriConnect",
+  "subtitle": "Comment j'ai connecté les agriculteurs aux données intelligentes.",
+  "stat_1_label": "Impact",
+  "stat_1_desc": "Optimisation des récoltes",
+  "stat_2_label": "Stack",
+  "stat_2_desc": "IA & Cloud",
+  "description": "Un défi technique majeur : fournir aux agriculteurs des prévisions fiables dans des zones rurales à faible connectivité. La solution ? Une plateforme 'Offline-First' intégrant l’IA pour analyser les données agricoles et guider les décisions.",
+  "cta_inspect": "EXPLORER LE CAS"
+},
+  "FinalCTA": {
+    "title_line1": "PRÊT À LANCER",
+    "title_line2": "VOTRE SYSTÈME ?",
+    "description": "Je suis disponible pour des missions de freelance ou de consulting technique.",
+    "cmd_init": "> _initiate_collaboration",
+    "btn_calendar": "RÉSERVER UN APPEL",
+    "btn_cv": "TÉLÉCHARGER CV",
+    "connect_label": "CONNEXION SÉCURISÉE VIA :"
+  },
+"About": {
+  "title": "JOURNAL DU SYSTÈME",
+  "subtitle": "Log: /root/user/efraim/history",
+  "intro": "Une architecture robuste se forge sous contrainte. Voici les patchs et mises à jour qui ont construit mon noyau actuel.",
+  "step_1_year": "2015 - 2019",
+  "step_1_title": "Kernel_Init (Discipline)",
+  "step_1_place": "Petit Séminaire de Pabré (Internat)",
+  "step_1_desc": "Initialisation du noyau. Apprentissage de la rigueur stricte et des protocoles communautaires. <bold>Acquisition de la tolérance aux fautes :</bold> accepter les défauts des autres pour la stabilité globale du système.",
+  "step_2_year": "Autodidacte",
+  "step_2_title": "Daemon_Process (Code)",
+  "step_2_place": "Exploration Binaire",
+  "step_2_desc": "Processus en arrière-plan démarré en 5e (Théorie, Word, Excel). Début effectif du code à 15 ans. <highlight>Multitâche intensif :</highlight> jongler entre devoirs scientifiques complexes et tutoriels de code nocturnes.",
+  "step_3_year": "2019 - 2021",
+  "step_3_title": "Stress_Test (Résilience)",
+  "step_3_place": "Lycée Mixte (Public)",
+  "step_3_desc": "Environnement à haute densité (100 élèves/classe). Ressources limitées (oxygène, espace). <highlight>Résultat :</highlight> développement d’une résilience extrême et capacité à performer sous forte pression.",
+  "step_4_year": "2022",
+  "step_4_title": "System_Upgrade (Excellence)",
+  "step_4_place": "Lycée International Maarif (Bourse)",
+  "step_4_desc": "Migration vers un environnement d’élite (Terminale spécialité Mathématiques). Premier de la classe en Mathématiques. Optimisation logique. Lauréat de la bourse de la Türkiye Maarif Foundation.",
+  "step_5_year": "Actuel",
+  "step_5_title": "Production_Runtime",
+  "step_5_place": "ENSA Berrechid, Maroc",
+  "step_5_desc": "Déployé via bourse d’État. Actuellement en Classes Préparatoires (CP1). Compilation des connaissances théoriques (Maths avancées) et passion applicative (Dev)."
+},
+  "ProjectsIndex": {
+    "title": "SYSTEM_REGISTRY",
+    "subtitle": "Index des architectures déployées.",
+    "status_deployed": "Déployé",
+    "status_building": "En cours",
+    "view_project": "ACCÈS SYSTÈME >",
+    "items": {
+      "1": {
+        "title": "Sahel_AI_Platform",
+        "desc": "Plateforme d'analyse prédictive agricole pour les zones arides via imagerie satellite."
+      },
+      "2": {
+        "title": "Faso_Fintech_App",
+        "desc": "Architecture bancaire mobile haute sécurité pour les paiements décentralisés."
+      },
+      "3": {
+        "title": "EduTrack_LMS",
+        "desc": "Système de gestion scolaire scalable capable de gérer 50k+ étudiants."
+      },
+      "4": {
+        "title": "Ouaga_Smart_Traffic",
+        "desc": "Modèle ML de vision par ordinateur pour l'analyse du trafic urbain en temps réel."
+      }
+    }
+  },
+  "ProjectDetails": {
+    "back_index": "< RETOUR AU REGISTRE",
+    "mission_brief": "Brief Mission",
+    "architecture": "Architecture & Stack",
+    "challenge_title": "01. Le Défi",
+    "solution_title": "02. La Solution",
+    "impact_title": "03. Impact Système",
+    "links": "Accès & Sources",
+    "btn_live": "VOIR LE SITE",
+    "btn_repo": "CODE SOURCE"
+  },
+  "Project_edutrack": {
+    "title": "EduTrack LMS",
+    "subtitle": "Système de gestion scolaire scalable pour l'Afrique de l'Ouest.",
+    "description": "Une solution complète pour digitaliser le suivi des élèves, des notes et des absences dans des zones à faible connectivité.",
+    "challenge": "Les écoles manquaient d'infrastructures fiables. Le système devait fonctionner hors-ligne (Offline-First) et se synchroniser quand le réseau est disponible.",
+    "solution": "Utilisation de PWA (Progressive Web App) avec une base de données locale (IndexedDB) synchronisée avec PostgreSQL via une API GraphQL optimisée.",
+    "impact": "Déployé dans 15 écoles, gestion de 50 000+ élèves, réduction de 80% de la paperasse administrative."
+  },
+  "Project_faso_fintech": {
+    "title": "Faso Fintech App",
+    "subtitle": "Banque mobile décentralisée pour l'inclusion financière.",
+    "description": "Une application mobile cross-platform permettant les transferts d'argent P2P et le paiement de factures sans compte bancaire traditionnel.",
+    "challenge": "Sécuriser les transactions sur des réseaux mobiles instables (2G/3G) tout en garantissant une UX fluide et rassurante pour des utilisateurs novices.",
+    "solution": "Architecture Flutter avec chiffrement de bout en bout. Mode 'Lite' pour économiser la data et système de mise en cache agressif pour la fluidité.",
+    "impact": "Adoption par 10 000 utilisateurs le premier mois. Volume de transaction mensuel dépassé de 200% par rapport aux prévisions."
+  },
+  "Project_sahel_ai": {
+    "title": "Sahel AI Platform",
+    "subtitle": "Analyse prédictive agricole par imagerie satellite.",
+    "description": "Une plateforme d'intelligence artificielle qui analyse les données satellitaires (Sentinel-2) pour prédire les rendements agricoles et détecter les zones de sécheresse précoce.",
+    "challenge": "Traiter des téraoctets d'images multispectrales avec une latence minimale et fournir des prédictions précises malgré la rareté des données d'entraînement locales (Ground Truth).",
+    "solution": "Pipeline de Computer Vision (ResNet custom) avec augmentation de données synthétiques. Déploiement des modèles optimisés (ONNX) sur serveurs locaux.",
+    "impact": "Prévention de la perte de récoltes dans 3 régions pilotes. Augmentation de 30% du rendement grâce aux conseils d'irrigation ciblés."
+  },
+  "Project_ouaga_traffic": {
+    "title": "Ouaga Smart Traffic",
+    "subtitle": "Optimisation du flux urbain par Vision par Ordinateur.",
+    "description": "Un système de surveillance intelligent déployé aux carrefours critiques pour analyser la densité du trafic en temps réel et ajuster les feux de signalisation dynamiquement.",
+    "challenge": "Les infrastructures existantes sont statiques. Le défi était de traiter des flux vidéo instables en bordure de réseau (Edge Computing) avec une latence quasi nulle.",
+    "solution": "Déploiement de modèles YOLOv8 optimisés sur des boîtiers NVIDIA Jetson Nano. Communication MQTT légère vers un dashboard centralisé pour la municipalité.",
+    "impact": "Réduction du temps d'attente moyen de 20% aux intersections équipées. Génération de datasets inédits pour la planification urbaine future."
+  },
+  "ContactPage": {
+    "title": "INITIATE_COMM",
+    "subtitle": "Canal de communication ouvert.",
+    "status": "Signal: Fort",
+    "email_label": "TRANSMISSION EMAIL",
+    "socials_label": "RÉSEAUX SÉCURISÉS",
+    "form_name": "IDENTIFIANT / NOM",
+    "form_email": "POINT DE CONTACT (EMAIL)",
+    "form_message": "DONNÉES / MESSAGE",
+    "btn_send": "ENVOYER LE PAQUET >",
+    "success_mock": "Message simulé envoyé."
+  }
+}
