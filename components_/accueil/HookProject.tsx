@@ -56,7 +56,7 @@ const HookProject = () => {
 
             {/* Bouton d'Action */}
             <Link 
-              href="/projects/edutrack" 
+              href="/en/projects" 
               className="group inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-bold uppercase tracking-wider hover:bg-indigo-50 transition-colors"
             >
               <span>{t('cta_inspect')}</span>

@@ -56,7 +56,7 @@ const Hero = () => {
             {/* Boutons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-10 justify-center md:justify-start">
               <Link 
-                href="/projects" 
+                href="/en/projects" 
                 className="group relative px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-black font-bold text-lg overflow-hidden rounded-none hover:scale-105 transition-transform duration-300 shadow-lg"
               >
                 <span className="relative z-10 mix-blend-difference dark:mix-blend-normal">{t('cta_primary')}</span>

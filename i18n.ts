@@ -1,28 +1,26 @@
 import { getRequestConfig } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
-const locales = ['en', 'fr'];
+import en from './messages/en.json';
+import fr from './messages/fr.json';
+
+const locales = ['en', 'fr'] as const;
+const allMessages = { en, fr };
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  // 1. On récupère la locale (Spécifique Next.js 15 : c'est une Promise)
-  let locale = await requestLocale;
+  let locale = (await requestLocale) as keyof typeof allMessages | undefined;
 
-  // 2. Sécurité : Si la locale est inconnue, on force le Français par défaut
-  if (!locale || !locales.includes(locale as any)) {
+  if (!locale || !locales.includes(locale)) {
     locale = 'fr';
   }
 
   try {
-    // 3. On charge le VRAI fichier JSON depuis le dossier messages
-    const messages = (await import(`./messages/${locale}.json`)).default;
-
     return {
       locale,
-      messages
+      messages: allMessages[locale]
     };
   } catch (error) {
-    console.error(`❌ ERREUR CRITIQUE : Impossible de lire messages/${locale}.json`);
-    // Si ça plante ici, c'est que ton fichier JSON a une erreur de virgule
+    console.error(`❌ ERREUR CRITIQUE : Impossible de lire messages pour ${locale}`);
     notFound();
   }
 });
