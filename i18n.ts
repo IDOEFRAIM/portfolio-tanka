@@ -1,15 +1,19 @@
+// i18n.ts
 import { getRequestConfig } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 import en from './messages/en.json';
 import fr from './messages/fr.json';
 
-// Déclare clairement les locales supportées
 const locales = ['en', 'fr'] as const;
 type Locale = (typeof locales)[number];
 
-// Précharge tous les fichiers de messages
-const allMessages: Record<Locale, Record<string, string>> = {
+// Type récursif : une valeur peut être une string ou un objet Messages
+type Messages = {
+  [key: string]: string | Messages;
+};
+
+const allMessages: Record<Locale, Messages> = {
   en,
   fr
 };
@@ -17,7 +21,6 @@ const allMessages: Record<Locale, Record<string, string>> = {
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = (await requestLocale) as Locale | undefined;
 
-  // Fallback sécurisé
   if (!locale || !locales.includes(locale)) {
     locale = 'fr';
   }
