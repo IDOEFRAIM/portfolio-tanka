@@ -5,7 +5,9 @@ const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // autres configs (images, experimental, etc.)
+    turbopack: {
+    root: "./"   
+  }
 };
 
 export default withNextIntl(nextConfig);

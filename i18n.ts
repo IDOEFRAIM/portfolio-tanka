@@ -8,10 +8,8 @@ import fr from './messages/fr.json';
 const locales = ['en', 'fr'] as const;
 type Locale = (typeof locales)[number];
 
-// Type récursif : une valeur peut être une string ou un objet Messages
-type Messages = {
-  [key: string]: string | Messages;
-};
+// Messages can be nested objects or strings
+type Messages = Record<string, string | Messages>;
 
 const allMessages: Record<Locale, Messages> = {
   en,
@@ -19,19 +17,22 @@ const allMessages: Record<Locale, Messages> = {
 };
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  let locale = (await requestLocale) as Locale | undefined;
+  // Ensure locale is one of the supported ones
+  let locale: Locale = (await requestLocale) as Locale;
 
   if (!locale || !locales.includes(locale)) {
-    locale = 'fr';
+    locale = 'fr'; // default fallback
   }
 
-  try {
-    return {
-      locale,
-      messages: allMessages[locale]
-    };
-  } catch (error) {
+  const messages = allMessages[locale];
+
+  if (!messages) {
     console.error(`❌ ERREUR CRITIQUE : Impossible de lire messages pour ${locale}`);
     notFound();
   }
+
+  return {
+    locale,
+    messages
+  };
 });
