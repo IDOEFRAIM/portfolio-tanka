@@ -5,8 +5,9 @@ const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    turbopack: {
-    root: "./"   
+  turbopack: {
+    // ✅ utilise process.cwd() pour un chemin absolu portable
+    root: process.cwd()
   }
 };
 
