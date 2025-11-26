@@ -1,4 +1,3 @@
-// i18n.ts
 import { getRequestConfig } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
@@ -8,8 +7,10 @@ import fr from './messages/fr.json';
 const locales = ['en', 'fr'] as const;
 type Locale = (typeof locales)[number];
 
-// Messages can be nested objects or strings
-type Messages = Record<string, string | Messages>;
+// Recursive type: a value can be a string or nested Messages
+interface Messages {
+  [key: string]: string | Messages;
+}
 
 const allMessages: Record<Locale, Messages> = {
   en,
@@ -17,11 +18,10 @@ const allMessages: Record<Locale, Messages> = {
 };
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  // Ensure locale is one of the supported ones
-  let locale: Locale = (await requestLocale) as Locale;
+  let locale = (await requestLocale) as Locale | undefined;
 
   if (!locale || !locales.includes(locale)) {
-    locale = 'fr'; // default fallback
+    locale = 'fr'; // fallback
   }
 
   const messages = allMessages[locale];
