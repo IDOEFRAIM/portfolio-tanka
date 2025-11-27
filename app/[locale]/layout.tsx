@@ -53,10 +53,10 @@ export default async function LocaleLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {/* Barre de réglages (Langue + Thème) */}
+            {/* Barre de réglages (Langue + Thème)
            <div className="fixed top-20 right-4 z-[60]">
               <SettingsBar />
-          </div>
+          </div> */}
 
             {/* ✅ Navbar globale */}
             <NavBar />

@@ -34,7 +34,7 @@ const SettingsBar = () => {
   if (!mounted) return null;
 
   return (
-    <div className="fixed top-6 right-6 z-50 flex items-center gap-3">
+    <div className=" flex items-center gap-3">
       
       {/* --- BLOC LANGUE --- */}
       <div className="flex p-1 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-md border border-gray-200 dark:border-white/10 rounded-lg shadow-lg transition-colors">

@@ -6,7 +6,7 @@ import { Hero, Philosophy, Categories, FinalCTA, HookProject } from "../../compo
 
 const Page = () => {
   return (
-    <main className="bg-black min-h-screen flex flex-col">
+    <main className="bg-black min-h-screen flex flex-col mt-6">
       <Hero />
       <Philosophy />
       <Categories />

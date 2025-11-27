@@ -114,7 +114,7 @@ export default function ContactPage({ params }: Props) {
                   <input
                     type="text"
                     className="w-full bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 p-4 rounded text-slate-900 dark:text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                    placeholder="John Doe"
+                    placeholder="Tanka IDO"
                   />
                 </div>
 
@@ -126,7 +126,7 @@ export default function ContactPage({ params }: Props) {
                   <input
                     type="email"
                     className="w-full bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 p-4 rounded text-slate-900 dark:text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                    placeholder="john@company.com"
+                    placeholder="ido@numix.com"
                   />
                 </div>
 
@@ -138,7 +138,7 @@ export default function ContactPage({ params }: Props) {
                   <textarea
                     rows={5}
                     className="w-full bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 p-4 rounded text-slate-900 dark:text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
-                    placeholder="..."
+                    placeholder="Tu as une question ou un projet en tête ? C'est simple, ecris moi!"
                   />
                 </div>
 
