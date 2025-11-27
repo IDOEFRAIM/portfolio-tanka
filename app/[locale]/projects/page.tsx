@@ -5,30 +5,30 @@ import Link from 'next/link';
 const projectsData = [
   {
     id: "1",
-    slug: "sahel-ai",
+    slug: "AgriConnect",
     category: "ai",
     stack: ["Python", "TensorFlow", "Next.js"],
     status: "deployed"
   },
   {
     id: "2",
-    slug: "faso-fintech",
+    slug: "Liber",
     category: "mobile",
     stack: ["Flutter", "Dart", "Firebase"],
     status: "deployed"
   },
   {
     id: "3",
-    slug: "edutrack",
+    slug: "Schola",
     category: "web",
     stack: ["Next.js", "PostgreSQL", "Docker"],
-    status: "deployed"
+    status: "In Progress"
   },
   {
     id: "4",
-    slug: "ouaga-traffic",
+    slug: "fraud-detection",
     category: "data",
-    stack: ["YOLOv8", "OpenCV", "FastAPI"],
+    stack: ["numpy", "matplotlib", "imbalanced-learn"],
     status: "building"
   }
 ];

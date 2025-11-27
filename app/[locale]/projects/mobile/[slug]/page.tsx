@@ -4,16 +4,15 @@ import { notFound } from 'next/navigation';
 
 // Mock Data (Simule une base de données)
 const projectsDB: Record<string, any> = {
-  "edutrack": {
-    key: "edutrack",
-    year: "2024",
-    client: "Ministère Éducation",
+  "Liber": {
+    key: "liber",
+    year: "2023",
+    client: "Personnel",
     role: "Lead Full-Stack",
     stack: ["Next.js 14", "PostgreSQL", "GraphQL", "Docker", "Redis"],
-    demoLink: "https://edutrack.example.com",
-    repoLink: "https://github.com/efraim/edutrack"
+    demoLink: "https://wa.me/+2120782901759",
+    repoLink: "https://wa.me/+2120782901759"
   }
-  // Tu pourras ajouter d'autres projets ici : "portfolio", "saas-app"...
 };
 
 type Props = {
@@ -24,15 +23,15 @@ export default async function WebProjectPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  // 1. Vérifier si le projet existe
+  // On verifie d abord si le projet existe
   const project = projectsDB[slug];
   if (!project) {
-    notFound(); // Renvoie une page 404 si le slug est inconnu
+    notFound(); 
   }
 
-  // 2. Charger les traductions
+  // Ensuite on charge la traduction
   const t = await getTranslations('ProjectDetails');
-  const content = await getTranslations(`Project_edutrack`); // Pour l'instant on force edutrack pour la démo
+  const content = await getTranslations(`Project_Liber`); // Pour l'instant on force Schola pour la démo
 
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-black text-slate-900 dark:text-white pt-32 pb-20 px-6 transition-colors duration-300">
@@ -58,7 +57,7 @@ export default async function WebProjectPage({ params }: Props) {
           <div className="flex items-center gap-3 mb-4">
              {/* Badge Couleur WEB */}
              <span className="px-2 py-1 text-[10px] font-mono font-bold bg-web/10 text-web rounded border border-web/20 uppercase">
-                Module: Web_App
+                Module: Mobile_App
              </span>
              <span className="text-xs font-mono text-gray-400">Build v.1.0.4</span>
           </div>
@@ -81,7 +80,7 @@ export default async function WebProjectPage({ params }: Props) {
              {/* Placeholder Image / Mockup */}
              <div className="aspect-video w-full bg-gray-200 dark:bg-white/5 rounded-xl border border-gray-300 dark:border-white/10 flex items-center justify-center relative overflow-hidden group">
                 <div className="absolute inset-0 bg-web/20 blur-[100px] opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
-                <span className="font-mono text-gray-400 text-sm">[ SYSTEM_PREVIEW_RENDER ]</span>
+                <span className="font-mono text-gray-400 text-sm">[ IMAGE_INDISPONIBLE]</span>
              </div>
 
              {/* Challenge */}

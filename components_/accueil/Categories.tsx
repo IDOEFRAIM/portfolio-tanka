@@ -6,7 +6,7 @@ const categoriesConfig = [
   {
     id: "01",
     key: "cat_1",
-    link: "/projects/web",
+    link: "en/projects/web/Schola",
     // Utilisation de la couleur 'web'
     colorClass: "hover:border-web hover:shadow-web/20 dark:hover:shadow-web/20",
     iconColor: "text-web", 
@@ -15,7 +15,7 @@ const categoriesConfig = [
   {
     id: "02",
     key: "cat_2",
-    link: "/projects/mobile",
+    link: "en/projects/mobile/Liber",
     // Utilisation de la couleur 'mobile'
     colorClass: "hover:border-mobile hover:shadow-mobile/20 dark:hover:shadow-mobile/20",
     iconColor: "text-mobile",
@@ -24,7 +24,7 @@ const categoriesConfig = [
   {
     id: "03",
     key: "cat_3",
-    link: "/projects/ai",
+    link: "/projects/ai/AgriConnect",
     // Utilisation de la couleur 'ai'
     colorClass: "hover:border-ai hover:shadow-ai/20 dark:hover:shadow-ai/20",
     iconColor: "text-ai",
@@ -33,7 +33,7 @@ const categoriesConfig = [
   {
     id: "04",
     key: "cat_4",
-    link: "/projects/ml",
+    link: "/projects/data/fraud-detection",
     // Utilisation de la couleur 'data'
     colorClass: "hover:border-data hover:shadow-data/20 dark:hover:shadow-data/20",
     iconColor: "text-data",

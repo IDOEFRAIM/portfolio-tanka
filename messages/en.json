@@ -1,11 +1,11 @@
 {
-   "Navbar": {
-    "logo": "Tanke B. IDO",
-    "home":"home",
+  "Navbar": {
+    "logo": "Tanka B. IDO",
+    "home": "Home",
     "projects": "Projects",
     "about": "About",
     "contact": "Contact",
-    "cta": "Hire Me"
+    "cta": "Hire me"
   },
   "Navigation": {
     "home": "Home",
@@ -14,172 +14,174 @@
     "contact": "Contact"
   },
   "Hero": {
-    "badge": "System Architect & AI",
+    "badge": "System & AI Architect",
     "title_line1": "I BUILD",
     "title_line2": "SYSTEMS.",
-    "description": "I don't just code. I design <bold>robust, scalable, and intelligent</bold> digital infrastructures to solve complex problems.",
+    "description": "<bold>System architect</bold> passionate since I was 15, I design <bold>robust, scalable and intelligent</bold> infrastructures with a diagnostic-driven approach and a vision focused on sustainable impact.",
     "cta_primary": "MY PROJECTS",
     "cta_secondary": "CONTACT ME",
     "stat_1_value": "3+",
     "stat_1_label": "Years Exp.",
     "stat_1_desc": "In critical production",
-    "stat_2_label": "Dual Competence",
-    "footer_routine": "Code / Deploy / Repeat",
-    "footer_loc": "Based in West Africa",
-    "footer_stack": "Next.js • Python • Cloud"
+    "stat_2_label": "Dual skillset",
+    "footer_routine": "Code / Deploy / Monitoring",
+    "footer_loc": "Based in Morocco",
+    "footer_stack": "Next.js • Flutter • Python • Cloud"
   },
   "Philosophy": {
     "header_title": "MY",
     "header_subtitle": "MINDSET",
     "system_status": "SYSTEM_STATUS: OPTIMAL",
     "block_1_title": "THE ORIGIN",
-    "block_1_text": "It all starts with a deep understanding of the problem. I deconstruct complexity to find <bold>architectural elegance</bold>.",
+    "block_1_text": "- I started at <bold>15 years old</bold>, out of necessity and curiosity. I am not among those who look for quick answers; I rather hunt down root causes. I dismantle complexity to the bone to reveal architectural elegance — the kind that simplifies without betraying, that stands when everything else falters.",
     "block_2_title": "THE METHOD",
-    "block_2_text": "Rigor, Discipline, Iteration. I code like an aeronautical engineer: every line has a purpose. No room for randomness.",
+    "block_2_text": "Rigor. Discipline. Iteration. I code like designing an airplane: every part has a function, every tolerance is measured, every risk is isolated. Nothing is left to chance. My approach is diagnostic-driven: I want states, metrics, and errors exposed to iterate quickly and well. Robustness is not an option, it's the contract.",
     "block_3_title": "THE TARGET",
-    "block_3_text": "Real impact. I don't chase hype, I chase <highlight>sustainable performance</highlight> and added value for the end user.",
+    "block_3_text": "- Real impact. No hype, no smoke and mirrors. I aim for sustainable performance — systems that hold, evolve, and create measurable value for the user. I build for the real world: constraints, scale, unforeseen events. Scalability is not a slogan, it's a responsibility.",
     "link_read_more": "READ MY STORY"
   },
   "Categories": {
-    "header_title": "AREAS OF",
-    "header_highlight": "EXPERTISE",
+    "header_title": "AREAS",
+    "header_highlight": "OF EXPERTISE",
     "select_module": "SELECT A MODULE",
     "action_access": "ACCESS >",
     "cat_1_title": "Web Engineering",
     "cat_1_sub": "Scalable & Robust",
-    "cat_1_desc": "Design of complex, high-performance, and SEO-friendly web applications (Next.js, React).",
+    "cat_1_desc": "Design of complex, high-performance and SEO-friendly web applications (Next.js, React).",
     "cat_2_title": "Mobile Dev",
     "cat_2_sub": "Cross-Platform",
-    "cat_2_desc": "Fluid native applications for iOS and Android with a unified codebase (Flutter/React Native).",
+    "cat_2_desc": "Smooth native apps for iOS and Android with a unified codebase (Flutter/React Native).",
     "cat_3_title": "AI Solutions",
     "cat_3_sub": "Machine Learning",
     "cat_3_desc": "Integration of predictive models and intelligent agents to automate processes.",
     "cat_4_title": "Data Science",
     "cat_4_sub": "Analytics & Big Data",
-    "cat_4_desc": "Massive data processing, ETL pipelines, and visualization for decision making."
+    "cat_4_desc": "Processing large datasets, ETL pipelines and visualization for decision making."
   },
   "HookProject": {
-  "badge": "FEATURED PROJECT",
-  "title": "AgriConnect",
-  "subtitle": "How I connected farmers to intelligent data.",
-  "stat_1_label": "Impact",
-  "stat_1_desc": "Optimized harvests",
-  "stat_2_label": "Stack",
-  "stat_2_desc": "AI & Cloud",
-  "description": "A major technical challenge: delivering reliable forecasts to farmers in rural areas with low connectivity. The solution? A robust 'Offline-First' platform powered by AI to analyze agricultural data and guide decisions.",
-  "cta_inspect": "EXPLORE CASE"
-},
+    "badge": "FEATURED PROJECT",
+    "title": "AgriConnect",
+    "subtitle": "How I connected farmers to intelligent data.",
+    "stat_1_label": "Impact",
+    "stat_1_desc": "Crop optimization",
+    "stat_2_label": "Stack",
+    "stat_2_desc": "AI & Cloud",
+    "description": "A major technical challenge: provide farmers with reliable forecasts in rural areas with low connectivity. The solution? An offline-first platform integrating AI to analyze agricultural data and guide decisions.",
+    "cta_inspect": "EXPLORE THE CASE"
+  },
   "FinalCTA": {
     "title_line1": "READY TO LAUNCH",
     "title_line2": "YOUR SYSTEM?",
     "description": "I am available for freelance missions or technical consulting.",
     "cmd_init": "> _initiate_collaboration",
     "btn_calendar": "BOOK A CALL",
-    "btn_cv": "DOWNLOAD RESUME",
-    "connect_label": "SECURE CONNECTION VIA:"
+    "btn_cv": "DOWNLOAD CV",
+    "connect_label": "SECURE LOGIN VIA :"
   },
-"About": {
-  "title": "SYSTEM LOGS",
-  "subtitle": "Log: /root/user/efraim/history",
-  "intro": "A robust system architecture is forged under constraint. Here are the patches and updates that built my current kernel.",
-  "step_1_year": "2015 - 2019",
-  "step_1_title": "Kernel_Init (Discipline)",
-  "step_1_place": "Petit Séminaire de Pabré (Boarding)",
-  "step_1_desc": "Kernel initialization. Learning strict rigor and community protocols. <bold>Acquiring fault tolerance:</bold> accepting others' flaws for global system stability.",
-  "step_2_year": "Self-Taught",
-  "step_2_title": "Daemon_Process (Code)",
-  "step_2_place": "Binary Exploration",
-  "step_2_desc": "Background process started in 7th grade (Theory, Word, Excel). Effective coding start at 15. <highlight>Intensive Multitasking:</highlight> juggling complex science homework and late-night coding tutorials.",
-  "step_3_year": "2019 - 2021",
-  "step_3_title": "Stress_Test (Resilience)",
-  "step_3_place": "Lycée Mixte (Public)",
-  "step_3_desc": "High-density environment (100 instances/class). Limited resources (oxygen, space). <highlight>Result:</highlight> Development of extreme resilience and ability to perform under high pressure.",
-  "step_4_year": "2022",
-  "step_4_title": "System_Upgrade (Excellence)",
-  "step_4_place": "Maarif Int. High School (Scholarship)",
-  "step_4_desc": "Migration to elite environment (Grade 12 Math Major). Top of the class in Mathematics. Logic optimization. Awarded the Türkiye Maarif Foundation scholarship.",
-  "step_5_year": "Current",
-  "step_5_title": "Production_Runtime",
-  "step_5_place": "ENSA Berrechid, Morocco",
-  "step_5_desc": "Deployed via State Scholarship. Currently in Preparatory Classes (CP1). Compiling theoretical knowledge (Adv. Math) and application passion (Dev)."
-},
-  "ContactPage": {
-    "title": "Contact",
-    "subtitle": "Get in touch",
-    "status": "Available",
-    "email_label": "Email",
-    "socials_label": "Socials",
-    "form_name": "Name",
-    "form_email": "Email",
-    "form_message": "Message",
-    "btn_send": "Send"
+  "About": {
+    "title": "SYSTEM JOURNAL",
+    "subtitle": "Log: /root/user/efraim/history",
+    "intro": "Solid architectures are born from constraint, not comfort. Here are the updates that shaped how I think, code and hold under pressure.",
+    "step_1_year": "2018 - 2022",
+    "step_1_title": "(Discipline, Community Life, Theory on Computer Science)",
+    "step_1_place": "Petit Séminaire de Pabré (Boarding)",
+    "step_1_desc": "At the seminary, I learned discipline, rigor and above all community life. This training house shaped how I coexist with others. Indeed, we had to show compromise and understand that our freedom stops where another's begins.",
+    "step_2_year": "Self-taught",
+    "step_2_title": "(Code, Resilience)",
+    "step_2_place": "Theory on Computer Science",
+    "step_2_desc": "In 5th grade, my father often took me to his workplace. I used the Wi‑Fi to watch tutorials on YouTube. For example, I could spend the night trying to understand binary or how networks like HTTP and SSH work.",
+    "step_3_year": "2022 - 2024",
+    "step_3_title": "Stress_Test (Resilience)",
+    "step_3_place": "Mixed High School (Public)",
+    "step_3_desc": "After the seminary, I went to the mixed high school of Goughin. This school taught me to be resilient. Indeed, there were 100 students in the second year. It was very difficult to breathe or follow classes. Despite that, I always held on because I knew sooner or later there would be a solution. I attended classes during the day and coded at night. It was especially during this period that I started programming: Python, JavaScript, React, Next.js",
+    "step_4_year": "2024",
+    "step_4_title": "(Maarif Foundation Scholarship)",
+    "step_4_place": "Lycée International Maarif (Scholarship)",
+    "step_4_desc": "Thanks to a computer science teacher (Mr. HONVOH Marcia), I was able to obtain an excellence scholarship from the Türkiye Maarif Foundation to continue my studies at this prestigious school, which is among the best in my country. It was truly a sign that my efforts were starting to pay off. Yes, it wasn't easy! Yes, there were always issues here and there. But knowing that with my work my father would no longer have to pay my tuition was very satisfying.",
+    "step_5_year": "Current",
+    "step_5_title": "Present",
+    "step_5_place": "ENSA Berrechid, Morocco",
+    "step_5_desc": "Thanks to my good results in the Burkinabè baccalaureate (High Honors in Bac C), I obtained a scholarship from the Moroccan government to study at the National School of Applied Sciences of Berrechid. I am also taking courses on Coursera and at GoAi Lab to acquire the necessary skills and certifications in Artificial Intelligence, Cloud Computing and Cybersecurity. I currently aspire to become an AI Engineer, AI Researcher and Cloud Architect. No surprise, since I have trained for this since childhood. My greatest ambition is to put my knowledge at the service of the development of my country, Burkina Faso, and to show that with hard work and iron discipline one can come from anywhere and achieve the wildest dreams. As Mandela said: <bold>Maybe not today, maybe not next month, but one day I will be a champion</bold>. Let us dare to innovate, dare to dream and above all dare to make the impossible possible.<bold> After all, sky is the limit</bold>"
   },
   "ProjectsIndex": {
     "title": "SYSTEM_REGISTRY",
     "subtitle": "Index of deployed architectures.",
     "status_deployed": "Deployed",
-    "status_building": "Building",
+    "status_building": "In progress",
     "view_project": "ACCESS SYSTEM >",
     "items": {
       "1": {
-        "title": "Sahel_AI_Platform",
-        "desc": "Agricultural predictive analysis platform for arid zones via satellite imagery."
+        "title": "AgriConnect",
+        "desc": "Predictive agricultural analytics platform for arid areas using satellite imagery."
       },
       "2": {
-        "title": "Faso_Fintech_App",
-        "desc": "High-security mobile banking architecture for decentralized payments."
+        "title": "Liber",
+        "desc": "An online library which create a bridge between people and reading."
       },
       "3": {
         "title": "EduTrack_LMS",
         "desc": "Scalable school management system capable of handling 50k+ students."
       },
       "4": {
-        "title": "Ouaga_Smart_Traffic",
-        "desc": "Computer vision ML model for real-time urban traffic analysis."
+        "title": "fraud-detection",
+        "desc": "ML model for real-time fraud detection."
       }
     }
   },
   "ProjectDetails": {
-    "back_index": "< RETURN TO REGISTRY",
-    "mission_brief": "Mission Brief",
+    "back_index": "< BACK TO REGISTRY",
+    "mission_brief": "Brief Mission",
     "architecture": "Architecture & Stack",
     "challenge_title": "01. The Challenge",
     "solution_title": "02. The Solution",
     "impact_title": "03. System Impact",
-    "links": "Access & Source",
+    "links": "Access & Sources",
     "btn_live": "VIEW SITE",
     "btn_repo": "SOURCE CODE"
   },
-  "Project_edutrack": {
+  "Project_schola": {
     "title": "EduTrack LMS",
     "subtitle": "Scalable school management system for West Africa.",
-    "description": "A complete solution to digitize student tracking, grades, and attendance in low-connectivity areas.",
-    "challenge": "Schools lacked reliable infrastructure. The system had to work Offline-First and synchronize seamlessly when the network became available.",
-    "solution": "Used PWA (Progressive Web App) with a local database (IndexedDB) synchronized with PostgreSQL via an optimized GraphQL API.",
+    "description": "A complete solution to digitize student tracking, grades and attendance in low-connectivity areas.",
+    "challenge": "Schools lacked reliable infrastructure. The system had to work offline (Offline-First) and synchronize when the network was available.",
+    "solution": "Use of a PWA (Progressive Web App) with a local database (IndexedDB) synchronized to PostgreSQL via an optimized GraphQL API.",
     "impact": "Deployed in 15 schools, managing 50,000+ students, reducing administrative paperwork by 80%."
   },
-  "Project_faso_fintech": {
-    "title": "Faso Fintech App",
-    "subtitle": "Decentralized mobile banking for financial inclusion.",
-    "description": "A cross-platform mobile application allowing P2P money transfers and bill payments without a traditional bank account.",
-    "challenge": "Securing transactions on unstable mobile networks (2G/3G) while ensuring a smooth and reassuring UX for first-time digital users.",
-    "solution": "Flutter architecture with end-to-end encryption. 'Lite' mode to save data and aggressive caching system for fluidity.",
-    "impact": "Adopted by 10,000 users in the first month. Monthly transaction volume exceeded forecasts by 200%."
-  },
-  "Project_sahel_ai": {
-    "title": "Sahel AI Platform",
-    "subtitle": "Agricultural predictive analysis via satellite imagery.",
+  "Project_Liber":{
+      "title": "Liber — Digital Library",
+      "subtitle": "Access and reconciliation of educational resources for institutions.",
+      "description": "An open platform that centralizes, organizes and distributes digital educational content (textbooks, lessons, multimedia) for schools and libraries in low‑connectivity areas.",
+      "challenge": "Fragmented resources: local files, paper materials, incompatible formats and limited network access. The system needed to ensure availability, fast search and rights management while preserving user privacy.",
+      "solution": "Offline‑First architecture with progressive synchronization, metadata engine and resource reconciliation (fuzzy matching). Distribution via PWA and lightweight apps, GraphQL API for integration, fine‑grained rights management and caching/compression strategies to save bandwidth.",
+      "impact": "Continuous access to learning materials even offline, reduced content duplication, improved inter‑institution collaboration and time savings for teachers. Enables fairer knowledge distribution in rural areas."
+    },
+  "Project_AgriConnect": {
+    "title": "AgriConnect",
+    "subtitle": "Predictive agricultural analysis via satellite imagery.",
     "description": "An AI platform that analyzes satellite data (Sentinel-2) to predict crop yields and detect early drought zones.",
-    "challenge": "Processing terabytes of multispectral images with minimal latency and providing accurate predictions despite the scarcity of local Ground Truth data.",
-    "solution": "Computer Vision pipeline (Custom ResNet) with synthetic data augmentation. Deployment of optimized models (ONNX) on local servers.",
-    "impact": "Prevention of crop loss in 3 pilot regions. 30% yield increase thanks to targeted irrigation advice."
+    "challenge": "Process terabytes of multispectral images with minimal latency and provide accurate predictions despite scarce local training data (ground truth).",
+    "solution": "Computer vision pipeline (custom ResNet) with synthetic data augmentation. Deployment of optimized models (ONNX) on local servers.",
+    "impact": "Prevented crop losses in 3 pilot regions. Increased yield by 30% thanks to targeted irrigation recommendations."
   },
-  "Project_ouaga_traffic": {
-    "title": "Ouaga Smart Traffic",
-    "subtitle": "Urban flow optimization via Computer Vision.",
-    "description": "An intelligent monitoring system deployed at critical intersections to analyze traffic density in real-time and dynamically adjust traffic lights.",
-    "challenge": "Existing infrastructures are static. The challenge was processing unstable video streams at the edge (Edge Computing) with near-zero latency.",
-    "solution": "Deployment of optimized YOLOv8 models on NVIDIA Jetson Nano units. Lightweight MQTT communication to a centralized dashboard for the municipality.",
-    "impact": "20% reduction in average wait times at equipped intersections. Generation of unique datasets for future urban planning."
+  "Project_fraud-detection": {
+      "title": "Fraud Detection",
+      "subtitle": "Transaction analysis and anomaly detection on imbalanced datasets.",
+      "description": "A transaction analysis system (Kaggle data) designed to surface fraudulent behavior despite the scarcity of positive examples.",
+      "challenge": "Fraud datasets are highly imbalanced: fraudulent transactions make up a tiny fraction of records. This imbalance skews standard models and makes anomaly detection difficult without tailored strategies.",
+      "solution": "Multi‑pronged pipeline: feature engineering, resampling (SMOTE) and class weighting, training robust models (XGBoost, LightGBM), validation using Precision‑Recall curves and threshold calibration. Added explainability (SHAP) and production metric monitoring.",
+      "impact": "Improved sensitivity to real fraud while containing false positives; operational integration via alerts and online scoring. Repo: https://github.com/IDOEFRAIM"
+    }
+,
+  "ContactPage": {
+    "title": "INITIATE_COMM",
+    "subtitle": "Open communication channel.",
+    "status": "Signal: Strong",
+    "email_label": "EMAIL TRANSMISSION",
+    "socials_label": "SECURE NETWORKS",
+    "form_name": "IDENTIFIER / NAME",
+    "form_email": "POINT OF CONTACT (EMAIL)",
+    "form_message": "DATA / MESSAGE",
+    "btn_send": "SEND PACKET >",
+    "success_mock": "Simulated message sent."
   }
 }

@@ -4,16 +4,15 @@ import { notFound } from 'next/navigation';
 
 // Mock Data (Simule une base de données)
 const projectsDB: Record<string, any> = {
-  "edutrack": {
-    key: "edutrack",
+  "Schola": {
+    key: "Schola",
     year: "2024",
-    client: "Ministère Éducation",
+    client: "Personnel",
     role: "Lead Full-Stack",
     stack: ["Next.js 14", "PostgreSQL", "GraphQL", "Docker", "Redis"],
-    demoLink: "https://edutrack.example.com",
-    repoLink: "https://github.com/efraim/edutrack"
+    demoLink: "https://github.com/IDOEFRAIM/educConnect/tree/master",
+    repoLink: "https://github.com/IDOEFRAIM/educConnect/tree/master"
   }
-  // Tu pourras ajouter d'autres projets ici : "portfolio", "saas-app"...
 };
 
 type Props = {
@@ -24,15 +23,15 @@ export default async function WebProjectPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  // 1. Vérifier si le projet existe
+  // On verifie d abord si le projet existe
   const project = projectsDB[slug];
   if (!project) {
-    notFound(); // Renvoie une page 404 si le slug est inconnu
+    notFound(); 
   }
 
-  // 2. Charger les traductions
+  // Ensuite on charge la traduction
   const t = await getTranslations('ProjectDetails');
-  const content = await getTranslations(`Project_edutrack`); // Pour l'instant on force edutrack pour la démo
+  const content = await getTranslations(`Project_schola`); // Pour l'instant on force Schola pour la démo
 
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-black text-slate-900 dark:text-white pt-32 pb-20 px-6 transition-colors duration-300">

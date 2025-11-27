@@ -4,6 +4,7 @@ import { getMessages } from 'next-intl/server';
 import { ThemeProvider } from "@/components_/ThemeProvider";
 import SettingsBar from '@/components_/SettingsBar'; 
 import NavBar from '@/components_/NavBar'; 
+import BackButton from '@/components_/BackButton'
 import "@/app/globals.css";
 
 // 1. Configuration des polices
@@ -54,11 +55,14 @@ export default async function LocaleLayout({
           >
             {/* Barre de réglages (Langue + Thème) */}
            <div className="fixed top-20 right-4 z-[60]">
-  <SettingsBar />
-</div>
+              <SettingsBar />
+          </div>
 
             {/* ✅ Navbar globale */}
             <NavBar />
+             <div className="px-4 py-2">
+        <BackButton />
+      </div>
 
             {/* Contenu de la page */}
             {children}

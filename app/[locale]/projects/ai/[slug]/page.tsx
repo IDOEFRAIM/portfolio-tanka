@@ -4,14 +4,14 @@ import { notFound } from 'next/navigation';
 
 // Mock Data AI
 const projectsDB: Record<string, any> = {
-  "sahel-ai": {
-    key: "sahel_ai",
-    year: "2023",
-    client: "AgriTech Corp",
+  "AgriConnect": {
+    key: "AgriConnect",
+    year: "2025",
+    client: "AgriConnect",
     role: "ML Engineer",
     stack: ["Python", "PyTorch", "FastAPI", "Docker", "PostGIS", "Sentinel Hub"],
-    demoLink: "https://demo.sahel-ai.example.com",
-    repoLink: "https://github.com/efraim/sahel-ai"
+    demoLink: "https://wa.me/+2120782901759",
+    repoLink: "https://github.com/IDOEFRAIM/AgriConnect"
   }
 };
 
@@ -58,7 +58,7 @@ export default async function AIProjectPage({ params }: Props) {
              <span className="px-2 py-1 text-[10px] font-mono font-bold bg-ai/10 text-ai rounded border border-ai/20 uppercase">
                 Module: AI_Model
              </span>
-             <span className="text-xs font-mono text-gray-400">Computer Vision</span>
+             <span className="text-xs font-mono text-gray-400">Computer Vision | AI Engineering</span>
           </div>
           
           <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-6 text-slate-900 dark:text-white">
@@ -147,7 +147,7 @@ export default async function AIProjectPage({ params }: Props) {
                  </div>
                  <div>
                     <p className="text-xs text-gray-400 uppercase">Model</p>
-                    <p className="font-bold">CNN (ResNet)</p>
+                    <p className="font-bold">CNN (ResNet) | Agentic | RAG</p>
                  </div>
                </div>
             </div>

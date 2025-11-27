@@ -17,27 +17,27 @@
     "badge": "Architecte Système & IA",
     "title_line1": "JE CONSTRUIS",
     "title_line2": "DES SYSTÈMES.",
-    "description": "Je ne fais pas que coder. Je conçois des infrastructures numériques <bold>robustes, scalables et intelligentes</bold> pour résoudre des problèmes complexes.",
+    "description": "<bold>Architecte de systèmes numériques </bold>  passionné depuis mes 15 ans, je conçois des infrastructures <bold>  robustes, scalables et intelligentes </bold> , avec une approche diagnostic-driven et une vision tournée vers l’impact durable.",
     "cta_primary": "MES PROJETS",
     "cta_secondary": "ME CONTACTER",
     "stat_1_value": "3+",
     "stat_1_label": "Années d'Exp.",
     "stat_1_desc": "En production critique",
     "stat_2_label": "Double compétence",
-    "footer_routine": "Code / Deploy / Repeat",
-    "footer_loc": "Basé en Afrique de l'Ouest",
-    "footer_stack": "Next.js • Python • Cloud"
+    "footer_routine": "Code / Deploy / Monitoring",
+    "footer_loc": "Basé au Maroc",
+    "footer_stack": "Next.js • Flutter • Python • Cloud"
   },
   "Philosophy": {
     "header_title": "MON",
     "header_subtitle": "MINDSET",
     "system_status": "SYSTEM_STATUS: OPTIMAL",
     "block_1_title": "L'ORIGINE",
-    "block_1_text": "Tout commence par une compréhension profonde du problème. Je déconstruis la complexité pour trouver <bold>l'élégance architecturale</bold>.",
+    "block_1_text": "- J’ai commencé à <bold>15 ans </bold>, par nécessité et curiosité. Je ne suis pas au nombre de ceux qui cherchent des réponses rapides, je traque plutot les causes premières. Je démonte la complexité jusqu’à l’os pour faire émerger l’élégance architecturale — celle qui simplifie sans trahir, qui tient debout lorsque tout vacille.",
     "block_2_title": "LA MÉTHODE",
-    "block_2_text": "Rigueur, Discipline, Itération. Je code comme un ingénieur en aéronautique : chaque ligne a sa raison d'être. Pas de place pour le hasard.",
+    "block_2_text": "  Rigueur. Discipline. Itération . Je code comme on conçoit un avion: chaque pièce a une fonction, chaque tolérance est mesurée, chaque risque est isolé. Rien au hasard. Mon approche est diagnostic-driven: je veux des états, des métriques, des erreurs mises à nu pour itérer vite et bien. La robustesse n’est pas une option, c’est le contrat.",
     "block_3_title": "LA CIBLE",
-    "block_3_text": "L'impact réel. Je ne cherche pas la hype, je cherche la <highlight>performance durable</highlight> et la valeur ajoutée pour l'utilisateur final.",
+    "block_3_text": "- L’impact réel. Pas de hype, pas de poudre aux yeux. Je vise la performance durable — des systèmes qui tiennent, évoluent, et créent de la valeur mesurable pour l’utilisateur. Je construis pour le monde réel: contraintes, échelles, imprévus. La scalabilité n’est pas un slogan, c’est une responsabilité.",
     "link_read_more": "LIRE MON HISTOIRE"
   },
   "Categories": {
@@ -81,27 +81,27 @@
 "About": {
   "title": "JOURNAL DU SYSTÈME",
   "subtitle": "Log: /root/user/efraim/history",
-  "intro": "Une architecture robuste se forge sous contrainte. Voici les patchs et mises à jour qui ont construit mon noyau actuel.",
-  "step_1_year": "2015 - 2019",
-  "step_1_title": "Kernel_Init (Discipline)",
+  "intro": "Les architectures solides naissent de la contrainte, pas du confort. Voici les mises à jour qui ont façonné ma façon de penser, coder et tenir sous pression.",
+  "step_1_year": "2018 - 2022",
+  "step_1_title": "(Discipline,Vie en Communauté,Therie sur l'Informatique)",
   "step_1_place": "Petit Séminaire de Pabré (Internat)",
-  "step_1_desc": "Initialisation du noyau. Apprentissage de la rigueur stricte et des protocoles communautaires. <bold>Acquisition de la tolérance aux fautes :</bold> accepter les défauts des autres pour la stabilité globale du système.",
+  "step_1_desc": "Au séminaire, j'ai appris la discipline, la rigueur et surtout la vie en communauté. Cette maison de formation a façonné ma façon de cohabiter avec les autres. En effet, on devait faire preuve de compromis et savoir que notre liberté s'arrête où commence celle des autres.",
   "step_2_year": "Autodidacte",
-  "step_2_title": "Daemon_Process (Code)",
-  "step_2_place": "Exploration Binaire",
-  "step_2_desc": "Processus en arrière-plan démarré en 5e (Théorie, Word, Excel). Début effectif du code à 15 ans. <highlight>Multitâche intensif :</highlight> jongler entre devoirs scientifiques complexes et tutoriels de code nocturnes.",
-  "step_3_year": "2019 - 2021",
+  "step_2_title": "(Code,Resilience)",
+  "step_2_place": "Théorie sur l'Informatique",
+  "step_2_desc": "En 5e, mon père m'amenait souvent à son travail. Je profitais du Wi‑Fi pour regarder des tutos sur YouTube. Par exemple, je pouvais passer la nuit à chercher à comprendre le binaire ou le fonctionnement des réseaux comme le HTTP, SSH.",
+  "step_3_year": "2022 - 2024",
   "step_3_title": "Stress_Test (Résilience)",
   "step_3_place": "Lycée Mixte (Public)",
-  "step_3_desc": "Environnement à haute densité (100 élèves/classe). Ressources limitées (oxygène, espace). <highlight>Résultat :</highlight> développement d’une résilience extrême et capacité à performer sous forte pression.",
-  "step_4_year": "2022",
-  "step_4_title": "System_Upgrade (Excellence)",
+  "step_3_desc": "Après le séminaire, je suis allé au lycée mixte de Goughin. Cette école m'a appris à faire preuve de résilience. En effet, on était 100 élèves en seconde. C'était très difficile de pouvoir respirer ou suivre les cours. En dépit de cela, j'ai toujours tenu bon car je savais que tôt ou tard il y aurait une solution. Je suivais les cours la journée et codais la nuit. C'est surtout durant cette période que j'ai commencé la programmation : Python, JavaScript, React, Next.js",
+  "step_4_year": "2024",
+  "step_4_title": "(Bourse de la fondation Maarif)",
   "step_4_place": "Lycée International Maarif (Bourse)",
-  "step_4_desc": "Migration vers un environnement d’élite (Terminale spécialité Mathématiques). Premier de la classe en Mathématiques. Optimisation logique. Lauréat de la bourse de la Türkiye Maarif Foundation.",
+  "step_4_desc": "Grâce à un prof de PC (M. HONVOH Marcia), j'ai pu obtenir une bourse d'excellence de la fondation Maarif de Turquie pour continuer mes études dans cette prestigieuse école qui fait partie des meilleures écoles de mon pays. C'était vraiment le signe que mes efforts commençaient à payer. Oui, ce n'était pas facile ! Oui, il y avait toujours des soucis par-ci par-là. Mais le fait de savoir qu'avec mon travail, mon père ne devrait plus payer ma scolarité, c'était très satisfaisant.",
   "step_5_year": "Actuel",
-  "step_5_title": "Production_Runtime",
+  "step_5_title": "Present",
   "step_5_place": "ENSA Berrechid, Maroc",
-  "step_5_desc": "Déployé via bourse d’État. Actuellement en Classes Préparatoires (CP1). Compilation des connaissances théoriques (Maths avancées) et passion applicative (Dev)."
+  "step_5_desc": "Grâce à mes bons résultats au baccalauréat burkinabè (mention Très Bien au Bac C), j'ai pu obtenir une bourse du gouvernement marocain pour étudier à l'Ecole Nationale de Sciences Appliquées de Berrechid. Je suis egalement des formations sur Coursera et la GoAi Lab dans le but d'acquerir des competences et certifications necessaires surles domaines de l'Intelligence Artificielle ,le Cloud Computing et la CyberSecuriteJ'ambitionne présentement de devenir un AI Engineer, AI Researcher et Cloud Architect. Rien de surprenant car depuis tout petit, je me suis formé pour cela. Ma plus grande ambition est de mettre mes connaissances au service du développement de mon pays le Burkina Faso et montrer qu'avec un travail acharné et une discipline de fer on peut venir de n'importe où et réaliser les rêves les plus fous. Comme Mandela le disait : <bold>Peut être pas aujourd'hui peut être pas le mois prochain mais un jour je serai un champion</bold>. Osons innover, osons rêver et surtout osons rendre l'impossible possible.<bold> Après tout, il n'y a pas de limite</bold>"
 },
   "ProjectsIndex": {
     "title": "SYSTEM_REGISTRY",
@@ -111,20 +111,20 @@
     "view_project": "ACCÈS SYSTÈME >",
     "items": {
       "1": {
-        "title": "Sahel_AI_Platform",
+        "title": "AgriConnect",
         "desc": "Plateforme d'analyse prédictive agricole pour les zones arides via imagerie satellite."
       },
       "2": {
-        "title": "Faso_Fintech_App",
-        "desc": "Architecture bancaire mobile haute sécurité pour les paiements décentralisés."
+        "title": "Liber",
+        "desc": "Une bibliotheque Numerique qui Reconcilie le monde avec la lecture."
       },
       "3": {
-        "title": "EduTrack_LMS",
-        "desc": "Système de gestion scolaire scalable capable de gérer 50k+ étudiants."
+        "title": "Schola",
+        "desc": "Système de gestion scolaire scalable capable de gérer 5k+ étudiants."
       },
       "4": {
-        "title": "Ouaga_Smart_Traffic",
-        "desc": "Modèle ML de vision par ordinateur pour l'analyse du trafic urbain en temps réel."
+        "title": "Fraud-detection",
+        "desc": "Modèle ML capable de detecte des fraudes financieres."
       }
     }
   },
@@ -139,38 +139,38 @@
     "btn_live": "VOIR LE SITE",
     "btn_repo": "CODE SOURCE"
   },
-  "Project_edutrack": {
-    "title": "EduTrack LMS",
+  "Project_schola": {
+    "title": "Schola",
     "subtitle": "Système de gestion scolaire scalable pour l'Afrique de l'Ouest.",
     "description": "Une solution complète pour digitaliser le suivi des élèves, des notes et des absences dans des zones à faible connectivité.",
     "challenge": "Les écoles manquaient d'infrastructures fiables. Le système devait fonctionner hors-ligne (Offline-First) et se synchroniser quand le réseau est disponible.",
     "solution": "Utilisation de PWA (Progressive Web App) avec une base de données locale (IndexedDB) synchronisée avec PostgreSQL via une API GraphQL optimisée.",
     "impact": "Déployé dans 15 écoles, gestion de 50 000+ élèves, réduction de 80% de la paperasse administrative."
   },
-  "Project_faso_fintech": {
-    "title": "Faso Fintech App",
-    "subtitle": "Banque mobile décentralisée pour l'inclusion financière.",
-    "description": "Une application mobile cross-platform permettant les transferts d'argent P2P et le paiement de factures sans compte bancaire traditionnel.",
-    "challenge": "Sécuriser les transactions sur des réseaux mobiles instables (2G/3G) tout en garantissant une UX fluide et rassurante pour des utilisateurs novices.",
-    "solution": "Architecture Flutter avec chiffrement de bout en bout. Mode 'Lite' pour économiser la data et système de mise en cache agressif pour la fluidité.",
-    "impact": "Adoption par 10 000 utilisateurs le premier mois. Volume de transaction mensuel dépassé de 200% par rapport aux prévisions."
-  },
-  "Project_sahel_ai": {
-    "title": "Sahel AI Platform",
+  "Project_Liber":{
+      "title": "Liber:Bibliothèque Numérique",
+      "subtitle": "Accès et réconciliation des ressources pédagogiques pour les établissements.",
+      "description": "Une plateforme libre qui centralise, organise et distribue des contenus éducatifs numériques (manuels, cours, ressources multimédias) pour les écoles et bibliothèques en zones à faible connectivité.",
+      "challenge": "Fragmentation des ressources : fichiers locaux, supports papier, formats incompatibles et accès réseau limité. Il fallait garantir disponibilité, recherche rapide et contrôle des droits tout en respectant la confidentialité des utilisateurs.",
+      "solution": "Architecture Offline‑First avec synchronisation progressive, moteur de métadonnées et réconciliation des ressources (fuzzy matching). Distribution via PWA et applications légères, API GraphQL pour intégration, gestion fine des droits et mécanismes de mise en cache et compression pour économiser la bande passante.",
+      "impact": "Accès continu aux ressources pédagogiques même hors ligne, réduction des doublons de contenus, amélioration de la collaboration inter‑établissements et gain de temps pour les enseignants. Facilite la diffusion équitable du savoir dans les zones rurales."
+    },
+  "Project_AgriConnect": {
+    "title": "AgriConnect",
     "subtitle": "Analyse prédictive agricole par imagerie satellite.",
     "description": "Une plateforme d'intelligence artificielle qui analyse les données satellitaires (Sentinel-2) pour prédire les rendements agricoles et détecter les zones de sécheresse précoce.",
     "challenge": "Traiter des téraoctets d'images multispectrales avec une latence minimale et fournir des prédictions précises malgré la rareté des données d'entraînement locales (Ground Truth).",
     "solution": "Pipeline de Computer Vision (ResNet custom) avec augmentation de données synthétiques. Déploiement des modèles optimisés (ONNX) sur serveurs locaux.",
     "impact": "Prévention de la perte de récoltes dans 3 régions pilotes. Augmentation de 30% du rendement grâce aux conseils d'irrigation ciblés."
   },
-  "Project_ouaga_traffic": {
-    "title": "Ouaga Smart Traffic",
-    "subtitle": "Optimisation du flux urbain par Vision par Ordinateur.",
-    "description": "Un système de surveillance intelligent déployé aux carrefours critiques pour analyser la densité du trafic en temps réel et ajuster les feux de signalisation dynamiquement.",
-    "challenge": "Les infrastructures existantes sont statiques. Le défi était de traiter des flux vidéo instables en bordure de réseau (Edge Computing) avec une latence quasi nulle.",
-    "solution": "Déploiement de modèles YOLOv8 optimisés sur des boîtiers NVIDIA Jetson Nano. Communication MQTT légère vers un dashboard centralisé pour la municipalité.",
-    "impact": "Réduction du temps d'attente moyen de 20% aux intersections équipées. Génération de datasets inédits pour la planification urbaine future."
-  },
+  "Project_fraud-detection": {
+      "title": "Détection de Fraude",
+      "subtitle": "Analyse de transactions et détection d'anomalies sur jeux de données déséquilibrés.",
+      "description": "Système d'analyse des transactions (données Kaggle) conçu pour repérer les comportements frauduleux malgré la rareté des exemples positifs.",
+      "challenge": "Les jeux de données de fraude sont fortement déséquilibrés : les transactions frauduleuses constituent une infime portion des enregistrements. Ce déséquilibre biaise les modèles classiques et rend la détection des anomalies difficile sans stratégies adaptées.",
+      "solution": "Pipeline multi‑volet : ingénierie de features, rééchantillonnage (SMOTE) et pondération des classes, entraînement de modèles robustes (XGBoost, LightGBM), validation via courbes Precision‑Recall et calibration des seuils. Ajout d'étapes d'explicabilité (SHAP) et d'un monitoring des métriques en production.",
+      "impact": "Amélioration de la sensibilité sur les fraudes réelles tout en limitant les faux positifs ; intégration opérationnelle via alertes et scoring en ligne. Repo : https://github.com/IDOEFRAIM"
+    },
   "ContactPage": {
     "title": "INITIATE_COMM",
     "subtitle": "Canal de communication ouvert.",

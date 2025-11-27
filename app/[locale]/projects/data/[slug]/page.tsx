@@ -4,14 +4,14 @@ import { notFound } from 'next/navigation';
 
 // Mock Data (Data Science)
 const projectsDB: Record<string, any> = {
-  "ouaga-traffic": {
-    key: "ouaga_traffic",
+  "fraud-detection": {
+    key: "fraud_detection",
     year: "2024",
-    client: "City Council",
+    client: "Kaggle Dataset",
     role: "Data Scientist",
-    stack: ["YOLOv8", "OpenCV", "MQTT", "InfluxDB", "Grafana"],
-    demoLink: "https://traffic.ouaga-city.example.gov",
-    repoLink: "https://github.com/efraim/smart-traffic"
+    stack: ["Python", "Pandas", "Scikit-learn", "XGBoost", "SMOTE"],
+    demoLink: "https://github.com/IDOEFRAIM/kaggle/tree/master/fraud_detection",
+    repoLink: "https://github.com/IDOEFRAIM/kaggle/blob/master/fraud_detection/fraud.ipynb"
   }
 };
 
@@ -29,7 +29,17 @@ export default async function DataProjectPage({ params }: Props) {
   }
 
   const t = await getTranslations('ProjectDetails');
-  const content = await getTranslations(`Project_${project.key}`);
+
+  // Inline content specific to the fraud detection project
+  const title = "Détection de Fraudes";
+  const subtitle =
+    "Système d'analyse de transactions (Kaggle) — traitement des classes fortement déséquilibrées.";
+  const challenge =
+    "Les jeux de données de fraude sont massivement déséquilibrés : les transactions frauduleuses représentent une infime portion des enregistrements. Ce déséquilibre fausse les modèles classiques et rend la détection des anomalies difficile sans stratégies adaptées.";
+  const solution =
+    "Approche multi‑volet : ingénierie de features, rééchantillonnage (SMOTE) et pondération des classes, entraînement de modèles robustes (XGBoost) et pipelines de validation basés sur courbes Precision‑Recall. Ajustement des seuils et monitoring des métriques sensibles (precision, recall, F1) pour limiter les faux positifs tout en capturant les fraudes réelles.";
+  const impact =
+    "Permet de détecter les transactions frauduleuses avec une meilleure sensibilité sur des données déséquilibrées. Le pipeline inclut des étapes d'explicabilité (SHAP) et des alertes opérationnelles pour intégrer le modèle en production. Repo : https://github.com/IDOEFRAIM";
 
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-black text-slate-900 dark:text-white pt-32 pb-20 px-6 transition-colors duration-300">
@@ -54,17 +64,17 @@ export default async function DataProjectPage({ params }: Props) {
         <div className="mb-20 border-b border-gray-200 dark:border-white/10 pb-10">
           <div className="flex items-center gap-3 mb-4">
              <span className="px-2 py-1 text-[10px] font-mono font-bold bg-data/10 text-data rounded border border-data/20 uppercase">
-                Module: Data_Ops
+                Module: Fraud_Detection
              </span>
-             <span className="text-xs font-mono text-gray-400">Real-Time Analytics</span>
+             <span className="text-xs font-mono text-gray-400">Imbalanced Data / Anomaly Detection</span>
           </div>
           
           <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-6 text-slate-900 dark:text-white">
-            {content('title')}
+            {title}
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-light max-w-3xl leading-relaxed">
-            {content('subtitle')}
+            {subtitle}
           </p>
         </div>
 
@@ -72,7 +82,7 @@ export default async function DataProjectPage({ params }: Props) {
           
           {/* GAUCHE */}
           <div className="lg:col-span-8 space-y-16">
-             
+              
              {/* Visualisation Graphique (Barres animées) */}
              <div className="w-full bg-gray-900 rounded-xl border border-gray-300 dark:border-white/10 flex items-end justify-center gap-2 px-20 py-20 relative overflow-hidden group h-[300px]">
                 
@@ -102,7 +112,7 @@ export default async function DataProjectPage({ params }: Props) {
                   {t('challenge_title')}
                 </h3>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  {content('challenge')}
+                  {challenge}
                 </p>
              </div>
 
@@ -111,7 +121,7 @@ export default async function DataProjectPage({ params }: Props) {
                   {t('solution_title')}
                 </h3>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  {content('solution')}
+                  {solution}
                 </p>
              </div>
 
@@ -121,7 +131,7 @@ export default async function DataProjectPage({ params }: Props) {
                   {t('impact_title')}
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 italic">
-                  "{content('impact')}"
+                  "{impact}"
                 </p>
              </div>
           </div>
@@ -145,7 +155,7 @@ export default async function DataProjectPage({ params }: Props) {
                  </div>
                  <div>
                     <p className="text-xs text-gray-400 uppercase">Processing</p>
-                    <p className="font-bold">Edge Computing</p>
+                    <p className="font-bold">Batch + Online Scoring</p>
                  </div>
                </div>
             </div>
@@ -173,14 +183,16 @@ export default async function DataProjectPage({ params }: Props) {
                   <a 
                     href={project.demoLink} 
                     target="_blank"
+                    rel="noreferrer"
                     className="flex items-center justify-center gap-2 w-full py-3 bg-data text-black font-bold text-sm rounded shadow-lg shadow-data/20 hover:bg-data/90 transition-colors"
                   >
-                    <span>Dashboard</span>
+                    <span>Repository</span>
                     <span>→</span>
                   </a>
                   <a 
                     href={project.repoLink} 
                     target="_blank"
+                    rel="noreferrer"
                     className="flex items-center justify-center gap-2 w-full py-3 border border-gray-300 dark:border-white/20 hover:border-data text-gray-600 dark:text-gray-300 hover:text-data transition-colors text-sm rounded font-mono"
                   >
                     {t('btn_repo')}
