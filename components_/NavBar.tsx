@@ -29,8 +29,14 @@ const NavBar = () => {
           <Link href="/projects" className="hover:text-primary transition-colors">
             {t("projects")}
           </Link>
+          <Link href="/blog" className="hover:text-primary transition-colors">
+           Blog
+          </Link>
           <Link href="/about" className="hover:text-primary transition-colors">
             {t("about")}
+          </Link>
+          <Link href="/certifications" className="hover:text-primary transition-colors">
+            certifications
           </Link>
           <Link href="/contact" className="hover:text-primary transition-colors">
             {t("contact")}
@@ -86,8 +92,14 @@ const NavBar = () => {
           <Link href="/projects" className="block hover:text-primary">
             {t("projects")}
           </Link>
+          <Link href="/blog" className="block hover:text-primary">
+            article
+          </Link>
           <Link href="/about" className="block hover:text-primary">
             {t("about")}
+          </Link>
+          <Link href="/certifications" className="hover:text-primary transition-colors">
+            certifications
           </Link>
           <Link href="/contact" className="block hover:text-primary">
             {t("contact")}

@@ -182,5 +182,20 @@
     "form_message": "DONNÉES / MESSAGE",
     "btn_send": "ENVOYER LE PAQUET >",
     "success_mock": "Message simulé envoyé."
+  },
+  "Blog": {
+    "title": "JOURNAL DE BORD",
+    "subtitle": "Articles Techniques & Réflexions",
+    "back_to_list": "← Retour aux articles",
+    "end_of_transmission": "--- END OF TRANSMISSION ---"
+  },
+  "Certifications": {
+    "title": "ACCRÉDITATIONS",
+    "subtitle": "Certificats & Validations Techniques",
+    "intro": "Validation officielle des compétences par les leaders de l'industrie (IBM, Stanford, AWS).",
+    "issued_by": "DÉLIVRÉ PAR",
+    "date_label": "DATE D'OBTENTION",
+    "verify_btn": "VÉRIFIER LE CERTIFICAT",
+    "id_label": "ID"
   }
 }

@@ -183,5 +183,20 @@
     "form_message": "DATA / MESSAGE",
     "btn_send": "SEND PACKET >",
     "success_mock": "Simulated message sent."
+  },
+   "Blog": {
+    "title": "LOGBOOK",
+    "subtitle": "Technical Articles & Insights",
+    "back_to_list": "← Back to Articles",
+    "end_of_transmission": "--- END OF TRANSMISSION ---"
+  },
+  "Certifications": {
+    "title": "CREDENTIALS",
+    "subtitle": "Certificates & Technical Validations",
+    "intro": "Official skill validation by industry leaders (IBM, Stanford, AWS).",
+    "issued_by": "ISSUED BY",
+    "date_label": "ISSUED DATE",
+    "verify_btn": "VERIFY CREDENTIAL",
+    "id_label": "ID"
   }
 }
