@@ -72,7 +72,7 @@ export default async function BlogIndexPage() {
           </p>
         </div>
 
-        {/* LISTE DES ARTICLES */}
+        {/* LISTE DES ARTICLES :efra n oublie pas de segmenter selon le type et d ajouter un filtreur apres */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {articles.map((article) => (
             <ArticleCard key={article.slug} article={article} />
