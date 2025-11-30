@@ -93,13 +93,13 @@ const NavBar = () => {
             {t("projects")}
           </Link>
           <Link href="/blog" className="block hover:text-primary">
-            article
+            Articles
           </Link>
           <Link href="/about" className="block hover:text-primary">
             {t("about")}
           </Link>
           <Link href="/certifications" className="hover:text-primary transition-colors">
-            certifications
+            Certifications
           </Link>
           <Link href="/contact" className="block hover:text-primary">
             {t("contact")}

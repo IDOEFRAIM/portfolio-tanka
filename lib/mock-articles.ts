@@ -24,7 +24,7 @@ export const mockArticles: Article[] = [
     title: 'Vitesse Lumière : L\'Architecture de l\'Instantané',
     subtitle: 'Pourquoi le Static Site Generation (SSG) n\'est pas juste une technique, mais une philosophie de performance.',
     summary: 'Plongée dans les mécanismes du rendu statique, du Edge Computing et de la perception utilisateur de la vitesse.',
-    date: '2025-10-01',
+    date: '2025-11-01',
     readTime: '7 min',
     category: 'web',
     toc: [
@@ -107,7 +107,7 @@ export default async function Page({ params }) {
     title: 'Le Duel des Titans : CNN vs Transformers',
     subtitle: 'La fin de l\'ère de la "Vision Tunnel" et l\'avènement de l\'Attention Globale.',
     summary: 'Comment l\'IA est passée de l\'analyse pixel par pixel à la compréhension contextuelle globale.',
-    date: '2025-09-15',
+    date: '2025-11-10',
     readTime: '12 min',
     category: 'ai',
     toc: [
@@ -176,7 +176,7 @@ export default async function Page({ params }) {
     title: 'Chaos to Order : L\'Expérience Ouaga Smart City',
     subtitle: 'Comment dompter le trafic d\'une métropole africaine avec des capteurs low-cost et du Big Data.',
     summary: 'Architecture d\'un pipeline IoT résilient face à la chaleur, la poussière et la connectivité instable.',
-    date: '2025-08-01',
+    date: '2025-11-15',
     readTime: '6 min',
     category: 'data',
     toc: [
@@ -231,7 +231,7 @@ export default async function Page({ params }) {
     title: 'Two AIs, Two Personalities',
     subtitle: 'Observer vs Creator — Like two geniuses in history.',
     summary: "A pedagogical comparison between Discriminative AI (the rigorous observer) and Generative AI (the creative artist), illustrated with agricultural examples.",
-    date: '2026-03-01',
+    date: '2025-11-28',
     readTime: '6 min',
     category: 'ai',
     toc: [
