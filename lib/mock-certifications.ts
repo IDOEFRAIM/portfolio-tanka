@@ -45,6 +45,8 @@ export const certifications: Certification[] = [
     date: "2025",
     link: "https://www.coursera.org/account/accomplishments/specialization/TUHXS2HH299Y?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Ds12n",
     category: "ai",
-    skills: ["RAG", "Vector Databases", "LangChain", "Prompt Engineering"]
+    skills: ["RAG", "Vector Databases", "LangChain","langgraph","crewai", "Prompt Engineering",
+      "orchestration","reflection"
+    ]
   }
 ];
