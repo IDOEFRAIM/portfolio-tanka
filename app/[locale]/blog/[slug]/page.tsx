@@ -2,8 +2,9 @@
 import React from 'react';
 import { getArticleBySlug, getAllArticles, Article } from '@/lib/mock-articles';
 import { notFound } from 'next/navigation';
-import { getThemeFromCategory, Theme } from '@/lib/theme';
-import {ArticleContent} from './article_content';
+import { getThemeFromCategory } from '@/lib/theme';
+import { ArticleContent } from './article_content';
+import type { Theme } from './article_content';
 
 type ParamsShape = { slug?: string; locale?: string };
 type Props = { params: ParamsShape | Promise<ParamsShape> };
@@ -29,7 +30,7 @@ export default async function ArticlePage({ params }: Props) {
   }
 
   // Utiliser la version server-safe pour déterminer le thème
-  const theme: Theme = getThemeFromCategory(article.category);
+  const theme: Theme = getThemeFromCategory(article.category) as unknown as Theme;
 
   // Passer le thème et l'article au Client Component
   return <ArticleContent article={article} theme={theme} />;
