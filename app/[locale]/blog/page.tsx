@@ -5,6 +5,7 @@ import { Clock, Calendar, Hash } from 'lucide-react';
 
 // Composant pour chaque carte d'article
 const ArticleCard = ({ article }: { article: Article }) => {
+  //Penser a ajouter d autre partie,pas juste la tech,montrer ses softskill
   const categoryColors:any = {
     'web': 'text-sky-500 border-sky-500/30 bg-sky-500/5',
     'ia': 'text-pink-500 border-pink-500/30 bg-pink-500/5',
