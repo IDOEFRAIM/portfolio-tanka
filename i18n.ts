@@ -7,9 +7,8 @@ import frJson from './messages/fr.json';
 const locales = ['en', 'fr'] as const;
 type Locale = (typeof locales)[number];
 
-export interface Messages {
-  [key: string]: string | Messages;
-}
+// Type non récursif mais suffisamment permissif
+export type Messages = Record<string, string | Record<string, any>>;
 
 const en: Messages = enJson as Messages;
 const fr: Messages = frJson as Messages;
