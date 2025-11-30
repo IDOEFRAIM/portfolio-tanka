@@ -22,6 +22,7 @@ export default async function ArticlePage({ params }: Props) {
 
   const article: Article | undefined = getArticleBySlug(slug);
   if (!article) {
+    console.log('efra article doesnt exist ...Make sure to check it')
     notFound();
     return null;
   }
