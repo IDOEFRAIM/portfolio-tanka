@@ -10,8 +10,10 @@ type ParamsShape = { slug?: string; locale?: string };
 type Props = { params: ParamsShape | Promise<ParamsShape> };
 
 export default async function ArticlePage({ params }: Props) {
+  console.log('slug searching started')
   const resolvedParams = await params;
   const slug = resolvedParams?.slug;
+  console.log('slug:',slug)
 
   if (!slug) {
     notFound();
