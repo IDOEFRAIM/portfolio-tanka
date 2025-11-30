@@ -13,7 +13,7 @@ export default async function ArticlePage({ params }: Props) {
   // Résoudre params (peut être une Promise dans l'App Router)
   const resolvedParams = await params;
   const slug = resolvedParams?.slug;
-
+  console.log(slug)
   console.log('[ArticlePage] requested params:', resolvedParams);
 
   if (!slug) {
