@@ -1,4 +1,6 @@
-// app/blog/[slug]/page.tsx
+// ✅ Autorise les slugs dynamiques même si la page est statique
+export const dynamicParams = true;
+
 import React from 'react';
 import { getArticleBySlug, getAllArticles, type Article } from '@/lib/mock-articles';
 import { notFound } from 'next/navigation';
@@ -6,25 +8,16 @@ import ArticleContent from './article_content';
 import type { Theme } from '@/lib/theme';
 import { getThemeFromCategory } from '@/lib/theme';
 
-type ParamsShape = { slug?: string; locale?: string };
-type Props = { params: ParamsShape | Promise<ParamsShape> };
+type Props = {
+  params: { slug: string };
+};
 
-export default async function ArticlePage({ params }: Props) {
-  console.log('slug searching started')
-  const resolvedParams = await params;
-  const slug = resolvedParams?.slug;
-  console.log('slug:',slug)
-
-  if (!slug) {
-    notFound();
-    return null;
-  }
+export default function ArticlePage({ params }: Props) {
+  const { slug } = params;
 
   const article: Article | undefined = getArticleBySlug(slug);
   if (!article) {
-    console.log('efra article doesnt exist ...Make sure to check it')
     notFound();
-    return null;
   }
 
   const theme: Theme = getThemeFromCategory(article.category);
