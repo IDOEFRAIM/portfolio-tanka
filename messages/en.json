@@ -182,7 +182,7 @@
     "form_email": "POINT OF CONTACT (EMAIL)",
     "form_message": "DATA / MESSAGE",
     "btn_send": "SEND PACKET >",
-    "success_mock": "Simulated message sent."
+    "success_mock": "Simulated message sent..."
   },
    "Blog": {
     "title": "LOGBOOK",
