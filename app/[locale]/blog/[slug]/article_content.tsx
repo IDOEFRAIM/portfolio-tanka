@@ -1,4 +1,3 @@
-// app/blog/[slug]/article_content.tsx
 'use client';
 import React from 'react';
 import type { Article } from '@/lib/mock-articles';

@@ -184,7 +184,9 @@ export default async function Page({ params }) {
       { id: 'nervous', title: '2. Le Système Nerveux (IoT)' },
       { id: 'pulse', title: '3. Visualiser le Pouls' },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?auto=format&fit=crop&q=80&w=1000',
+    coverImage: 
+    'https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?auto=format&fit=crop&q=80&w=1000',
+    
     content: `
       <section id="entropy" class="mb-12">
         <h2>1. L'Entropie Urbaine</h2>
@@ -386,9 +388,35 @@ export default async function Page({ params }) {
 ];
 
 export function getAllArticles() {
-  return mockArticles;
+  console.log("getAllArticles:", mockArticles.length, "articles found");
+
+  return mockArticles
+    .map((a) => ({
+      ...a,
+      slug: a.slug.trim().toLowerCase(),
+    }))
+    .sort((a, b) => {
+      const dateA = new Date(a.date).getTime();
+      const dateB = new Date(b.date).getTime();
+      return dateB - dateA; // plus récent d'abord
+    });
 }
 
 export function getArticleBySlug(slug: string) {
-  return mockArticles.find((a) => a.slug === slug);
+  if (!slug || typeof slug !== "string") {
+    console.warn("getArticleBySlug: invalid slug:", slug);
+    return undefined;
+  }
+
+  const normalized = slug.trim().toLowerCase();
+
+  const article = mockArticles.find(
+    (a) => a.slug.trim().toLowerCase() === normalized
+  );
+
+  if (!article) {
+    console.warn("getArticleBySlug: no article found for slug:", normalized);
+  }
+
+  return article;
 }
