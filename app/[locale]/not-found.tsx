@@ -20,7 +20,7 @@ export default function NotFound() {
                 </h1>
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="bg-red-500/10 text-red-600 dark:text-red-500 border border-red-500/20 px-4 py-2 rounded backdrop-blur-sm animate-pulse font-mono font-bold">
-                        ⚠️ SYSTEM_FAILURE
+                        un incident est arrive
                     </div>
                 </div>
             </div>
