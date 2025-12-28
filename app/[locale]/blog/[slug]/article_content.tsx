@@ -16,7 +16,7 @@ export default function ArticleContent({
       <header className="article-header">
         <div className="meta-info">
           <span className="protocol-label">DOC_TYPE: ANALYSIS_REPORT</span>
-          <span className="id-label">REF: {article.id || '000-X'}</span>
+          <span className="id-label">REF: {article?.slug || '000-X'}</span>
         </div>
         <h1>{article.title}</h1>
         {article.subtitle && (
