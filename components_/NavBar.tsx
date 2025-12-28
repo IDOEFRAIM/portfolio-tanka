@@ -41,6 +41,9 @@ const NavBar = () => {
           <Link href="/contact" className="hover:text-primary transition-colors">
             {t("contact")}
           </Link>
+                  <Link href="/price" className="hover:text-primary transition-colors">
+            pricing
+          </Link>
         </div>
         <SettingsBar />
         {/* CTA */}

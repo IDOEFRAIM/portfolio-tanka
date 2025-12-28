@@ -73,14 +73,14 @@
     "title_line1": "READY TO LAUNCH",
     "title_line2": "YOUR SYSTEM?",
     "description": "I am available for freelance missions or technical consulting.",
-    "cmd_init": "> _initiate_collaboration",
+    "cmd_init": "Collaborate",
     "btn_calendar": "BOOK A CALL",
     "btn_cv": "DOWNLOAD CV",
     "connect_label": "SECURE LOGIN VIA :"
   },
   "About": {
-    "title": "SYSTEM JOURNAL",
-    "subtitle": "Log: /root/user/efraim/history",
+    "title": "Start Earlier,Fail earlier,improve earlier",
+    "subtitle": "AD ASTRA PER ASPERA",
     "intro": "Solid architectures are born from constraint, not comfort. Here are the updates that shaped how I think, code and hold under pressure.",
     "step_1_year": "2018 - 2022",
     "step_1_title": "(Discipline, Community Life, Theory on Computer Science)",
@@ -125,9 +125,18 @@
       "4": {
         "title": "fraud-detection",
         "desc": "ML model for real-time fraud detection."
-      }
+      },
+      "5": {
+  "title": "MindCare",
+  "desc": "AI-powered mental wellness ecosystem designed for high privacy and immediate support."
+},
+"6": {
+  "title": "Amira-Shop",
+  "desc": "High-performance E-commerce engine optimized for regional trade and seamless payment integration."
+}
     }
   },
+
   "ProjectDetails": {
     "back_index": "< BACK TO REGISTRY",
     "mission_brief": "Brief Mission",
@@ -139,6 +148,22 @@
     "btn_live": "VIEW SITE",
     "btn_repo": "SOURCE CODE"
   },
+  "Project_mindcare": {
+  "title": "MindCare",
+  "subtitle": "AI-driven mental health companion & tracker.",
+  "description": "Une plateforme innovante qui brise les barrières de la santé mentale grâce à une IA empathique et sécurisée.",
+  "challenge": "Le manque de spécialistes et le tabou social empêchent l'accès aux soins. Il fallait créer une solution anonyme, disponible 24/7 et capable de comprendre les nuances émotionnelles.",
+  "solution": "Développement d'un agent intelligent basé sur le RAG (Retrieval-Augmented Generation) pour fournir des conseils validés cliniquement, couplé à un tableau de bord de suivi d'humeur chiffré de bout en bout.",
+  "impact": "Testé par un groupe pilote de 500 utilisateurs, avec un taux de satisfaction de 92% sur la pertinence des réponses de l'IA et une amélioration notable du suivi quotidien."
+},
+"Project_amira_shop": {
+  "title": "Amira-Shop",
+  "subtitle": "Scalable Digital Marketplace.",
+  "description": "Une plateforme de commerce électronique complète, conçue pour offrir une expérience d'achat fluide, rapide et sécurisée.",
+  "challenge": "Gérer des pics de trafic intenses tout en assurant une synchronisation parfaite des stocks et la sécurité des transactions bancaires et mobiles.",
+  "solution": "Architecture Next.js avec rendu hybride (ISR/SSR) pour un SEO maximal, intégration d'API de paiement locales et internationales, et gestion d'état ultra-performante.",
+  "impact": "Optimisation du temps de chargement de 60% par rapport aux solutions standards, permettant une augmentation du taux de conversion et une fiabilité de transaction de 99.9%."
+},
   "Project_schola": {
     "title": "EduTrack LMS",
     "subtitle": "Scalable school management system for West Africa.",

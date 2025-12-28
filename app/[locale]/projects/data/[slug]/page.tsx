@@ -23,7 +23,7 @@ export default async function DataProjectPage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const project = projectsDB[slug];
+  const project = projectsDB[slug.toLocaleLowerCase()];
   if (!project) {
     notFound();
   }

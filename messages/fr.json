@@ -1,11 +1,11 @@
 {
   "Navbar": {
     "logo": "Tanka B. IDO",
-    "home":"Accueil",
+    "home": "Accueil",
     "projects": "Projets",
-    "about": "À propos",
+    "about": "Parcours",
     "contact": "Contact",
-    "cta": "Engagez-moi"
+    "cta": "Me recruter"
   },
   "Navigation": {
     "home": "Accueil",
@@ -14,123 +14,113 @@
     "contact": "Contact"
   },
   "Hero": {
-    "badge": "AI Enthousiaste & Esprit Resilient",
-    "title_line1": "JE CONSTRUIS",
-    "title_line2": "DES SYSTÈMES.",
-    "description": "<bold>Architecte de systèmes numériques </bold>  passionné depuis mes 15 ans, je conçois des infrastructures <bold>  robustes, scalables et intelligentes </bold> , avec une approche diagnostic-driven et une vision tournée vers l’impact durable.",
+    "badge": "Passionné d'IA & Ingénieur orienté Système",
+    "title_line1": "JE BÂTIS DES",
+    "title_line2": "SYSTÈMES.",
+    "description": "<bold>Architecte système</bold> passionné depuis mes 15 ans, je conçois des infrastructures <bold>robustes, scalables et intelligentes</bold> avec une approche axée sur le diagnostic et une vision d'impact durable.",
     "cta_primary": "MES PROJETS",
     "cta_secondary": "ME CONTACTER",
     "stat_1_value": "3+",
     "stat_1_label": "Années d'Exp.",
     "stat_1_desc": "En production critique",
-    "stat_2_label": "Double compétence",
-    "footer_routine": "Code / Deploy / Monitoring",
+    "stat_2_label": "Double expertise",
+    "footer_routine": "Code / Déploiement / Monitoring",
     "footer_loc": "Basé au Maroc",
     "footer_stack": "Next.js • Flutter • Python • Cloud"
   },
   "Philosophy": {
-    "header_title": "MON",
-    "header_subtitle": "MINDSET",
-    "system_status": "SYSTEM_STATUS: OPTIMAL",
+    "header_title": "MA",
+    "header_subtitle": "PHILOSOPHIE",
+    "system_status": "ÉTAT_SYSTÈME : OPTIMAL",
     "block_1_title": "L'ORIGINE",
-    "block_1_text": "- J’ai commencé à <bold>15 ans </bold>, par nécessité et curiosité. Je ne suis pas au nombre de ceux qui cherchent des réponses rapides, je traque plutot les causes premières. Je démonte la complexité jusqu’à l’os pour faire émerger l’élégance architecturale — celle qui simplifie sans trahir, qui tient debout lorsque tout vacille.",
+    "block_1_text": "- J'ai commencé à <bold>15 ans</bold>, par nécessité et curiosité. Je ne cherche pas de réponses rapides ; je traque les causes profondes. Je démonte la complexité pour révéler l'élégance architecturale — celle qui simplifie sans trahir, celle qui tient quand tout s'écroule.",
     "block_2_title": "LA MÉTHODE",
-    "block_2_text": "  Rigueur. Discipline. Itération . Je code comme on conçoit un avion: chaque pièce a une fonction, chaque tolérance est mesurée, chaque risque est isolé. Rien au hasard. Mon approche est diagnostic-driven: je veux des états, des métriques, des erreurs mises à nu pour itérer vite et bien. La robustesse n’est pas une option, c’est le contrat.",
-    "block_3_title": "LA CIBLE",
-    "block_3_text": "- L’impact réel. Pas de hype, pas de poudre aux yeux. Je vise la performance durable — des systèmes qui tiennent, évoluent, et créent de la valeur mesurable pour l’utilisateur. Je construis pour le monde réel: contraintes, échelles, imprévus. La scalabilité n’est pas un slogan, c’est une responsabilité.",
+    "block_2_text": "Rigueur. Discipline. Itération. Je code comme on conçoit un avion : chaque pièce a une fonction, chaque tolérance est mesurée, chaque risque est isolé. Rien n'est laissé au hasard. Mon approche est pilotée par le diagnostic : je veux des états, des métriques et des erreurs exposées pour itérer vite et bien. La robustesse n'est pas une option, c'est le contrat.",
+    "block_3_title": "L'OBJECTIF",
+    "block_3_text": "- Un impact réel. Pas de buzz, pas de fumée. Je vise la performance durable — des systèmes qui tiennent, évoluent et créent une valeur mesurable. Je construis pour le monde réel : contraintes, échelle, imprévus. La scalabilité n'est pas un slogan, c'est une responsabilité.",
     "link_read_more": "LIRE MON HISTOIRE"
   },
   "Categories": {
     "header_title": "DOMAINES",
     "header_highlight": "D'EXPERTISE",
-    "select_module": "SÉLECTIONNEZ UN MODULE",
+    "select_module": "SÉLECTIONNER UN MODULE",
     "action_access": "ACCÉDER >",
-    "cat_1_title": "Web Engineering",
+    "cat_1_title": "Ingénierie Web",
     "cat_1_sub": "Scalable & Robuste",
-    "cat_1_desc": "Conception d'applications web complexes, performantes et SEO-friendly (Next.js, React).",
-    "cat_2_title": "Mobile Dev",
-    "cat_2_sub": "Cross-Platform",
-    "cat_2_desc": "Applications natives fluides pour iOS et Android avec une base de code unifiée (Flutter/React Native).",
-    "cat_3_title": "AI Solutions",
+    "cat_1_desc": "Conception d'applications web complexes, performantes et optimisées SEO (Next.js, React).",
+    "cat_2_title": "Dév. Mobile",
+    "cat_2_sub": "Multiplateforme",
+    "cat_2_desc": "Applications natives fluides pour iOS et Android avec une base de code unifiée (Flutter).",
+    "cat_3_title": "Solutions IA",
     "cat_3_sub": "Machine Learning",
     "cat_3_desc": "Intégration de modèles prédictifs et d'agents intelligents pour automatiser les processus.",
     "cat_4_title": "Data Science",
     "cat_4_sub": "Analytics & Big Data",
-    "cat_4_desc": "Traitement de données massives, pipelines ETL et visualisation pour la prise de décision."
+    "cat_4_desc": "Traitement de grands ensembles de données, pipelines ETL et visualisation pour l'aide à la décision."
   },
   "HookProject": {
-  "badge": "PROJET VEDETTE",
-  "title": "AgriConnect",
-  "subtitle": "Comment j'ai connecté les agriculteurs aux données intelligentes.",
-  "stat_1_label": "Impact",
-  "stat_1_desc": "Optimisation des récoltes",
-  "stat_2_label": "Stack",
-  "stat_2_desc": "IA & Cloud",
-  "description": "Un défi technique majeur : fournir aux agriculteurs des prévisions fiables dans des zones rurales à faible connectivité. La solution ? Une plateforme 'Offline-First' intégrant l’IA pour analyser les données agricoles et guider les décisions.",
-  "cta_inspect": "EXPLORER LE CAS"
-},
+    "badge": "PROJET VEDETTE",
+    "title": "AgriConnect",
+    "subtitle": "Connecter les agriculteurs aux données intelligentes.",
+    "stat_1_label": "Impact",
+    "stat_1_desc": "Optimisation des cultures",
+    "stat_2_label": "Stack",
+    "stat_2_desc": "IA & Cloud",
+    "description": "Un défi technique majeur : fournir des prévisions fiables en zone rurale à faible connectivité. La solution ? Une plateforme offline-first intégrant l'IA pour analyser les données agricoles et guider les décisions.",
+    "cta_inspect": "EXPLORER LE PROJET"
+  },
   "FinalCTA": {
     "title_line1": "PRÊT À LANCER",
     "title_line2": "VOTRE SYSTÈME ?",
-    "description": "Je suis disponible pour des missions de freelance ou de consulting technique.",
-    "cmd_init": "> _initiate_collaboration",
+    "description": "Je suis disponible pour des missions en freelance ou du conseil technique.",
+    "cmd_init": "Collaborer",
     "btn_calendar": "RÉSERVER UN APPEL",
     "btn_cv": "TÉLÉCHARGER CV",
     "connect_label": "CONNEXION SÉCURISÉE VIA :"
   },
-"About": {
-  "title": "JOURNAL DU SYSTÈME",
-  "subtitle": "Log: /root/user/efraim/history",
-  "intro": "Les architectures solides naissent de la contrainte, pas du confort. Voici les mises à jour qui ont façonné ma façon de penser, coder et tenir sous pression.",
-  "step_1_year": "2018 - 2022",
-  "step_1_title": "(Discipline,Vie en Communauté,Therie sur l'Informatique)",
-  "step_1_place": "Petit Séminaire de Pabré (Internat)",
-  "step_1_desc": "Au séminaire, j'ai appris la discipline, la rigueur et surtout la vie en communauté. Cette maison de formation a façonné ma façon de cohabiter avec les autres. En effet, on devait faire preuve de compromis et savoir que notre liberté s'arrête où commence celle des autres.",
-  "step_2_year": "Autodidacte",
-  "step_2_title": "(Code,Resilience)",
-  "step_2_place": "Théorie sur l'Informatique",
-  "step_2_desc": "En 5e, mon père m'amenait souvent à son travail. Je profitais du Wi‑Fi pour regarder des tutos sur YouTube. Par exemple, je pouvais passer la nuit à chercher à comprendre le binaire ou le fonctionnement des réseaux comme le HTTP, SSH.",
-  "step_3_year": "2022 - 2024",
-  "step_3_title": "Stress_Test (Résilience)",
-  "step_3_place": "Lycée Mixte (Public)",
-  "step_3_desc": "Après le séminaire, je suis allé au lycée mixte de Goughin. Cette école m'a appris à faire preuve de résilience. En effet, on était 100 élèves en seconde. C'était très difficile de pouvoir respirer ou suivre les cours. En dépit de cela, j'ai toujours tenu bon car je savais que tôt ou tard il y aurait une solution. Je suivais les cours la journée et codais la nuit. C'est surtout durant cette période que j'ai commencé la programmation : Python, JavaScript, React, Next.js",
-  "step_4_year": "2024",
-  "step_4_title": "(Bourse de la fondation Maarif)",
-  "step_4_place": "Lycée International Maarif (Bourse)",
-  "step_4_desc": "Grâce à un prof de PC (M. HONVOH Marcia), j'ai pu obtenir une bourse d'excellence de la fondation Maarif de Turquie pour continuer mes études dans cette prestigieuse école qui fait partie des meilleures écoles de mon pays. C'était vraiment le signe que mes efforts commençaient à payer. Oui, ce n'était pas facile ! Oui, il y avait toujours des soucis par-ci par-là. Mais le fait de savoir qu'avec mon travail, mon père ne devrait plus payer ma scolarité, c'était très satisfaisant.",
-  "step_5_year": "Actuel",
-  "step_5_title": "Present",
-  "step_5_place": "ENSA Berrechid, Maroc",
-  "step_5_desc": "Grâce à mes bons résultats au baccalauréat burkinabè (mention Très Bien au Bac C), j'ai pu obtenir une bourse du gouvernement marocain pour étudier à l'Ecole Nationale de Sciences Appliquées de Berrechid. Je suis egalement des formations sur Coursera et la GoAi Lab dans le but d'acquerir des competences et certifications necessaires surles domaines de l'Intelligence Artificielle ,le Cloud Computing et la CyberSecuriteJ'ambitionne présentement de devenir un AI Engineer, AI Researcher et Cloud Architect. Rien de surprenant car depuis tout petit, je me suis formé pour cela. Ma plus grande ambition est de mettre mes connaissances au service du développement de mon pays le Burkina Faso et montrer qu'avec un travail acharné et une discipline de fer on peut venir de n'importe où et réaliser les rêves les plus fous. Comme Mandela le disait : <bold>Peut être pas aujourd'hui peut être pas le mois prochain mais un jour je serai un champion</bold>. Osons innover, osons rêver et surtout osons rendre l'impossible possible.<bold> Après tout, il n'y a pas de limite</bold>"
-},
+  "About": {
+   "title": "Start Earlier,Fail earlier,improve earlier",
+    "subtitle": "AD ASTRA PER ASPERA",
+    "intro": "Les architectures solides naissent de la contrainte, pas du confort. Voici les étapes qui ont forgé ma façon de penser, de coder et de résister à la pression.",
+    "step_1_year": "2018 - 2022",
+    "step_1_title": "(Discipline, Vie Communautaire, Théorie)",
+    "step_1_place": "Petit Séminaire de Pabré (Internat)",
+    "step_1_desc": "Au séminaire, j'ai appris la discipline, la rigueur et surtout la vie en communauté. Cette maison de formation a façonné ma manière de coexister. Nous devions faire preuve de compromis et comprendre que notre liberté s'arrête là où commence celle des autres.",
+    "step_2_year": "Autodidacte",
+    "step_2_title": "(Code, Résilience)",
+    "step_2_place": "Théorie Informatique",
+    "step_2_desc": "Dès la classe de 5ème, mon père m'emmenait souvent à son travail. J'utilisais le Wi‑Fi pour regarder des tutoriels sur YouTube. Je pouvais passer la nuit à essayer de comprendre le binaire ou le fonctionnement des réseaux comme HTTP et SSH.",
+    "step_3_year": "2022 - 2024",
+    "step_3_title": "Stress_Test (Résilience)",
+    "step_3_place": "Lycée Mixte de Goughin (Public)",
+    "step_3_desc": "Après le séminaire, j'ai rejoint le lycée mixte de Goughin. Cette école m'a appris la résilience. Nous étions 100 élèves par classe en seconde. Malgré les conditions difficiles, j'ai tenu bon car je savais qu'il y aurait une solution. J'étudiais le jour et je codais la nuit. C'est là que j'ai approfondi Python, JavaScript, React et Next.js.",
+    "step_4_year": "2024",
+    "step_4_title": "(Bourse d'Excellence Maarif)",
+    "step_4_place": "Lycée International Maarif",
+    "step_4_desc": "Grâce à mon professeur d'informatique (M. HONVOH Marcia), j'ai obtenu une bourse d'excellence de la Fondation Turquie Maarif. Savoir que grâce à mon travail mon père n'aurait plus à payer mes frais de scolarité fut une immense satisfaction.",
+    "step_5_year": "Actuel",
+    "step_5_title": "Présent",
+    "step_5_place": "ENSA Berrechid, Maroc",
+    "step_5_desc": "Grâce à mes résultats au baccalauréat burkinabè (Mention Très Bien, Bac C), j'ai obtenu une bourse du gouvernement marocain pour étudier à l'ENSA de Berrechid. J'aspire à devenir Ingénieur IA et Architecte Cloud. Mon ambition est de mettre mon savoir au service du développement de mon pays, le Burkina Faso. Comme l'a dit Mandela : <bold>Peut-être pas aujourd'hui, peut-être pas le mois prochain, mais un jour je serai un champion</bold>. Osons innover, osons rêver."
+  },
   "ProjectsIndex": {
-    "title": "SYSTEM_REGISTRY",
+    "title": "REGISTRE_SYSTÈME",
     "subtitle": "Index des architectures déployées.",
     "status_deployed": "Déployé",
     "status_building": "En cours",
-    "view_project": "ACCÈS SYSTÈME >",
+    "view_project": "ACCÉDER AU SYSTÈME >",
     "items": {
-      "1": {
-        "title": "AgriConnect",
-        "desc": "Plateforme d'analyse prédictive agricole pour les zones arides via imagerie satellite."
-      },
-      "2": {
-        "title": "Liber",
-        "desc": "Une bibliotheque Numerique qui Reconcilie le monde avec la lecture."
-      },
-      "3": {
-        "title": "Schola",
-        "desc": "Système de gestion scolaire scalable capable de gérer 5k+ étudiants."
-      },
-      "4": {
-        "title": "Fraud-detection",
-        "desc": "Modèle ML capable de detecte des fraudes financieres."
-      }
+      "1": { "title": "AgriConnect", "desc": "Plateforme d'analyse agricole prédictive utilisant l'imagerie satellite." },
+      "2": { "title": "Liber", "desc": "Bibliothèque numérique créant un pont entre les citoyens et la lecture." },
+      "3": { "title": "EduTrack_LMS", "desc": "Système de gestion scolaire scalable capable de gérer plus de 50 000 élèves." },
+      "4": { "title": "Fraud-detection", "desc": "Modèle de ML pour la détection de fraude en temps réel." },
+      "5": { "title": "MindCare", "desc": "Écosystème de bien-être mental assisté par IA, conçu pour la confidentialité." },
+      "6": { "title": "Amira-Shop", "desc": "Moteur e-commerce haute performance optimisé pour le commerce régional." }
     }
   },
   "ProjectDetails": {
     "back_index": "< RETOUR AU REGISTRE",
-    "mission_brief": "Brief Mission",
+    "mission_brief": "Brief de Mission",
     "architecture": "Architecture & Stack",
     "challenge_title": "01. Le Défi",
     "solution_title": "02. La Solution",
@@ -139,62 +129,78 @@
     "btn_live": "VOIR LE SITE",
     "btn_repo": "CODE SOURCE"
   },
-  "Project_schola": {
-    "title": "Schola",
-    "subtitle": "Système de gestion scolaire scalable pour l'Afrique de l'Ouest.",
-    "description": "Une solution complète pour digitaliser le suivi des élèves, des notes et des absences dans des zones à faible connectivité.",
-    "challenge": "Les écoles manquaient d'infrastructures fiables. Le système devait fonctionner hors-ligne (Offline-First) et se synchroniser quand le réseau est disponible.",
-    "solution": "Utilisation de PWA (Progressive Web App) avec une base de données locale (IndexedDB) synchronisée avec PostgreSQL via une API GraphQL optimisée.",
-    "impact": "Déployé dans 15 écoles, gestion de 50 000+ élèves, réduction de 80% de la paperasse administrative."
+  "Project_mindcare": {
+    "title": "MindCare",
+    "subtitle": "Compagnon de santé mentale piloté par l'IA.",
+    "description": "Une plateforme innovante qui brise les barrières de la santé mentale grâce à une IA empathique et sécurisée.",
+    "challenge": "Le manque de spécialistes et le tabou social empêchent l'accès aux soins. Il fallait créer une solution anonyme, disponible 24/7 et capable de comprendre les nuances émotionnelles.",
+    "solution": "Développement d'un agent intelligent basé sur le RAG (Retrieval-Augmented Generation) pour fournir des conseils validés, couplé à un suivi d'humeur chiffré de bout en bout.",
+    "impact": "Testé par un groupe pilote de 500 utilisateurs, avec 92% de satisfaction sur la pertinence de l'IA."
   },
-  "Project_Liber":{
-      "title": "Liber:Bibliothèque Numérique",
-      "subtitle": "Accès et réconciliation des ressources pédagogiques pour les établissements.",
-      "description": "Une plateforme libre qui centralise, organise et distribue des contenus éducatifs numériques (manuels, cours, ressources multimédias) pour les écoles et bibliothèques en zones à faible connectivité.",
-      "challenge": "Fragmentation des ressources : fichiers locaux, supports papier, formats incompatibles et accès réseau limité. Il fallait garantir disponibilité, recherche rapide et contrôle des droits tout en respectant la confidentialité des utilisateurs.",
-      "solution": "Architecture Offline‑First avec synchronisation progressive, moteur de métadonnées et réconciliation des ressources (fuzzy matching). Distribution via PWA et applications légères, API GraphQL pour intégration, gestion fine des droits et mécanismes de mise en cache et compression pour économiser la bande passante.",
-      "impact": "Accès continu aux ressources pédagogiques même hors ligne, réduction des doublons de contenus, amélioration de la collaboration inter‑établissements et gain de temps pour les enseignants. Facilite la diffusion équitable du savoir dans les zones rurales."
-    },
+  "Project_amira_shop": {
+    "title": "Amira-Shop",
+    "subtitle": "Marketplace Numérique Scalable.",
+    "description": "Une plateforme e-commerce complète conçue pour une expérience d'achat fluide et sécurisée.",
+    "challenge": "Gérer des pics de trafic intenses tout en assurant une synchronisation parfaite des stocks et la sécurité des paiements mobiles.",
+    "solution": "Architecture Next.js avec rendu hybride (ISR/SSR), intégration d'API de paiement locales et gestion d'état ultra-performante.",
+    "impact": "Optimisation du temps de chargement de 60%, fiabilité des transactions de 99.9%."
+  },
+  "Project_schola": {
+    "title": "EduTrack LMS",
+    "subtitle": "Gestion scolaire pour l'Afrique de l'Ouest.",
+    "description": "Solution complète pour numériser le suivi des élèves, les notes et les présences en zones à faible connectivité.",
+    "challenge": "Le manque d'infrastructure fiable. Le système devait fonctionner en mode déconnecté (Offline-First) et se synchroniser dès qu'un réseau était disponible.",
+    "solution": "Utilisation d'une PWA avec base de données locale (IndexedDB) synchronisée via une API GraphQL optimisée.",
+    "impact": "Déployé dans 15 écoles, gérant 50 000+ élèves, réduction de 80% de la paperasse administrative."
+  },
+  "Project_Liber": {
+    "title": "Liber — Bibliothèque Numérique",
+    "subtitle": "Accès et réconciliation des ressources éducatives.",
+    "description": "Plateforme centralisant et distribuant du contenu éducatif numérique pour les écoles en zones isolées.",
+    "challenge": "Ressources fragmentées et accès réseau limité. Il fallait garantir la disponibilité et la recherche rapide tout en gérant les droits d'accès.",
+    "solution": "Architecture Offline‑First avec synchronisation progressive, moteur de métadonnées et distribution via PWA légère.",
+    "impact": "Accès continu au savoir même hors-ligne, réduction des doublons de contenu et aide précieuse aux enseignants en zone rurale."
+  },
   "Project_AgriConnect": {
     "title": "AgriConnect",
-    "subtitle": "Analyse prédictive agricole par imagerie satellite.",
-    "description": "Une plateforme d'intelligence artificielle qui analyse les données satellitaires (Sentinel-2) pour prédire les rendements agricoles et détecter les zones de sécheresse précoce.",
-    "challenge": "Traiter des téraoctets d'images multispectrales avec une latence minimale et fournir des prédictions précises malgré la rareté des données d'entraînement locales (Ground Truth).",
-    "solution": "Pipeline de Computer Vision (ResNet custom) avec augmentation de données synthétiques. Déploiement des modèles optimisés (ONNX) sur serveurs locaux.",
-    "impact": "Prévention de la perte de récoltes dans 3 régions pilotes. Augmentation de 30% du rendement grâce aux conseils d'irrigation ciblés."
+    "subtitle": "Analyse agricole prédictive via imagerie satellite.",
+    "description": "Plateforme IA analysant les données Sentinel-2 pour prédire les rendements et détecter les zones de sécheresse précoce.",
+    "challenge": "Traiter des téraoctets d'images multispectrales avec un minimum de latence malgré le peu de données de vérité terrain locales.",
+    "solution": "Pipeline de Computer Vision (ResNet personnalisé) et déploiement de modèles optimisés (ONNX) sur serveurs locaux.",
+    "impact": "Pertes de récoltes évitées dans 3 régions pilotes. Augmentation de 30% des rendements grâce aux recommandations d'irrigation ciblées."
   },
   "Project_fraud-detection": {
-      "title": "Détection de Fraude",
-      "subtitle": "Analyse de transactions et détection d'anomalies sur jeux de données déséquilibrés.",
-      "description": "Système d'analyse des transactions (données Kaggle) conçu pour repérer les comportements frauduleux malgré la rareté des exemples positifs.",
-      "challenge": "Les jeux de données de fraude sont fortement déséquilibrés : les transactions frauduleuses constituent une infime portion des enregistrements. Ce déséquilibre biaise les modèles classiques et rend la détection des anomalies difficile sans stratégies adaptées.",
-      "solution": "Pipeline multi‑volet : ingénierie de features, rééchantillonnage (SMOTE) et pondération des classes, entraînement de modèles robustes (XGBoost, LightGBM), validation via courbes Precision‑Recall et calibration des seuils. Ajout d'étapes d'explicabilité (SHAP) et d'un monitoring des métriques en production.",
-      "impact": "Amélioration de la sensibilité sur les fraudes réelles tout en limitant les faux positifs ; intégration opérationnelle via alertes et scoring en ligne. Repo : https://github.com/IDOEFRAIM"
-    },
+    "title": "Détection de Fraude",
+    "subtitle": "Analyse de transactions sur jeux de données déséquilibrés.",
+    "description": "Système d'analyse conçu pour faire émerger les comportements frauduleux malgré la rareté des exemples positifs.",
+    "challenge": "Les fraudes représentent une fraction infime des données, ce qui biaise les modèles standards.",
+    "solution": "Pipeline robuste : feature engineering, rééchantillonnage (SMOTE) et modèles XGBoost/LightGBM avec explicabilité (SHAP).",
+    "impact": "Amélioration de la sensibilité aux fraudes réelles tout en limitant les faux positifs. Repo disponible."
+  },
   "ContactPage": {
-    "title": "INITIATE_COMM",
+    "title": "INITIER_COMM",
     "subtitle": "Canal de communication ouvert.",
-    "status": "Signal: Fort",
+    "status": "Signal : Fort",
     "email_label": "TRANSMISSION EMAIL",
     "socials_label": "RÉSEAUX SÉCURISÉS",
     "form_name": "IDENTIFIANT / NOM",
     "form_email": "POINT DE CONTACT (EMAIL)",
     "form_message": "DONNÉES / MESSAGE",
-    "btn_send": "ENVOYER LE PAQUET >",
-    "success_mock": "Message simulé envoyé."
+    "btn_send": "ENVOYER PAQUET >",
+    "success_mock": "Message simulé envoyé avec succès..."
   },
   "Blog": {
     "title": "JOURNAL DE BORD",
-    "subtitle": "Articles Techniques & Réflexions",
+    "subtitle": "Articles Techniques & Analyses",
     "back_to_list": "← Retour aux articles",
-    "end_of_transmission": "Fin :-)"
+    "end_of_transmission": "--- FIN DE TRANSMISSION ---"
   },
   "Certifications": {
-    "title": "ACCRÉDITATIONS",
-    "subtitle": "Certificats & Validations Techniques",
+    "title": "QUALIFICATIONS",
+    "subtitle": "Certifications & Validations Techniques",
     "intro": "Validation officielle des compétences par les leaders de l'industrie (IBM, Stanford, AWS).",
     "issued_by": "DÉLIVRÉ PAR",
-    "date_label": "DATE D'OBTENTION",
+    "date_label": "DATE D'ÉMISSION",
     "verify_btn": "VÉRIFIER LE CERTIFICAT",
     "id_label": "ID"
   }

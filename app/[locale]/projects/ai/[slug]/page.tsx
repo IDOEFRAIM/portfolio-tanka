@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 
 // Mock Data AI
 const projectsDB: Record<string, any> = {
-  "AgriConnect": {
+  "agriconnect": {
     key: "AgriConnect",
     year: "2025",
     client: "AgriConnect",
@@ -24,7 +24,7 @@ export default async function AIProjectPage({ params }: Props) {
   setRequestLocale(locale);
 
   // 1. Vérification
-  const project = projectsDB[slug];
+  const project = projectsDB[slug.toLocaleLowerCase()];
   if (!project) {
     notFound();
   }

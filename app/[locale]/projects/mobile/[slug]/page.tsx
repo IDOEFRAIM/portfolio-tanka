@@ -24,7 +24,7 @@ export default async function WebProjectPage({ params }: Props) {
   setRequestLocale(locale);
 
   // On verifie d abord si le projet existe
-  const project = projectsDB[slug];
+  const project = projectsDB[slug.toLocaleLowerCase()];
   if (!project) {
     notFound(); 
   }
