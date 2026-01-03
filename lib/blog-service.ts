@@ -10,6 +10,8 @@ const mapDocumentToArticle = (doc: any, locale: string): Article => {
     // Helper to get localized field with fallback to base field (for backward compatibility)
     const getField = (field: string) => doc[`${field}${suffix}`] || doc[field];
 
+    const tocRaw = getField('toc');
+
     return {
         slug: doc.slug, // Slug is usually shared, or you can localize it too if needed
         title: getField('title'),
@@ -18,7 +20,7 @@ const mapDocumentToArticle = (doc: any, locale: string): Article => {
         date: doc.date,
         readTime: doc.readTime,
         category: doc.category,
-        toc: getField('toc') ? JSON.parse(getField('toc')) : [],
+        toc: typeof tocRaw === 'string' ? JSON.parse(tocRaw) : (tocRaw || []),
         content: getField('content'),
         coverImage: doc.coverImage,
     };
