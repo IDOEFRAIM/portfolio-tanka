@@ -4,6 +4,20 @@ import createNextIntlPlugin from 'next-intl/plugin';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // tes autres options Next.js ici
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cloud.appwrite.io',
+        port: '',
+        pathname: '/v1/storage/buckets/**/files/**/view',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
+  },
   turbopack: {
     root: process.cwd()
   }

@@ -99,11 +99,15 @@ const NavBar = () => {
 
       {/* Mobile Menu Overlay */}
       <div 
-        className={`fixed inset-0 bg-white/95 dark:bg-black/95 backdrop-blur-2xl z-40 transition-all duration-500 flex flex-col justify-center items-center ${
+        className={`fixed inset-0 bg-white dark:bg-[#020617] z-40 transition-all duration-300 flex flex-col justify-center items-center ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
         }`}
+        style={{ height: '100dvh' }} // Force full viewport height
       >
-        <div className="flex flex-col items-center gap-8 text-center">
+        {/* Background Grid Effect for Mobile Menu */}
+        <div className="absolute inset-0 pointer-events-none opacity-[0.03] dark:opacity-[0.05] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px] bg-white dark:bg-[#020617]"></div>
+
+        <div className="relative z-10 flex flex-col items-center gap-8 text-center">
           {[
             { href: "/", label: t("home") },
             { href: "/projects", label: t("projects") },

@@ -30,10 +30,12 @@ export const blogService = {
     async getAllArticles(locale: string = 'fr'): Promise<Article[]> {
         try {
             if (!process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID) {
-                console.warn('Appwrite Project ID not set, using mocks.');
+                console.warn('⚠️ [BLOG] Appwrite Project ID not set. Using MOCK data.');
                 // Map mocks to localized structure
                 return mockArticles.map(doc => mapDocumentToArticle(doc, locale));
             }
+
+            console.log('🚀 [BLOG] Fetching articles from Appwrite...');
 
             const response = await databases.listDocuments(
                 APPWRITE_CONFIG.databaseId,
@@ -43,9 +45,11 @@ export const blogService = {
                 ]
             );
 
+            console.log(`✅ [BLOG] Successfully fetched ${response.documents.length} articles from Appwrite.`);
+
             return response.documents.map(doc => mapDocumentToArticle(doc, locale));
         } catch (error) {
-            console.error('Failed to fetch articles from Appwrite:', error);
+            console.error('❌ [BLOG] Failed to fetch from Appwrite. Fallback to MOCKS.', error);
             // Map mocks to localized structure on error too
             return mockArticles.map(doc => mapDocumentToArticle(doc, locale));
         }
