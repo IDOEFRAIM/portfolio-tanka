@@ -1,8 +1,8 @@
 // next.config.ts
 import createNextIntlPlugin from 'next-intl/plugin';
+import { NextConfig } from 'next';
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   // tes autres options Next.js ici
   images: {
     remotePatterns: [
