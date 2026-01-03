@@ -41,7 +41,7 @@ const Hero = () => {
           
           {/* Colonne Gauche : Message */}
           <div className="lg:col-span-8 text-center md:text-left">
-            <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-6">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] mb-6">
               {t('title_line1')} <br />
               {/* Utilisation du GRADIENT CENTRALISÉ (bg-hero-gradient) */}
               <span className="text-transparent bg-clip-text bg-hero-gradient">
