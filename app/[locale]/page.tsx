@@ -1,8 +1,12 @@
 // app/[locale]/page.tsx
+import { setRequestLocale } from 'next-intl/server';
 import { Hero, Philosophy, Categories, HookProject, FinalCTA } from "../../components_/accueil";
 import PricingSection from "../../components_/pricingOptions";
 
-const Page = () => {
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <main className="relative bg-background-deep selection:bg-primary selection:text-white">
       
@@ -47,6 +51,6 @@ const Page = () => {
 
     </main>
   );
-};
+}
 
 export default Page;

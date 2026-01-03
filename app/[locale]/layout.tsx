@@ -1,6 +1,6 @@
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { ThemeProvider } from "@/components_/ThemeProvider";
 import QueryProvider from "@/components_/QueryProvider";
 import SettingsBar from '@/components_/SettingsBar'; 
@@ -31,11 +31,20 @@ interface RootLayoutProps {
   params: Promise<{ locale: string }>;
 }
 
+// Génération statique des routes pour la performance (SSG)
+export function generateStaticParams() {
+  return [{locale: 'en'}, {locale: 'fr'}];
+}
+
 export default async function LocaleLayout({
   children,
   params
 }: RootLayoutProps) {
   const { locale } = await params;
+  
+  // Active l'optimisation statique pour ce layout
+  setRequestLocale(locale);
+  
   const messages = await getMessages();
 
   return (
