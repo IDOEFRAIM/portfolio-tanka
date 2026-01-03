@@ -27,6 +27,10 @@ const mapDocumentToArticle = (doc: any, locale: string): Article => {
 };
 
 export const blogService = {
+    getMockArticles(locale: string = 'fr'): Article[] {
+        return mockArticles.map(doc => mapDocumentToArticle(doc, locale));
+    },
+
     async getAllArticles(locale: string = 'fr'): Promise<Article[]> {
         try {
             if (!process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID) {

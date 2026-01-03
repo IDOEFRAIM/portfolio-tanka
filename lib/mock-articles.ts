@@ -36,7 +36,7 @@ export const mockArticles: Article[] = [
     subtitle: 'Understanding the probabilistic nature of Large Language Models and why they "guess" instead of "know".',
     summary: 'Deconstructing the myth of AI knowledge. Learn why LLMs don\'t "know" facts but "guess" sequences, and why this distinction matters for developers building robust architectures like RAG.',
     date: '2025-12-28',
-    readTime: '4 min',
+    readTime: '8 min',
     category: 'ai',
     coverImage: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1000',
     
@@ -45,23 +45,64 @@ export const mockArticles: Article[] = [
     subtitle_en: 'Understanding the probabilistic nature of Large Language Models and why they "guess" instead of "know".',
     summary_en: 'Deconstructing the myth of AI knowledge. Learn why LLMs don\'t "know" facts but "guess" sequences, and why this distinction matters for developers building robust architectures like RAG.',
     content_en: `
-      <header class="mb-10">
-        <p class="lead text-xl text-gray-600 dark:text-gray-300 font-light italic">
-          "AI doesn't 'know' anything. It 'guesses' everything."
+      <header class="mb-12">
+        <p class="lead text-2xl text-gray-600 dark:text-gray-300 font-light italic border-l-4 border-primary pl-6 py-2">
+          "AI doesn't 'know' anything. It 'guesses' everything. And that distinction changes everything about how we build software."
         </p>
       </header>
-      <section id="intro" class="mb-12">
-        <h2>The Autocorrect Analogy</h2>
-        <p>Stop treating AI like an encyclopedia. It’s not "Google 2.0." It’s basically your phone’s autocorrect, but on steroids. 💊</p>
+
+      <section id="intro" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">The Autocorrect Analogy</h2>
+        <p class="mb-4 text-lg leading-relaxed">Stop treating AI like an encyclopedia. It’s not "Google 2.0." It’s basically your phone’s autocorrect, but on steroids. 💊</p>
+        <p class="mb-4 text-lg leading-relaxed">Ever since I was 15, I’ve been obsessed with what happens "under the hood." I spent countless nights deconstructing code just to understand how a few lines of text could turn into complex actions. When I looked under the hood of GPT, I didn't find a brain. I found a calculator.</p>
       </section>
-      <section id="tokens" class="mb-12">
-        <h2>Tokens & Probabilities</h2>
-        <p>If there’s one thing I’ve learned by diving deep into LLMs (Large Language Models), it’s this: <strong>AI doesn't "know" anything. It "guesses" everything.</strong></p>
+
+      <section id="tokens" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Tokens & Probabilities</h2>
+        <p class="mb-6 text-lg leading-relaxed">If there’s one thing I’ve learned by diving deep into LLMs (Large Language Models), it’s this: <strong>AI doesn't "know" anything. It "guesses" everything.</strong></p>
+        
+        <div class="bg-gray-50 dark:bg-white/5 p-8 rounded-2xl border border-gray-200 dark:border-white/10 mb-8">
+            <h3 class="font-mono text-sm uppercase tracking-widest text-primary mb-4">The Prediction Game</h3>
+            <p class="mb-4">Think about your phone when you type a message. It suggests the next word:</p>
+            <ul class="list-disc pl-6 space-y-3 text-gray-700 dark:text-gray-300">
+                <li>You type: <span class="font-mono bg-gray-200 dark:bg-black px-2 py-1 rounded">"I am..."</span></li>
+                <li>It suggests: <span class="font-bold text-green-500">"going" (80%)</span>, "happy" (15%), "tired" (5%).</li>
+            </ul>
+        </div>
+
+        <p class="mb-4 text-lg leading-relaxed">ChatGPT does the exact same thing, but with insane computing power and a "memory" of almost the entire internet. It doesn't understand the concept of "truth". It understands the concept of "statistical likelihood".</p>
+      </section>
+
+      <section id="hallucinations" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Hallucinations: A Feature, Not a Bug</h2>
+        <p class="mb-4 text-lg leading-relaxed">Why is this vital for your projects? Because it explains "hallucinations."</p>
+        <p class="mb-4 text-lg leading-relaxed">If the AI doesn't find the exact answer in its training data, it won't just stop. It will build the most plausible mathematical sequence, even if it’s factually wrong. It isn't lying; it’s just predicting.</p>
+        <p class="mb-4 text-lg leading-relaxed">In creative writing, this is a feature (we call it "creativity"). In banking software, it's a critical bug (we call it "lying").</p>
+      </section>
+
+      <section id="rag" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">The Solution: RAG (Retrieval Augmented Generation)</h2>
+        <p class="mb-4 text-lg leading-relaxed">So how do we fix this? We don't ask the model to "remember" facts. We give it the facts.</p>
+        <p class="mb-4 text-lg leading-relaxed">This is where <strong>RAG</strong> comes in. Instead of asking: <br><em>"What is Tanka's latest project?"</em> (which it doesn't know), <br>We say: <br><em>"Here is a PDF of Tanka's portfolio. Based ONLY on this file, what is his latest project?"</em></p>
+        <p class="mb-4 text-lg leading-relaxed">We turn the "Creative Writer" into a "Reading Assistant". That is the key to building reliable AI systems.</p>
+      </section>
+
+      <section id="conclusion" class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Why It Matters</h2>
+        <p class="mb-4 text-lg leading-relaxed">The bottom line: Understanding this nuance is the difference between just using a tool and truly mastering it. It’s what allows us to build robust architectures to make these models reliable.</p>
+        <p class="mb-4 text-lg leading-relaxed">Tech isn't magic; it’s logic. And that’s exactly why I love it.</p>
+        <div class="mt-8 p-6 bg-primary/10 rounded-xl border border-primary/20">
+            <p class="font-bold text-primary">👇 What about you?</p>
+            <p class="mt-2">Have you ever caught an AI inventing very "convincing" facts? Tell me about your best "hallucination" in the comments!</p>
+        </div>
       </section>
     `,
     toc_en: [
       { id: 'intro', title: 'The Autocorrect Analogy' },
-      { id: 'tokens', title: 'Tokens & Probabilités' },
+      { id: 'tokens', title: 'Tokens & Probabilities' },
+      { id: 'hallucinations', title: 'Hallucinations Explained' },
+      { id: 'rag', title: 'The Solution: RAG' },
+      { id: 'conclusion', title: 'Why It Matters' },
     ],
 
     // French Mock Data
@@ -69,23 +110,64 @@ export const mockArticles: Article[] = [
     subtitle_fr: 'Comprendre la nature probabiliste des LLM et pourquoi ils "devinent" au lieu de "savoir".',
     summary_fr: 'Déconstruction du mythe de la connaissance de l\'IA. Découvrez pourquoi les LLM ne "savent" pas les faits mais "devinent" des séquences.',
     content_fr: `
-      <header class="mb-10">
-        <p class="lead text-xl text-gray-600 dark:text-gray-300 font-light italic">
-          "L'IA ne 'sait' rien. Elle 'devine' tout."
+      <header class="mb-12">
+        <p class="lead text-2xl text-gray-600 dark:text-gray-300 font-light italic border-l-4 border-primary pl-6 py-2">
+          "L'IA ne 'sait' rien. Elle 'devine' tout. Et cette distinction change tout à la façon dont nous concevons les logiciels."
         </p>
       </header>
-      <section id="intro" class="mb-12">
-        <h2>L'Analogie du Correcteur</h2>
-        <p>Arrêtez de traiter l'IA comme une encyclopédie. Ce n'est pas "Google 2.0". C'est essentiellement le correcteur automatique de votre téléphone, mais sous stéroïdes. 💊</p>
+
+      <section id="intro" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">L'Analogie du Correcteur</h2>
+        <p class="mb-4 text-lg leading-relaxed">Arrêtez de traiter l'IA comme une encyclopédie. Ce n'est pas "Google 2.0". C'est essentiellement le correcteur automatique de votre téléphone, mais sous stéroïdes. 💊</p>
+        <p class="mb-4 text-lg leading-relaxed">Depuis mes 15 ans, je suis obsédé par ce qui se passe "sous le capot". J'ai passé des nuits entières à déconstruire du code juste pour comprendre comment quelques lignes de texte pouvaient se transformer en actions complexes. Quand j'ai regardé sous le capot de GPT, je n'ai pas trouvé un cerveau. J'ai trouvé une calculatrice.</p>
       </section>
-      <section id="tokens" class="mb-12">
-        <h2>Tokens & Probabilités</h2>
-        <p>S'il y a une chose que j'ai apprise en plongeant dans les LLM (Large Language Models), c'est ceci : <strong>L'IA ne "sait" rien. Elle "devine" tout.</strong></p>
+
+      <section id="tokens" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Tokens & Probabilités</h2>
+        <p class="mb-6 text-lg leading-relaxed">S'il y a une chose que j'ai apprise en plongeant dans les LLM (Large Language Models), c'est ceci : <strong>L'IA ne "sait" rien. Elle "devine" tout.</strong></p>
+        
+        <div class="bg-gray-50 dark:bg-white/5 p-8 rounded-2xl border border-gray-200 dark:border-white/10 mb-8">
+            <h3 class="font-mono text-sm uppercase tracking-widest text-primary mb-4">Le Jeu de la Prédiction</h3>
+            <p class="mb-4">Pensez à votre téléphone quand vous tapez un message. Il suggère le mot suivant :</p>
+            <ul class="list-disc pl-6 space-y-3 text-gray-700 dark:text-gray-300">
+                <li>Vous tapez : <span class="font-mono bg-gray-200 dark:bg-black px-2 py-1 rounded">"Je suis..."</span></li>
+                <li>Il suggère : <span class="font-bold text-green-500">"parti" (80%)</span>, "heureux" (15%), "fatigué" (5%).</li>
+            </ul>
+        </div>
+
+        <p class="mb-4 text-lg leading-relaxed">ChatGPT fait exactement la même chose, mais avec une puissance de calcul démentielle et une "mémoire" de presque tout internet. Il ne comprend pas le concept de "vérité". Il comprend le concept de "probabilité statistique".</p>
+      </section>
+
+      <section id="hallucinations" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Les Hallucinations : Une Fonctionnalité, pas un Bug</h2>
+        <p class="mb-4 text-lg leading-relaxed">Pourquoi est-ce vital pour vos projets ? Parce que cela explique les "hallucinations".</p>
+        <p class="mb-4 text-lg leading-relaxed">Si l'IA ne trouve pas la réponse exacte dans ses données d'entraînement, elle ne va pas s'arrêter. Elle va construire la suite mathématique la plus plausible, même si c'est factuellement faux. Elle ne ment pas ; elle prédit juste.</p>
+        <p class="mb-4 text-lg leading-relaxed">En écriture créative, c'est une fonctionnalité (on appelle ça "l'imagination"). Dans un logiciel bancaire, c'est un bug critique (on appelle ça "mentir").</p>
+      </section>
+
+      <section id="rag" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">La Solution : RAG (Retrieval Augmented Generation)</h2>
+        <p class="mb-4 text-lg leading-relaxed">Alors comment on répare ça ? On ne demande pas au modèle de se "souvenir" des faits. On lui donne les faits.</p>
+        <p class="mb-4 text-lg leading-relaxed">C'est là qu'intervient le <strong>RAG</strong>. Au lieu de demander : <br><em>"Quel est le dernier projet de Tanka ?"</em> (ce qu'il ne sait pas), <br>On dit : <br><em>"Voici un PDF du portfolio de Tanka. En te basant UNIQUEMENT sur ce fichier, quel est son dernier projet ?"</em></p>
+        <p class="mb-4 text-lg leading-relaxed">On transforme l'"Écrivain Créatif" en "Assistant de Lecture". C'est la clé pour construire des systèmes IA fiables.</p>
+      </section>
+
+      <section id="conclusion" class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">Pourquoi c'est Important</h2>
+        <p class="mb-4 text-lg leading-relaxed">Le fond du problème : Comprendre cette nuance fait la différence entre juste utiliser un outil et vraiment le maîtriser. C'est ce qui nous permet de construire des architectures robustes pour rendre ces modèles fiables.</p>
+        <p class="mb-4 text-lg leading-relaxed">La tech n'est pas de la magie ; c'est de la logique. Et c'est exactement pour ça que je l'aime.</p>
+        <div class="mt-8 p-6 bg-primary/10 rounded-xl border border-primary/20">
+            <p class="font-bold text-primary">👇 Et vous ?</p>
+            <p class="mt-2">Avez-vous déjà surpris une IA en train d'inventer des faits très "convaincants" ? Racontez-moi votre meilleure "hallucination" en commentaire !</p>
+        </div>
       </section>
     `,
     toc_fr: [
       { id: 'intro', title: 'L\'Analogie du Correcteur' },
       { id: 'tokens', title: 'Tokens & Probabilités' },
+      { id: 'hallucinations', title: 'Les Hallucinations' },
+      { id: 'rag', title: 'La Solution : RAG' },
+      { id: 'conclusion', title: 'Pourquoi c\'est Important' },
     ],
 
     // Default / Fallback Content (English)
@@ -93,112 +175,209 @@ export const mockArticles: Article[] = [
       { id: 'intro', title: 'The Autocorrect Analogy' },
       { id: 'tokens', title: 'Tokens & Probabilities' },
       { id: 'hallucinations', title: 'Hallucinations Explained' },
+      { id: 'rag', title: 'The Solution: RAG' },
       { id: 'conclusion', title: 'Why It Matters' },
     ],
     content: `
-      <header class="mb-10">
-        <p class="lead text-xl text-gray-600 dark:text-gray-300 font-light italic">
-          "AI doesn't 'know' anything. It 'guesses' everything."
+      <header class="mb-12">
+        <p class="lead text-2xl text-gray-600 dark:text-gray-300 font-light italic border-l-4 border-primary pl-6 py-2">
+          "AI doesn't 'know' anything. It 'guesses' everything. And that distinction changes everything about how we build software."
         </p>
       </header>
 
-      <section id="intro" class="mb-12">
-        <h2>The Autocorrect Analogy</h2>
-        <p>Stop treating AI like an encyclopedia. It’s not "Google 2.0." It’s basically your phone’s autocorrect, but on steroids. 💊</p>
-        <p>Ever since I was 15, I’ve been obsessed with what happens "under the hood." I spent countless nights deconstructing code just to understand how a few lines of text could turn into complex actions.</p>
+      <section id="intro" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">The Autocorrect Analogy</h2>
+        <p class="mb-4 text-lg leading-relaxed">Stop treating AI like an encyclopedia. It’s not "Google 2.0." It’s basically your phone’s autocorrect, but on steroids. 💊</p>
+        <p class="mb-4 text-lg leading-relaxed">Ever since I was 15, I’ve been obsessed with what happens "under the hood." I spent countless nights deconstructing code just to understand how a few lines of text could turn into complex actions. When I looked under the hood of GPT, I didn't find a brain. I found a calculator.</p>
       </section>
 
-      <section id="tokens" class="mb-12">
-        <h2>Tokens & Probabilities</h2>
-        <p>If there’s one thing I’ve learned by diving deep into LLMs (Large Language Models), it’s this: <strong>AI doesn't "know" anything. It "guesses" everything.</strong></p>
-        <p>For a beginner, that might sound disappointing. But for an expert, this is exactly where the power lies.</p>
-        <p>Think about your phone when you type a message. It suggests the next word:</p>
-        <ul class="list-disc pl-6 mb-4 space-y-2">
-            <li>You type: "I am..."</li>
-            <li>It suggests: "going" (80%), "happy" (15%), "tired" (5%).</li>
-        </ul>
-        <p>ChatGPT does the exact same thing, but with insane computing power and a "memory" of almost the entire internet.</p>
-        <p>👨‍💻 <strong>The technical bit:</strong> AI doesn't handle truths; it handles probabilities. It calculates the most statistically likely "Token" (a piece of a word) to follow based on the context you gave it.</p>
+      <section id="tokens" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Tokens & Probabilities</h2>
+        <p class="mb-6 text-lg leading-relaxed">If there’s one thing I’ve learned by diving deep into LLMs (Large Language Models), it’s this: <strong>AI doesn't "know" anything. It "guesses" everything.</strong></p>
+        
+        <div class="bg-gray-50 dark:bg-white/5 p-8 rounded-2xl border border-gray-200 dark:border-white/10 mb-8">
+            <h3 class="font-mono text-sm uppercase tracking-widest text-primary mb-4">The Prediction Game</h3>
+            <p class="mb-4">Think about your phone when you type a message. It suggests the next word:</p>
+            <ul class="list-disc pl-6 space-y-3 text-gray-700 dark:text-gray-300">
+                <li>You type: <span class="font-mono bg-gray-200 dark:bg-black px-2 py-1 rounded">"I am..."</span></li>
+                <li>It suggests: <span class="font-bold text-green-500">"going" (80%)</span>, "happy" (15%), "tired" (5%).</li>
+            </ul>
+        </div>
+
+        <p class="mb-4 text-lg leading-relaxed">ChatGPT does the exact same thing, but with insane computing power and a "memory" of almost the entire internet. It doesn't understand the concept of "truth". It understands the concept of "statistical likelihood".</p>
       </section>
 
-      <section id="hallucinations" class="mb-12">
-        <h2>Hallucinations Explained</h2>
-        <p>Why is this vital for your projects? Because it explains "hallucinations."</p>
-        <p>If the AI doesn't find the exact answer in its training data, it won't just stop. It will build the most plausible mathematical sequence, even if it’s factually wrong. It isn't lying; it’s just predicting.</p>
+      <section id="hallucinations" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Hallucinations: A Feature, Not a Bug</h2>
+        <p class="mb-4 text-lg leading-relaxed">Why is this vital for your projects? Because it explains "hallucinations."</p>
+        <p class="mb-4 text-lg leading-relaxed">If the AI doesn't find the exact answer in its training data, it won't just stop. It will build the most plausible mathematical sequence, even if it’s factually wrong. It isn't lying; it’s just predicting.</p>
+        <p class="mb-4 text-lg leading-relaxed">In creative writing, this is a feature (we call it "creativity"). In banking software, it's a critical bug (we call it "lying").</p>
+      </section>
+
+      <section id="rag" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">The Solution: RAG (Retrieval Augmented Generation)</h2>
+        <p class="mb-4 text-lg leading-relaxed">So how do we fix this? We don't ask the model to "remember" facts. We give it the facts.</p>
+        <p class="mb-4 text-lg leading-relaxed">This is where <strong>RAG</strong> comes in. Instead of asking: <br><em>"What is Tanka's latest project?"</em> (which it doesn't know), <br>We say: <br><em>"Here is a PDF of Tanka's portfolio. Based ONLY on this file, what is his latest project?"</em></p>
+        <p class="mb-4 text-lg leading-relaxed">We turn the "Creative Writer" into a "Reading Assistant". That is the key to building reliable AI systems.</p>
       </section>
 
       <section id="conclusion" class="mb-12">
-        <h2>Why It Matters</h2>
-        <p>The bottom line: Understanding this nuance is the difference between just using a tool and truly mastering it. It’s what allows us to build robust architectures, like RAG, to make these models reliable.</p>
-        <p>Tech isn't magic; it’s logic. And that’s exactly why I love it.</p>
-        <p>👇 What about you? Have you ever caught an AI inventing very "convincing" facts? Tell me about your best "hallucination" in the comments!</p>
-        <p class="text-sm text-gray-500 mt-4">PS: In my next post, we’ll explore why AI thinks an image, a text, and a sound are actually the same thing (Spoiler: it’s all about Vectors).</p>
+        <h2 class="text-3xl font-bold mb-6">Why It Matters</h2>
+        <p class="mb-4 text-lg leading-relaxed">The bottom line: Understanding this nuance is the difference between just using a tool and truly mastering it. It’s what allows us to build robust architectures to make these models reliable.</p>
+        <p class="mb-4 text-lg leading-relaxed">Tech isn't magic; it’s logic. And that’s exactly why I love it.</p>
+        <div class="mt-8 p-6 bg-primary/10 rounded-xl border border-primary/20">
+            <p class="font-bold text-primary">👇 What about you?</p>
+            <p class="mt-2">Have you ever caught an AI inventing very "convincing" facts? Tell me about your best "hallucination" in the comments!</p>
+        </div>
       </section>
     `
   },
   {
     slug: 'optimisation-nextjs-ssg',
-    title: 'Vitesse Lumière : L\'Architecture de l\'Instantané',
-    subtitle: 'Pourquoi le Static Site Generation (SSG) n\'est pas juste une technique, mais une philosophie de performance.',
-    summary: 'Plongée dans les mécanismes du rendu statique, du Edge Computing et de la perception utilisateur de la vitesse.',
+    title: 'Light Speed: The Architecture of Instant',
+    subtitle: 'Why Static Site Generation (SSG) is not just a technique, but a philosophy of performance.',
+    summary: 'Deep dive into static rendering mechanisms, Edge Computing, and user perception of speed.',
     date: '2025-11-01',
     readTime: '7 min',
     category: 'web',
-    toc: [
-      { id: 'illusion', title: '1. L\'Illusion de la Vitesse' },
-      { id: 'chef', title: '2. Le Chef vs Le Buffet' },
-      { id: 'edge', title: '3. La Géographie du Code' },
-      { id: 'implementation', title: '4. Implémentation' },
-    ],
     coverImage: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000',
-    content: `
-      <header class="mb-10">
-        <p class="lead text-xl text-gray-600 dark:text-gray-300 font-light italic">
+
+    // English Mock Data
+    title_en: 'Light Speed: The Architecture of Instant',
+    subtitle_en: 'Why Static Site Generation (SSG) is not just a technique, but a philosophy of performance.',
+    summary_en: 'Deep dive into static rendering mechanisms, Edge Computing, and user perception of speed.',
+    content_en: `
+      <header class="mb-12">
+        <p class="lead text-2xl text-gray-600 dark:text-gray-300 font-light italic border-l-4 border-blue-500 pl-6 py-2">
+          "On the web, 100 milliseconds of latency can kill an intention. Speed is not a feature, it's the foundation of trust."
+        </p>
+      </header>
+
+      <section id="illusion" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">1. The Illusion of Speed</h2>
+        <p class="mb-4 text-lg leading-relaxed">Imagine walking into a dark room and flipping the switch. Do you expect the light to turn on instantly? Yes. If it takes half a second, you think the bulb is broken.</p>
+        <p class="mb-4 text-lg leading-relaxed">The modern web must respond with the same immediacy. The human brain perceives any delay under <strong>100ms</strong> as instant. Beyond that, the cognitive conversation breaks.</p>
+      </section>
+
+      <section id="chef" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">2. The Chef vs The Buffet (SSR vs SSG)</h2>
+        <p class="mb-6 text-lg leading-relaxed">To understand SSG, let's forget code for a moment and go to a restaurant.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="p-8 bg-blue-50 dark:bg-blue-900/10 rounded-2xl border border-blue-100 dark:border-blue-900/30">
+                <h3 class="text-xl text-blue-600 dark:text-blue-400 font-bold mb-4">SSR (Server Side Rendering)</h3>
+                <p class="text-gray-700 dark:text-gray-300">It's an <strong>A La Carte Restaurant</strong>. You order. The chef gets the ticket, chops vegetables, cooks the meat, plates the dish. It's fresh, custom, but you wait 20 minutes.</p>
+            </div>
+            <div class="p-8 bg-indigo-50 dark:bg-indigo-900/10 rounded-2xl border border-indigo-100 dark:border-indigo-900/30">
+                <h3 class="text-xl text-indigo-600 dark:text-indigo-400 font-bold mb-4">SSG (Static Site Generation)</h3>
+                <p class="text-gray-700 dark:text-gray-300">It's a <strong>Luxury Buffet</strong>. The chef prepared everything at 4 AM. When you arrive, the food is there, steaming, perfect. You serve yourself. Wait time: zero.</p>
+            </div>
+        </div>
+
+        <p class="mb-4 text-lg leading-relaxed">Next.js allows us to build this digital buffet. At "Build" time, we pre-calculate every possible page. The server does the hard work once, not on every visit.</p>
+      </section>
+
+      <section id="edge" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">3. The Geography of Code (The Edge)</h2>
+        <div class="mb-8 relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10 group">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000" alt="Global Network Connection" class="w-full object-cover h-[400px] transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-md p-4">
+            <p class="text-white text-sm font-mono">Fig 1. CDN Distribution: Moving data closer to the user.</p>
+          </div>
+        </div>
+        <p class="mb-4 text-lg leading-relaxed">Once your page is statically generated (HTML + JSON), it doesn't stay on a single server in New York. It gets cloned and shipped to the "Edge" of the network: London, Tokyo, Sao Paulo, Cape Town.</p>
+        <p class="mb-4 text-lg leading-relaxed">When a user in Ouagadougou requests your page, they don't download it from Europe, but from a local CDN server. That is the power of Vercel's infrastructure.</p>
+      </section>
+
+      <section id="implementation" class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">4. The Art of Implementation</h2>
+        <p class="mb-6 text-lg leading-relaxed">Here is the exact pattern I use to generate thousands of blog pages in seconds during build:</p>
+        
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <pre class="relative bg-gray-900 text-gray-100 p-6 rounded-lg overflow-x-auto text-sm font-mono border border-gray-700 shadow-2xl"><code>// app/blog/[slug]/page.tsx
+
+// 1. Tell Next.js which pages exist
+export async function generateStaticParams() {
+  const posts = await getPosts(); 
+  
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
+// 2. The page is generated ONCE
+export default async function Page({ params }) {
+  const { slug } = params;
+  // DB call happens only at build time!
+  const post = await getPost(slug); 
+  
+  return &lt;Article content={post} /&gt;;
+}</code></pre>
+        </div>
+      </section>
+    `,
+    toc_en: [
+      { id: 'illusion', title: '1. The Illusion of Speed' },
+      { id: 'chef', title: '2. The Chef vs The Buffet' },
+      { id: 'edge', title: '3. The Geography of Code' },
+      { id: 'implementation', title: '4. Implementation' },
+    ],
+
+    // French Mock Data
+    title_fr: 'Vitesse Lumière : L\'Architecture de l\'Instantané',
+    subtitle_fr: 'Pourquoi le Static Site Generation (SSG) n\'est pas juste une technique, mais une philosophie de performance.',
+    summary_fr: 'Plongée dans les mécanismes du rendu statique, du Edge Computing et de la perception utilisateur de la vitesse.',
+    content_fr: `
+      <header class="mb-12">
+        <p class="lead text-2xl text-gray-600 dark:text-gray-300 font-light italic border-l-4 border-blue-500 pl-6 py-2">
           "Sur le web, 100 millisecondes de latence peuvent tuer une intention. La vitesse n'est pas une fonctionnalité, c'est le fondement de la confiance."
         </p>
       </header>
 
-      <section id="illusion" class="mb-12">
-        <h2>1. L'Illusion de la Vitesse</h2>
-        <p>Imaginez que vous entrez dans une pièce sombre et que vous appuyez sur l'interrupteur. Vous attendez-vous à ce que la lumière s'allume instantanément ? Oui. Si elle met une demi-seconde à réagir, vous pensez que l'ampoule est cassée.</p>
-        <p>Le web moderne doit répondre avec la même immédiateté. Le cerveau humain perçoit tout délai inférieur à <strong>100ms</strong> comme instantané. Au-delà, la conversation cognitive se brise.</p>
+      <section id="illusion" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">1. L'Illusion de la Vitesse</h2>
+        <p class="mb-4 text-lg leading-relaxed">Imaginez que vous entrez dans une pièce sombre et que vous appuyez sur l'interrupteur. Vous attendez-vous à ce que la lumière s'allume instantanément ? Oui. Si elle met une demi-seconde à réagir, vous pensez que l'ampoule est cassée.</p>
+        <p class="mb-4 text-lg leading-relaxed">Le web moderne doit répondre avec la même immédiateté. Le cerveau humain perçoit tout délai inférieur à <strong>100ms</strong> comme instantané. Au-delà, la conversation cognitive se brise.</p>
       </section>
 
-      <section id="chef" class="mb-12">
-        <h2>2. Le Chef vs Le Buffet (SSR vs SSG)</h2>
-        <p>Pour comprendre le SSG, oublions le code un instant et allons au restaurant.</p>
+      <section id="chef" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">2. Le Chef vs Le Buffet (SSR vs SSG)</h2>
+        <p class="mb-6 text-lg leading-relaxed">Pour comprendre le SSG, oublions le code un instant et allons au restaurant.</p>
         
-        <div class="grid md:grid-cols-2 gap-6 my-8">
-            <div class="p-6 bg-blue-50 dark:bg-blue-900/10 rounded-xl border border-blue-100 dark:border-blue-900/30">
-                <h3 class="text-blue-600 dark:text-blue-400 font-bold mb-2">SSR (Server Side Rendering)</h3>
-                <p class="text-sm">C'est un <strong>restaurant à la carte</strong>. Vous commandez. Le chef reçoit le bon, coupe les légumes, cuit la viande, dresse l'assiette. C'est frais, personnalisé, mais vous devez attendre 20 minutes.</p>
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="p-8 bg-blue-50 dark:bg-blue-900/10 rounded-2xl border border-blue-100 dark:border-blue-900/30">
+                <h3 class="text-xl text-blue-600 dark:text-blue-400 font-bold mb-4">SSR (Server Side Rendering)</h3>
+                <p class="text-gray-700 dark:text-gray-300">C'est un <strong>restaurant à la carte</strong>. Vous commandez. Le chef reçoit le bon, coupe les légumes, cuit la viande, dresse l'assiette. C'est frais, personnalisé, mais vous devez attendre 20 minutes.</p>
             </div>
-            <div class="p-6 bg-indigo-50 dark:bg-indigo-900/10 rounded-xl border border-indigo-100 dark:border-indigo-900/30">
-                <h3 class="text-indigo-600 dark:text-indigo-400 font-bold mb-2">SSG (Static Site Generation)</h3>
-                <p class="text-sm">C'est un <strong>buffet de luxe</strong>. Le chef a tout préparé à 4h du matin. Quand vous arrivez, les plats sont là, fumants, parfaits. Vous vous servez. Temps d'attente : zéro.</p>
+            <div class="p-8 bg-indigo-50 dark:bg-indigo-900/10 rounded-2xl border border-indigo-100 dark:border-indigo-900/30">
+                <h3 class="text-xl text-indigo-600 dark:text-indigo-400 font-bold mb-4">SSG (Static Site Generation)</h3>
+                <p class="text-gray-700 dark:text-gray-300">C'est un <strong>buffet de luxe</strong>. Le chef a tout préparé à 4h du matin. Quand vous arrivez, les plats sont là, fumants, parfaits. Vous vous servez. Temps d'attente : zéro.</p>
             </div>
         </div>
 
-        <p>Next.js nous permet de construire ce buffet numérique. Au moment du "Build", nous précalculons toutes les pages possibles. Le serveur fait le travail difficile une seule fois, pas à chaque visite.</p>
+        <p class="mb-4 text-lg leading-relaxed">Next.js nous permet de construire ce buffet numérique. Au moment du "Build", nous précalculons toutes les pages possibles. Le serveur fait le travail difficile une seule fois, pas à chaque visite.</p>
       </section>
 
-      <section id="edge" class="mb-12">
-        <h2>3. La Géographie du Code (The Edge)</h2>
-        <div class="my-8 relative rounded-xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10">
-          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000" alt="Global Network Connection" class="w-full object-cover h-[350px]" />
-          <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-md p-3">
-            <p class="text-white text-xs font-mono">Fig 1. Distribution CDN : Rapprocher la donnée de l'utilisateur.</p>
+      <section id="edge" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">3. La Géographie du Code (The Edge)</h2>
+        <div class="mb-8 relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10 group">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000" alt="Global Network Connection" class="w-full object-cover h-[400px] transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-md p-4">
+            <p class="text-white text-sm font-mono">Fig 1. Distribution CDN : Rapprocher la donnée de l'utilisateur.</p>
           </div>
         </div>
-        <p>Une fois votre page générée statiquement (HTML + JSON), elle ne reste pas sur un serveur unique à Paris. Elle est clonée et envoyée aux "limites" (Edge) du réseau : New York, Tokyo, Sao Paulo, Le Cap.</p>
-        <p>Quand un utilisateur à Ouagadougou demande votre page, il ne la télécharge pas depuis l'Europe, mais depuis un serveur CDN local. C'est la puissance de l'infrastructure Vercel.</p>
+        <p class="mb-4 text-lg leading-relaxed">Une fois votre page générée statiquement (HTML + JSON), elle ne reste pas sur un serveur unique à Paris. Elle est clonée et envoyée aux "limites" (Edge) du réseau : New York, Tokyo, Sao Paulo, Le Cap.</p>
+        <p class="mb-4 text-lg leading-relaxed">Quand un utilisateur à Ouagadougou demande votre page, il ne la télécharge pas depuis l'Europe, mais depuis un serveur CDN local. C'est la puissance de l'infrastructure Vercel.</p>
       </section>
 
       <section id="implementation" class="mb-12">
-        <h2>4. L'Art de l'Implémentation</h2>
-        <p>Voici le pattern exact que j'utilise pour générer des milliers de pages de blog en quelques secondes lors du build :</p>
+        <h2 class="text-3xl font-bold mb-6">4. L'Art de l'Implémentation</h2>
+        <p class="mb-6 text-lg leading-relaxed">Voici le pattern exact que j'utilise pour générer des milliers de pages de blog en quelques secondes lors du build :</p>
         
-        <pre class="bg-gray-900 text-gray-100 p-6 rounded-lg overflow-x-auto text-sm font-mono border border-gray-700 shadow-inner"><code>// app/blog/[slug]/page.tsx
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <pre class="relative bg-gray-900 text-gray-100 p-6 rounded-lg overflow-x-auto text-sm font-mono border border-gray-700 shadow-2xl"><code>// app/blog/[slug]/page.tsx
 
 // 1. Dites à Next.js quelles pages existent
 export async function generateStaticParams() {
@@ -216,23 +395,268 @@ export default async function Page({ params }) {
   
   return &lt;Article content={post} /&gt;;
 }</code></pre>
+        </div>
+      </section>
+    `,
+    toc_fr: [
+      { id: 'illusion', title: '1. L\'Illusion de la Vitesse' },
+      { id: 'chef', title: '2. Le Chef vs Le Buffet' },
+      { id: 'edge', title: '3. La Géographie du Code' },
+      { id: 'implementation', title: '4. Implémentation' },
+    ],
+
+    // Default / Fallback Content (French)
+    toc: [
+      { id: 'illusion', title: '1. L\'Illusion de la Vitesse' },
+      { id: 'chef', title: '2. Le Chef vs Le Buffet' },
+      { id: 'edge', title: '3. La Géographie du Code' },
+      { id: 'implementation', title: '4. Implémentation' },
+    ],
+    content: `
+      <header class="mb-12">
+        <p class="lead text-2xl text-gray-600 dark:text-gray-300 font-light italic border-l-4 border-blue-500 pl-6 py-2">
+          "Sur le web, 100 millisecondes de latence peuvent tuer une intention. La vitesse n'est pas une fonctionnalité, c'est le fondement de la confiance."
+        </p>
+      </header>
+
+      <section id="illusion" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">1. L'Illusion de la Vitesse</h2>
+        <p class="mb-4 text-lg leading-relaxed">Imaginez que vous entrez dans une pièce sombre et que vous appuyez sur l'interrupteur. Vous attendez-vous à ce que la lumière s'allume instantanément ? Oui. Si elle met une demi-seconde à réagir, vous pensez que l'ampoule est cassée.</p>
+        <p class="mb-4 text-lg leading-relaxed">Le web moderne doit répondre avec la même immédiateté. Le cerveau humain perçoit tout délai inférieur à <strong>100ms</strong> comme instantané. Au-delà, la conversation cognitive se brise.</p>
+      </section>
+
+      <section id="chef" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">2. Le Chef vs Le Buffet (SSR vs SSG)</h2>
+        <p class="mb-6 text-lg leading-relaxed">Pour comprendre le SSG, oublions le code un instant et allons au restaurant.</p>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="p-8 bg-blue-50 dark:bg-blue-900/10 rounded-2xl border border-blue-100 dark:border-blue-900/30">
+                <h3 class="text-xl text-blue-600 dark:text-blue-400 font-bold mb-4">SSR (Server Side Rendering)</h3>
+                <p class="text-gray-700 dark:text-gray-300">C'est un <strong>restaurant à la carte</strong>. Vous commandez. Le chef reçoit le bon, coupe les légumes, cuit la viande, dresse l'assiette. C'est frais, personnalisé, mais vous devez attendre 20 minutes.</p>
+            </div>
+            <div class="p-8 bg-indigo-50 dark:bg-indigo-900/10 rounded-2xl border border-indigo-100 dark:border-indigo-900/30">
+                <h3 class="text-xl text-indigo-600 dark:text-indigo-400 font-bold mb-4">SSG (Static Site Generation)</h3>
+                <p class="text-gray-700 dark:text-gray-300">C'est un <strong>buffet de luxe</strong>. Le chef a tout préparé à 4h du matin. Quand vous arrivez, les plats sont là, fumants, parfaits. Vous vous servez. Temps d'attente : zéro.</p>
+            </div>
+        </div>
+
+        <p class="mb-4 text-lg leading-relaxed">Next.js nous permet de construire ce buffet numérique. Au moment du "Build", nous précalculons toutes les pages possibles. Le serveur fait le travail difficile une seule fois, pas à chaque visite.</p>
+      </section>
+
+      <section id="edge" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">3. La Géographie du Code (The Edge)</h2>
+        <div class="mb-8 relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10 group">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000" alt="Global Network Connection" class="w-full object-cover h-[400px] transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-md p-4">
+            <p class="text-white text-sm font-mono">Fig 1. Distribution CDN : Rapprocher la donnée de l'utilisateur.</p>
+          </div>
+        </div>
+        <p class="mb-4 text-lg leading-relaxed">Une fois votre page générée statiquement (HTML + JSON), elle ne reste pas sur un serveur unique à Paris. Elle est clonée et envoyée aux "limites" (Edge) du réseau : New York, Tokyo, Sao Paulo, Le Cap.</p>
+        <p class="mb-4 text-lg leading-relaxed">Quand un utilisateur à Ouagadougou demande votre page, il ne la télécharge pas depuis l'Europe, mais depuis un serveur CDN local. C'est la puissance de l'infrastructure Vercel.</p>
+      </section>
+
+      <section id="implementation" class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">4. L'Art de l'Implémentation</h2>
+        <p class="mb-6 text-lg leading-relaxed">Voici le pattern exact que j'utilise pour générer des milliers de pages de blog en quelques secondes lors du build :</p>
+        
+        <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <pre class="relative bg-gray-900 text-gray-100 p-6 rounded-lg overflow-x-auto text-sm font-mono border border-gray-700 shadow-2xl"><code>// app/blog/[slug]/page.tsx
+
+// 1. Dites à Next.js quelles pages existent
+export async function generateStaticParams() {
+  const posts = await getPosts(); 
+  
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
+// 2. La page est générée une seule fois
+export default async function Page({ params }) {
+  const { slug } = params;
+  const post = await getPost(slug); // Appel BDD uniquement au build !
+  
+  return &lt;Article content={post} /&gt;;
+}</code></pre>
+        </div>
       </section>
     `,
   },
   {
     slug: 'transformer-vs-cnn-en-ia',
-    title: 'Le Duel des Titans : CNN vs Transformers',
-    subtitle: 'La fin de l\'ère de la "Vision Tunnel" et l\'avènement de l\'Attention Globale.',
-    summary: 'Comment l\'IA est passée de l\'analyse pixel par pixel à la compréhension contextuelle globale.',
+    title: 'Clash of Titans: CNN vs Transformers',
+    subtitle: 'The end of the "Tunnel Vision" era and the rise of Global Attention.',
+    summary: 'How AI moved from pixel-by-pixel analysis to global contextual understanding.',
     date: '2025-11-10',
     readTime: '12 min',
     category: 'ai',
+    coverImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000',
+
+    // English Mock Data
+    title_en: 'Clash of Titans: CNN vs Transformers',
+    subtitle_en: 'The end of the "Tunnel Vision" era and the rise of Global Attention.',
+    summary_en: 'How AI moved from pixel-by-pixel analysis to global contextual understanding.',
+    content_en: `
+      <header class="mb-12">
+        <p class="lead text-2xl text-gray-600 dark:text-gray-300 font-light italic border-l-4 border-purple-500 pl-6 py-2">
+          "A CNN looks at the world through a straw. A Transformer looks at the world through a wide-angle lens."
+        </p>
+      </header>
+
+      <section id="history" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">1. The Hegemony of CNNs (2012-2020)</h2>
+        <p class="mb-4 text-lg leading-relaxed">For a decade, if you wanted a computer to "see", you used a CNN (Convolutional Neural Network). Its operation is inspired by the biological visual cortex.</p>
+        
+        <div class="my-8 flex gap-4 items-center justify-center bg-gray-50 dark:bg-white/5 p-6 rounded-xl border border-gray-200 dark:border-white/10">
+            <div class="text-center">
+                <div class="font-mono text-xs text-gray-400 mb-2">INPUT</div>
+                <div class="w-16 h-16 bg-gray-300 dark:bg-gray-700 rounded"></div>
+            </div>
+            <div class="w-8 h-0.5 bg-gray-300 dark:bg-gray-700"></div>
+            <div class="text-center">
+                <div class="font-mono text-xs text-blue-500 font-bold mb-2">KERNEL</div>
+                <div class="w-12 h-12 border-2 border-dashed border-blue-500 rounded flex items-center justify-center text-blue-500">🔍</div>
+            </div>
+            <div class="w-8 h-0.5 bg-gray-300 dark:bg-gray-700"></div>
+            <div class="text-center">
+                <div class="font-mono text-xs text-gray-400 mb-2">FEATURE</div>
+                <div class="w-12 h-12 bg-gray-400 dark:bg-gray-600 rounded"></div>
+            </div>
+        </div>
+
+        <p class="mb-4 text-lg leading-relaxed">The CNN scans the image with a small window (the kernel). It detects edges, then textures, then shapes. But it has a major flaw: <strong>tunnel vision</strong>. It struggles to relate a pixel in the top left with a pixel in the bottom right if the image is large.</p>
+      </section>
+
+      <section id="revolution" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">2. The Revolution "Attention is All You Need"</h2>
+        <div class="mb-8 relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10">
+          <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1000" alt="Neural Network Glowing" class="w-full object-cover h-[400px]" />
+          <div class="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-transparent mix-blend-overlay"></div>
+        </div>
+        
+        <p class="mb-4 text-lg leading-relaxed">Transformers changed everything. Instead of scanning locally, the <strong>Self-Attention</strong> mechanism looks at the entire image (or sentence) at once.</p>
+        <blockquote class="border-l-4 border-purple-500 pl-6 italic text-xl my-8 text-gray-700 dark:text-gray-300 bg-purple-50 dark:bg-purple-900/10 p-6 rounded-r-xl">
+          "A Transformer doesn't read a sentence word by word. It contemplates it as a whole and understands that 'Bank' is related to 'Money', even if they are separated by 50 words."
+        </blockquote>
+      </section>
+
+      <section id="comparison" class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">3. The Ultimate Analogy: The Magnifying Glass vs The Map</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 my-10">
+            <div class="bg-white dark:bg-neutral-900 p-8 rounded-2xl shadow-lg border-t-4 border-blue-500">
+                <h3 class="text-2xl font-black mb-4 flex items-center gap-2">The CNN 🔍</h3>
+                <p class="mb-4 font-bold text-gray-500 uppercase tracking-wide text-xs">The Detective</p>
+                <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                    <li class="flex items-start gap-2"><span class="text-green-500">✓</span> Very strong for local details.</li>
+                    <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Ignores what happens outside its lens.</li>
+                    <li class="flex items-start gap-2"><span class="text-green-500">✓</span> Efficient, fast, lightweight.</li>
+                </ul>
+            </div>
+            <div class="bg-white dark:bg-neutral-900 p-8 rounded-2xl shadow-lg border-t-4 border-purple-500">
+                <h3 class="text-2xl font-black mb-4 flex items-center gap-2">The Transformer 🗺️</h3>
+                <p class="mb-4 font-bold text-gray-500 uppercase tracking-wide text-xs">The General</p>
+                <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                    <li class="flex items-start gap-2"><span class="text-green-500">✓</span> Sees all distant connections.</li>
+                    <li class="flex items-start gap-2"><span class="text-green-500">✓</span> Understands global context.</li>
+                    <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Resource hungry (quadratic).</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+    `,
+    toc_en: [
+      { id: 'history', title: '1. The Hegemony of CNNs' },
+      { id: 'revolution', title: '2. The Revolution of Attention' },
+      { id: 'comparison', title: '3. The Magnifying Glass vs The Map' },
+    ],
+
+    // French Mock Data
+    title_fr: 'Le Duel des Titans : CNN vs Transformers',
+    subtitle_fr: 'La fin de l\'ère de la "Vision Tunnel" et l\'avènement de l\'Attention Globale.',
+    summary_fr: 'Comment l\'IA est passée de l\'analyse pixel par pixel à la compréhension contextuelle globale.',
+    content_fr: `
+      <header class="mb-12">
+        <p class="lead text-2xl text-gray-600 dark:text-gray-300 font-light italic border-l-4 border-purple-500 pl-6 py-2">
+          "Un CNN regarde le monde à travers une paille. Un Transformer regarde le monde avec un grand angle."
+        </p>
+      </header>
+
+      <section id="history" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">1. L'Hégémonie des CNN (2012-2020)</h2>
+        <p class="mb-4 text-lg leading-relaxed">Pendant une décennie, si vous vouliez qu'un ordinateur "voie", vous utilisiez un CNN (Convolutional Neural Network). Son fonctionnement est inspiré du cortex visuel biologique.</p>
+        
+        <div class="my-8 flex gap-4 items-center justify-center bg-gray-50 dark:bg-white/5 p-6 rounded-xl border border-gray-200 dark:border-white/10">
+            <div class="text-center">
+                <div class="font-mono text-xs text-gray-400 mb-2">INPUT</div>
+                <div class="w-16 h-16 bg-gray-300 dark:bg-gray-700 rounded"></div>
+            </div>
+            <div class="w-8 h-0.5 bg-gray-300 dark:bg-gray-700"></div>
+            <div class="text-center">
+                <div class="font-mono text-xs text-blue-500 font-bold mb-2">KERNEL</div>
+                <div class="w-12 h-12 border-2 border-dashed border-blue-500 rounded flex items-center justify-center text-blue-500">🔍</div>
+            </div>
+            <div class="w-8 h-0.5 bg-gray-300 dark:bg-gray-700"></div>
+            <div class="text-center">
+                <div class="font-mono text-xs text-gray-400 mb-2">FEATURE</div>
+                <div class="w-12 h-12 bg-gray-400 dark:bg-gray-600 rounded"></div>
+            </div>
+        </div>
+
+        <p class="mb-4 text-lg leading-relaxed">Le CNN scanne l'image avec une petite fenêtre (le noyau). Il détecte des bords, puis des textures, puis des formes. Mais il a un défaut majeur : <strong>la vision tunnel</strong>. Il a du mal à relier un pixel en haut à gauche avec un pixel en bas à droite si l'image est grande.</p>
+      </section>
+
+      <section id="revolution" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">2. La Révolution "Attention is All You Need"</h2>
+        <div class="mb-8 relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10">
+          <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1000" alt="Neural Network Glowing" class="w-full object-cover h-[400px]" />
+          <div class="absolute inset-0 bg-gradient-to-r from-purple-900/40 to-transparent mix-blend-overlay"></div>
+        </div>
+        
+        <p class="mb-4 text-lg leading-relaxed">Les Transformers ont tout changé. Au lieu de scanner localement, le mécanisme d'<strong>Auto-Attention (Self-Attention)</strong> regarde toute l'image (ou toute la phrase) d'un seul coup.</p>
+        <blockquote class="border-l-4 border-purple-500 pl-6 italic text-xl my-8 text-gray-700 dark:text-gray-300 bg-purple-50 dark:bg-purple-900/10 p-6 rounded-r-xl">
+          "Un Transformer ne lit pas une phrase mot après mot. Il la contemple dans son ensemble et comprend que 'Banque' est lié à 'Argent', même s'ils sont séparés par 50 mots."
+        </blockquote>
+      </section>
+
+      <section id="comparison" class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">3. L'Analogie Ultime : La Loupe vs La Carte</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 my-10">
+            <div class="bg-white dark:bg-neutral-900 p-8 rounded-2xl shadow-lg border-t-4 border-blue-500">
+                <h3 class="text-2xl font-black mb-4 flex items-center gap-2">Le CNN 🔍</h3>
+                <p class="mb-4 font-bold text-gray-500 uppercase tracking-wide text-xs">Le Détective</p>
+                <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                    <li class="flex items-start gap-2"><span class="text-green-500">✓</span> Très fort pour les détails locaux.</li>
+                    <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Ignore ce qui se passe hors de sa loupe.</li>
+                    <li class="flex items-start gap-2"><span class="text-green-500">✓</span> Efficace, rapide, léger.</li>
+                </ul>
+            </div>
+            <div class="bg-white dark:bg-neutral-900 p-8 rounded-2xl shadow-lg border-t-4 border-purple-500">
+                <h3 class="text-2xl font-black mb-4 flex items-center gap-2">Le Transformer 🗺️</h3>
+                <p class="mb-4 font-bold text-gray-500 uppercase tracking-wide text-xs">Le Stratège</p>
+                <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                    <li class="flex items-start gap-2"><span class="text-green-500">✓</span> Voit toutes les connexions distantes.</li>
+                    <li class="flex items-start gap-2"><span class="text-green-500">✓</span> Comprend le contexte global.</li>
+                    <li class="flex items-start gap-2"><span class="text-red-500">✗</span> Gourmand en ressources (quadratique).</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+    `,
+    toc_fr: [
+      { id: 'history', title: '1. L\'Hégémonie des CNN' },
+      { id: 'revolution', title: '2. La Révolution de l\'Attention' },
+      { id: 'comparison', title: '3. La Loupe vs La Carte' },
+    ],
+
+    // Default / Fallback Content (French)
     toc: [
       { id: 'history', title: '1. L\'Hégémonie des CNN' },
       { id: 'revolution', title: '2. La Révolution de l\'Attention' },
       { id: 'comparison', title: '3. La Loupe vs La Carte' },
     ],
-    coverImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000',
     content: `
       <section id="history" class="mb-12">
         <h2>1. L'Hégémonie des CNN (2012-2020)</h2>
@@ -290,20 +714,162 @@ export default async function Page({ params }) {
   },
   {
     slug: 'ouaga-smart-city-data',
-    title: 'Chaos to Order : L\'Expérience Ouaga Smart City',
-    subtitle: 'Comment dompter le trafic d\'une métropole africaine avec des capteurs low-cost et du Big Data.',
-    summary: 'Architecture d\'un pipeline IoT résilient face à la chaleur, la poussière et la connectivité instable.',
+    title: 'Chaos to Order: The Ouaga Smart City Experiment',
+    subtitle: 'How to tame the traffic of an African metropolis with low-cost sensors and Big Data.',
+    summary: 'Architecture of an IoT pipeline resilient to heat, dust, and unstable connectivity.',
     date: '2025-11-15',
     readTime: '6 min',
     category: 'data',
+    coverImage: 'https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?auto=format&fit=crop&q=80&w=1000',
+
+    // English Mock Data
+    title_en: 'Chaos to Order: The Ouaga Smart City Experiment',
+    subtitle_en: 'How to tame the traffic of an African metropolis with low-cost sensors and Big Data.',
+    summary_en: 'Architecture of an IoT pipeline resilient to heat, dust, and unstable connectivity.',
+    content_en: `
+      <header class="mb-12">
+        <p class="lead text-2xl text-gray-600 dark:text-gray-300 font-light italic border-l-4 border-emerald-500 pl-6 py-2">
+          "In a city where the temperature hits 45°C, your server room isn't just a room. It's an oven. Resilience isn't an option, it's the only spec."
+        </p>
+      </header>
+
+      <section id="entropy" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">1. Urban Entropy</h2>
+        <p class="mb-4 text-lg leading-relaxed">Ouagadougou. 2.5 million inhabitants. Ground temperature of 45°C. An endless ballet of motorcycles, taxis, and pedestrians.</p>
+        <p class="mb-4 text-lg leading-relaxed">The problem isn't the number of vehicles, it's the unpredictability. Without data, the city is a black box. You cannot optimize what you cannot measure.</p>
+      </section>
+
+      <section id="nervous" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">2. Building a Resilient Nervous System</h2>
+        <p class="mb-6 text-lg leading-relaxed">We couldn't use expensive 4K cameras. We needed <strong>Low-Tech High-Impact</strong>.</p>
+        
+        <div class="mb-8 p-8 bg-emerald-50 dark:bg-emerald-900/10 border border-emerald-200 dark:border-emerald-500/20 rounded-2xl">
+            <h3 class="text-emerald-600 dark:text-emerald-400 font-mono text-sm uppercase tracking-widest mb-6">THE SURVIVAL STACK</h3>
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <div class="bg-emerald-100 dark:bg-emerald-900 p-2 rounded mr-4 text-emerald-600 dark:text-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    </div>
+                    <div>
+                        <span class="font-bold block text-gray-900 dark:text-white">HARDWARE</span>
+                        <span class="text-gray-600 dark:text-gray-400">Raspberry Pi + Thermal Cameras (immune to dust and privacy concerns).</span>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="bg-emerald-100 dark:bg-emerald-900 p-2 rounded mr-4 text-emerald-600 dark:text-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+                    </div>
+                    <div>
+                        <span class="font-bold block text-gray-900 dark:text-white">PROTOCOL</span>
+                        <span class="text-gray-600 dark:text-gray-400"><strong>MQTT</strong>: The ultra-lightweight protocol. If the network cuts, the message waits. Zero data loss.</span>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="bg-emerald-100 dark:bg-emerald-900 p-2 rounded mr-4 text-emerald-600 dark:text-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <div>
+                        <span class="font-bold block text-gray-900 dark:text-white">EDGE AI</span>
+                        <span class="text-gray-600 dark:text-gray-400">Local processing with YOLO-Nano. We don't send video (too heavy), we just send JSON: <code>{ "car": 12, "moto": 45 }</code>.</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </section>
+
+      <section id="pulse" class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">3. Visualizing the City's Pulse</h2>
+        <div class="mb-8 relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" alt="Data Dashboard Visualization" class="w-full object-cover h-[400px]" />
+          <div class="absolute inset-0 bg-emerald-900/20 mix-blend-color"></div>
+        </div>
+        <p class="mb-4 text-lg leading-relaxed">All these micro-data points converge into an <strong>InfluxDB</strong> (Time Series) database. Grafana then transforms these millions of points into curves of life.</p>
+        <p class="mb-4 text-lg leading-relaxed">For the first time, the municipality doesn't just see traffic jams, it sees <strong>flows</strong>. It can predict that at 5:30 PM, the United Nations intersection will saturate, and adjust the traffic lights 5 minutes beforehand.</p>
+      </section>
+    `,
+    toc_en: [
+      { id: 'entropy', title: '1. Urban Entropy' },
+      { id: 'nervous', title: '2. The Nervous System (IoT)' },
+      { id: 'pulse', title: '3. Visualizing the Pulse' },
+    ],
+
+    // French Mock Data
+    title_fr: 'Chaos to Order : L\'Expérience Ouaga Smart City',
+    subtitle_fr: 'Comment dompter le trafic d\'une métropole africaine avec des capteurs low-cost et du Big Data.',
+    summary_fr: 'Architecture d\'un pipeline IoT résilient face à la chaleur, la poussière et la connectivité instable.',
+    content_fr: `
+      <header class="mb-12">
+        <p class="lead text-2xl text-gray-600 dark:text-gray-300 font-light italic border-l-4 border-emerald-500 pl-6 py-2">
+          "Dans une ville où la température atteint 45°C, votre salle serveur n'est pas juste une salle. C'est un four. La résilience n'est pas une option, c'est la seule spécification."
+        </p>
+      </header>
+
+      <section id="entropy" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">1. L'Entropie Urbaine</h2>
+        <p class="mb-4 text-lg leading-relaxed">Ouagadougou. 2,5 millions d'habitants. Une température au sol de 45°C. Un ballet incessant de motos, de taxis et de piétons.</p>
+        <p class="mb-4 text-lg leading-relaxed">Le problème n'est pas le nombre de véhicules, c'est l'imprévisibilité. Sans données, la ville est une boîte noire. On ne peut pas optimiser ce qu'on ne mesure pas.</p>
+      </section>
+
+      <section id="nervous" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">2. Construire un Système Nerveux Résilient</h2>
+        <p class="mb-6 text-lg leading-relaxed">Nous ne pouvions pas utiliser des caméras 4K couteuses. Il fallait du <strong>Low-Tech High-Impact</strong>.</p>
+        
+        <div class="mb-8 p-8 bg-emerald-50 dark:bg-emerald-900/10 border border-emerald-200 dark:border-emerald-500/20 rounded-2xl">
+            <h3 class="text-emerald-600 dark:text-emerald-400 font-mono text-sm uppercase tracking-widest mb-6">LA STACK DE SURVIE</h3>
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <div class="bg-emerald-100 dark:bg-emerald-900 p-2 rounded mr-4 text-emerald-600 dark:text-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                    </div>
+                    <div>
+                        <span class="font-bold block text-gray-900 dark:text-white">HARDWARE</span>
+                        <span class="text-gray-600 dark:text-gray-400">Raspberry Pi + Caméras thermiques (insensibles à la poussière).</span>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="bg-emerald-100 dark:bg-emerald-900 p-2 rounded mr-4 text-emerald-600 dark:text-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+                    </div>
+                    <div>
+                        <span class="font-bold block text-gray-900 dark:text-white">PROTOCOL</span>
+                        <span class="text-gray-600 dark:text-gray-400"><strong>MQTT</strong> : Le protocole ultra-léger. Si le réseau coupe, le message attend. Zéro perte de données.</span>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <div class="bg-emerald-100 dark:bg-emerald-900 p-2 rounded mr-4 text-emerald-600 dark:text-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <div>
+                        <span class="font-bold block text-gray-900 dark:text-white">EDGE AI</span>
+                        <span class="text-gray-600 dark:text-gray-400">Traitement local avec YOLO-Nano. On n'envoie pas la vidéo (trop lourd), on envoie juste : <code>{ "car": 12, "moto": 45 }</code>.</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+      </section>
+
+      <section id="pulse" class="mb-12">
+        <h2 class="text-3xl font-bold mb-6">3. Visualiser le Pouls de la Ville</h2>
+        <div class="mb-8 relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-white/10">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" alt="Data Dashboard Visualization" class="w-full object-cover h-[400px]" />
+          <div class="absolute inset-0 bg-emerald-900/20 mix-blend-color"></div>
+        </div>
+        <p class="mb-4 text-lg leading-relaxed">Toutes ces micro-données convergent vers une base <strong>InfluxDB</strong> (Time Series). Grafana transforme ensuite ces millions de points en courbes de vie.</p>
+        <p class="mb-4 text-lg leading-relaxed">Pour la première fois, la municipalité ne voit plus des embouteillages, elle voit des <strong>flux</strong>. Elle peut prédire qu'à 17h30, le carrefour des Nations Unies va saturer, et ajuster les feux en conséquence 5 minutes avant.</p>
+      </section>
+    `,
+    toc_fr: [
+      { id: 'entropy', title: '1. L\'Entropie Urbaine' },
+      { id: 'nervous', title: '2. Le Système Nerveux (IoT)' },
+      { id: 'pulse', title: '3. Visualiser le Pouls' },
+    ],
+
+    // Default / Fallback Content (French)
     toc: [
       { id: 'entropy', title: '1. L\'Entropie Urbaine' },
       { id: 'nervous', title: '2. Le Système Nerveux (IoT)' },
       { id: 'pulse', title: '3. Visualiser le Pouls' },
     ],
-    coverImage: 
-    'https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?auto=format&fit=crop&q=80&w=1000',
-    
     content: `
       <section id="entropy" class="mb-12">
         <h2>1. L'Entropie Urbaine</h2>

@@ -14,7 +14,9 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
   const t = await getTranslations('Blog');
   
   // Fetch articles on the server with ISR
-  const articles = await blogService.getAllArticles(locale);
+  // const articles = await blogService.getAllArticles(locale);
+  // OPTIMIZATION: Load mocks immediately, then fetch real data in background
+  const initialArticles = blogService.getMockArticles(locale);
   
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-black text-slate-900 dark:text-white pt-32 pb-20 px-6 transition-colors duration-300">
@@ -38,7 +40,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
         </div>
 
         {/* LISTE DES ARTICLES (Server Component Data -> Client Component Display) */}
-        <BlogList articles={articles} />
+        <BlogList initialArticles={initialArticles} locale={locale} />
 
       </div>
     </main>

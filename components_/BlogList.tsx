@@ -3,6 +3,7 @@
 import { Article } from '@/lib/mock-articles';
 import Link from 'next/link';
 import { Clock, Calendar } from 'lucide-react';
+import { useQuery } from '@tanstack/react-query';
 
 const ArticleCard = ({ article }: { article: Article }) => {
   const categoryColors: any = {
@@ -44,7 +45,18 @@ const ArticleCard = ({ article }: { article: Article }) => {
   );
 };
 
-export default function BlogList({ articles }: { articles: Article[] }) {
+export default function BlogList({ initialArticles, locale }: { initialArticles: Article[], locale: string }) {
+  const { data: articles } = useQuery({
+    queryKey: ['articles', locale],
+    queryFn: async () => {
+      const res = await fetch(`/api/blog?locale=${locale}`);
+      if (!res.ok) throw new Error('Failed to fetch');
+      return res.json() as Promise<Article[]>;
+    },
+    initialData: initialArticles,
+    staleTime: 0,
+  });
+
   if (!articles || articles.length === 0) {
     return (
       <div className="text-center py-20 opacity-50">
