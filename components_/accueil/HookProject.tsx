@@ -7,7 +7,7 @@ const HookProject = () => {
 
   return (
     // CHANGEMENT : bg-background-surface + sticky + shadow-layer
-    <section className="sticky top-0 min-h-[100dvh] flex items-center py-16 lg:py-24 bg-background-surface/90 backdrop-blur-2xl text-white border-t border-white/10 overflow-hidden shadow-layer">
+    <section className="relative flex items-center py-16 lg:py-24 bg-background-surface/90 backdrop-blur-2xl text-white border-t border-white/10 overflow-hidden">
       
       {/* 1. EFFET ATMOSPHÉRIQUE : Le halo qui réagit au scroll */}
       <div className="absolute -right-1/4 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 blur-[120px] rounded-full pointer-events-none"></div>

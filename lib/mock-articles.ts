@@ -1088,14 +1088,14 @@ export default async function Page({ params }) {
           In my last post, we saw that AI is a prediction engine. But how can a machine "predict" a painting or a melody?
         </p>
         <p class="mt-4">
-          When I first started coding at 15, I thought computers needed separate brains for separate tasks. One for reading, one for seeing. I was wrong.
+          When I first started coding at 15, I thought computers needed separate brains for separate tasks. One for reading, one for seeing.
         </p>
       </header>
 
       <section class="mb-12">
         <h2 class="text-3xl font-bold mb-6">The Secret: Vectors</h2>
         <p class="mb-4">
-          The beauty of modern AI lies in one mathematical concept: <strong>Vectors</strong>.
+          I was wrong. The beauty of modern AI lies in one mathematical concept: <strong>Vectors</strong>.
         </p>
         <p class="mb-4">
           Here is the secret: The AI doesn't read the word "Apple." The AI doesn't see a picture of a red fruit.
@@ -1115,7 +1115,7 @@ export default async function Page({ params }) {
       <section class="mb-12">
         <h2 class="text-3xl font-bold mb-6">Algebra with Ideas</h2>
         <p class="mb-4">
-          The technical bit: This is why Generative AI is "Multimodal." Since everything is converted into the same mathematical space, we can do algebra with ideas.
+          👨‍💻 The technical bit: This is why Generative AI is "Multimodal." Since everything is converted into the same mathematical space, we can do algebra with ideas.
         </p>
         <p class="mb-4">
           The most famous example?
@@ -1131,7 +1131,7 @@ export default async function Page({ params }) {
       <section class="mb-12">
         <h2 class="text-3xl font-bold mb-6">Why does this matter?</h2>
         <p class="mb-4">
-          It changes how we handle data. We are no longer just matching keywords; we are matching concepts. This is the foundation of modern search engines and recommendation systems.
+          Why does this matter for us? It changes how we handle data. We are no longer just matching keywords; we are matching concepts. This is the foundation of modern search engines and recommendation systems.
         </p>
         <p class="mb-4">
           We are not just coding rules anymore; we are navigating a map of human knowledge.

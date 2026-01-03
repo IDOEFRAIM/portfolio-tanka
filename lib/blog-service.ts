@@ -51,7 +51,21 @@ export const blogService = {
 
             console.log(`✅ [BLOG] Successfully fetched ${response.documents.length} articles from Appwrite.`);
 
-            return response.documents.map(doc => mapDocumentToArticle(doc, locale));
+            const appwriteArticles = response.documents.map(doc => mapDocumentToArticle(doc, locale));
+            
+            // HYBRID MODE: Merge Appwrite articles with Mock articles
+            // This allows adding new articles locally (mocks) before pushing them to the DB
+            const appwriteSlugs = new Set(appwriteArticles.map(a => a.slug));
+            const missingMocks = mockArticles
+                .filter(mock => !appwriteSlugs.has(mock.slug))
+                .map(mock => mapDocumentToArticle(mock, locale));
+
+            // Combine and sort by date (newest first)
+            const allArticles = [...appwriteArticles, ...missingMocks].sort((a, b) => 
+                new Date(b.date).getTime() - new Date(a.date).getTime()
+            );
+
+            return allArticles;
         } catch (error) {
             console.error('❌ [BLOG] Failed to fetch from Appwrite. Fallback to MOCKS.', error);
             // Map mocks to localized structure on error too
