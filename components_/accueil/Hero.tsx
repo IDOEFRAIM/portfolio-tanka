@@ -5,7 +5,7 @@ const Hero = () => {
   const t = useTranslations('Hero');
 
   return (
-    <section className="relative min-h-[100dvh] flex items-center justify-center bg-gray-50 dark:bg-[#020617] text-slate-900 dark:text-white overflow-hidden transition-colors duration-300 pt-32 pb-20 lg:pt-28 lg:pb-0">
+    <section className="relative min-h-[100dvh] flex items-center justify-center bg-gray-50 dark:bg-[#020617] text-slate-900 dark:text-white overflow-hidden transition-colors duration-300 pt-40 pb-20 lg:pt-40 lg:pb-0">
       
       {/* 1. FOND GRAPHIQUE (Plus riche et captivant) */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
