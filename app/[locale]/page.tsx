@@ -52,5 +52,3 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
     </main>
   );
 }
-
-export default Page;
