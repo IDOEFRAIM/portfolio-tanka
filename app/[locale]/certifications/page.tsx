@@ -34,14 +34,14 @@ export default async function CertificationsPage({ params }: Props) {
           <div className="flex items-center gap-3 mb-4">
             <ShieldCheck className="w-6 h-6 text-primary" />
             <span className="font-mono text-primary tracking-widest text-sm uppercase">
-              /root/user/efraim/credentials
+              Credentials
             </span>
           </div>
           <h1 className="text-4xl md:text-7xl font-black tracking-tighter uppercase mb-4">
             {t('title')}
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 font-mono">
-            // {t('subtitle')}
+             {t('subtitle')}
           </p>
           <p className="mt-6 text-lg text-gray-500 max-w-2xl font-light">
             {t('intro')}

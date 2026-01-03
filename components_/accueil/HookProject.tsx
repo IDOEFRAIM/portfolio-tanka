@@ -7,13 +7,13 @@ const HookProject = () => {
 
   return (
     // CHANGEMENT : bg-background-surface + sticky + shadow-layer
-    <section className="sticky top-0 min-h-screen flex items-center py-24 bg-background-surface/90 backdrop-blur-2xl text-white border-t border-white/10 overflow-hidden shadow-layer">
+    <section className="sticky top-0 min-h-[100dvh] flex items-center py-16 lg:py-24 bg-background-surface/90 backdrop-blur-2xl text-white border-t border-white/10 overflow-hidden shadow-layer">
       
       {/* 1. EFFET ATMOSPHÉRIQUE : Le halo qui réagit au scroll */}
       <div className="absolute -right-1/4 top-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
           {/* COLONNE GAUCHE : DATA & SPECS */}
           <div className="order-2 lg:order-1">
@@ -28,11 +28,11 @@ const HookProject = () => {
             </div>
 
             {/* Titre avec Gradient Centralisé */}
-            <h2 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none italic uppercase">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-none italic uppercase">
               {t('title')}<span className="bg-hero-gradient bg-clip-text text-transparent">.sys</span>
             </h2>
             
-            <p className="text-xl text-slate-400 mb-10 font-medium italic max-w-lg leading-snug">
+            <p className="text-lg sm:text-xl text-slate-400 mb-10 font-medium italic max-w-lg leading-snug">
               {t('subtitle')}
             </p>
 

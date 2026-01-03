@@ -178,7 +178,7 @@
     "impact": "Amélioration de la sensibilité aux fraudes réelles tout en limitant les faux positifs. Repo disponible."
   },
   "ContactPage": {
-    "title": "INITIER_COMM",
+    "title": "Me contacter",
     "subtitle": "Canal de communication ouvert.",
     "status": "Signal : Fort",
     "email_label": "TRANSMISSION EMAIL",
@@ -190,8 +190,8 @@
     "success_mock": "Message simulé envoyé avec succès..."
   },
   "Blog": {
-    "title": "JOURNAL DE BORD",
-    "subtitle": "Articles Techniques & Analyses",
+    "title": "Blog d'Efraim IDO",
+    "subtitle": "Articles Techniques & interressants",
     "back_to_list": "← Retour aux articles",
     "end_of_transmission": "--- FIN DE TRANSMISSION ---"
   },
@@ -203,5 +203,24 @@
     "date_label": "DATE D'ÉMISSION",
     "verify_btn": "VÉRIFIER LE CERTIFICAT",
     "id_label": "ID"
+  },
+  "Pricing": {
+    "title": "INVESTISSEMENT",
+    "subtitle": "HAUT RENDEMENT",
+    "tier_1_name": "Site Vitrine",
+    "tier_1_price": "150 000 FCFA",
+    "tier_1_desc": "Ne soyez pas juste présent, soyez inoubliable. Une vitrine ultra-rapide qui convertit vos visiteurs en clients dès la première seconde.",
+    "tier_1_features": "Design Premium,SEO Optimisé,Hébergement Inclus",
+    "tier_1_cta": "Lancer mon site",
+    "tier_2_name": "E-commerce",
+    "tier_2_price": "250 000 FCFA",
+    "tier_2_desc": "Plus qu'une boutique, un empire. Une expérience d'achat fluide et sécurisée conçue pour maximiser votre panier moyen.",
+    "tier_2_features": "Paiement Sécurisé,Gestion Stocks,Dashboard Admin",
+    "tier_2_cta": "Créer ma boutique",
+    "tier_3_name": "Application Mobile",
+    "tier_3_price": "600 000 FCFA",
+    "tier_3_desc": "Votre business dans la poche de vos clients. Une application native fluide, addictive et puissante pour une fidélisation totale.",
+    "tier_3_features": "iOS & Android,Notifications Push,Mode Hors-ligne",
+    "tier_3_cta": "Développer mon app"
   }
 }

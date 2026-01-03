@@ -1,55 +1,69 @@
 // components/PricingSection.tsx
 import React from 'react';
-
-const tiers = [
-  {
-    name: 'Consulting_IA',
-    price: 'Sur Devis',
-    unit: '/projet',
-    features: ['Audit de système', 'Architecture RAG', 'Optimisation LLM'],
-    cta: 'Lancer l_audit',
-    color: 'border-yellow-500/30'
-  },
-  {
-    name: 'Full_Stack_Dev',
-    price: '500€',
-    unit: '/jour',
-    features: ['Next.js / TypeScript', 'API Design', 'Performance Core Web Vitals'],
-    cta: 'Réserver un slot',
-    color: 'border-blue-500/30'
-  },
-  {
-    name: 'Efra_Learning_VIP',
-    price: '299€',
-    unit: '/formation',
-    features: ['Accès à vie', 'Support Discord privé', 'Projets réels inclus'],
-    cta: 'S_inscrire',
-    color: 'border-green-500/30'
-  }
-];
+import { useTranslations } from 'next-intl';
 
 export default function PricingSection() {
+  const t = useTranslations('Pricing');
+
+  const tiers = [
+    {
+      id: 'tier_1',
+      name: t('tier_1_name'),
+      price: t('tier_1_price'),
+      desc: t('tier_1_desc'),
+      features: t('tier_1_features').split(','),
+      cta: t('tier_1_cta'),
+      color: 'border-yellow-500/30'
+    },
+    {
+      id: 'tier_2',
+      name: t('tier_2_name'),
+      price: t('tier_2_price'),
+      desc: t('tier_2_desc'),
+      features: t('tier_2_features').split(','),
+      cta: t('tier_2_cta'),
+      color: 'border-blue-500/30'
+    },
+    {
+      id: 'tier_3',
+      name: t('tier_3_name'),
+      price: t('tier_3_price'),
+      desc: t('tier_3_desc'),
+      features: t('tier_3_features').split(','),
+      cta: t('tier_3_cta'),
+      color: 'border-green-500/30'
+    }
+  ];
+
   return (
     <section className="py-24 px-6 border-t border-gray-100 dark:border-white/5">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-mono text-[10px] font-black opacity-30 uppercase tracking-[0.5em] mb-16">
-          Service_Pricing_Protocols_v1
-        </h2>
+        <div className="mb-16">
+            <h2 className="font-mono text-[10px] font-black opacity-30 uppercase tracking-[0.5em] mb-4">
+            {t('title')}
+            </h2>
+            <h3 className="text-3xl md:text-5xl font-black italic tracking-tighter">
+            {t('subtitle')}
+            </h3>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {tiers.map((tier) => (
             <div 
-              key={tier.name}
-              className={`p-8 border ${tier.color} bg-gray-50/50 dark:bg-white/[0.02] flex flex-col`}
+              key={tier.id}
+              className={`p-8 border ${tier.color} bg-gray-50/50 dark:bg-white/[0.02] flex flex-col hover:bg-gray-100/50 dark:hover:bg-white/[0.04] transition-colors duration-300`}
             >
               <span className="font-mono text-[10px] opacity-50 mb-4 uppercase tracking-widest">
-                ID: {tier.name}
+                {tier.name}
               </span>
               
-              <div className="mb-8">
-                <span className="text-4xl font-black italic">{tier.price}</span>
-                <span className="text-xs opacity-50 ml-2 uppercase font-mono">{tier.unit}</span>
+              <div className="mb-4">
+                <span className="text-3xl md:text-4xl font-black italic">{tier.price}</span>
               </div>
+
+              <p className="text-sm opacity-70 mb-8 leading-relaxed">
+                {tier.desc}
+              </p>
 
               <ul className="space-y-4 mb-12 flex-grow">
                 {tier.features.map((f) => (

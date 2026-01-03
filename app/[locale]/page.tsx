@@ -1,5 +1,6 @@
 // app/[locale]/page.tsx
 import { Hero, Philosophy, Categories, HookProject, FinalCTA } from "../../components_/accueil";
+import PricingSection from "../../components_/pricingOptions";
 
 const Page = () => {
   return (
@@ -34,7 +35,12 @@ const Page = () => {
         <HookProject />
       </section>
 
-      {/* LAYER 05 : FINAL CTA (Le Final en Noir Absolu) */}
+      {/* LAYER 05 : PRICING (L'Investissement) */}
+      <section className="sticky top-0 min-h-screen z-45 bg-background-deep/95 backdrop-blur-xl shadow-[0_-50px_100px_rgba(0,0,0,0.8)] border-t border-white/10">
+        <PricingSection />
+      </section>
+
+      {/* LAYER 06 : FINAL CTA (Le Final en Noir Absolu) */}
       <section className="relative z-50 bg-black border-t border-primary/30">
         <FinalCTA />
       </section>

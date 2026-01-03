@@ -68,7 +68,7 @@ const Categories = () => {
               className={`group relative flex flex-col p-6 rounded-lg transition-all duration-300 
                 bg-white dark:bg-neutral-900/50 
                 border border-gray-200 dark:border-white/10 
-                shadow-sm dark:shadow-none hover:shadow-xl
+                shadow-sm dark:shadow-none hover:shadow-xl hover:-translate-y-1
                 ${cat.colorClass}`}
             >
                 {/* Numéro */}

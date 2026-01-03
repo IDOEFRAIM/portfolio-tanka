@@ -198,7 +198,7 @@
     }
 ,
   "ContactPage": {
-    "title": "INITIATE_COMM",
+    "title": "Lets get in touch",
     "subtitle": "Open communication channel.",
     "status": "Signal: Strong",
     "email_label": "EMAIL TRANSMISSION",
@@ -210,8 +210,8 @@
     "success_mock": "Simulated message sent..."
   },
    "Blog": {
-    "title": "LOGBOOK",
-    "subtitle": "Technical Articles & Insights",
+    "title": "Efraim IDO BLOG",
+    "subtitle": "Funny and Technical Articles & Insights",
     "back_to_list": "← Back to Articles",
     "end_of_transmission": "--- END :-)"
   },
@@ -223,5 +223,24 @@
     "date_label": "ISSUED DATE",
     "verify_btn": "VERIFY CREDENTIAL",
     "id_label": "ID"
+  },
+  "Pricing": {
+    "title": "INVESTMENT",
+    "subtitle": "HIGH ROI",
+    "tier_1_name": "Showcase Website",
+    "tier_1_price": "$300",
+    "tier_1_desc": "Don't just show up, stand out. A lightning-fast showcase that turns visitors into clients from the very first second.",
+    "tier_1_features": "Premium Design,SEO Optimized,Hosting Included",
+    "tier_1_cta": "Launch my site",
+    "tier_2_name": "E-commerce",
+    "tier_2_price": "$500",
+    "tier_2_desc": "More than a store, an empire. A seamless, secure shopping experience designed to maximize your average order value.",
+    "tier_2_features": "Secure Payment,Stock Management,Admin Dashboard",
+    "tier_2_cta": "Create my store",
+    "tier_3_name": "Mobile App",
+    "tier_3_price": "$1000",
+    "tier_3_desc": "Your business in your customers' pockets. A fluid, addictive, and powerful native app for total retention.",
+    "tier_3_features": "iOS & Android,Push Notifications,Offline Mode",
+    "tier_3_cta": "Develop my app"
   }
 }

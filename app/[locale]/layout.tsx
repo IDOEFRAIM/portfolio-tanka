@@ -2,6 +2,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { ThemeProvider } from "@/components_/ThemeProvider";
+import QueryProvider from "@/components_/QueryProvider";
 import SettingsBar from '@/components_/SettingsBar'; 
 import NavBar from '@/components_/NavBar'; 
 import BackButton from '@/components_/BackButton'
@@ -45,30 +46,28 @@ export default async function LocaleLayout({
         
         {/* Provider de Traduction */}
         <NextIntlClientProvider messages={messages}>
-          
-          {/* Provider de Thème (Dark/Light) */}
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            {/* Barre de réglages (Langue + Thème)
-           <div className="fixed top-20 right-4 z-[60]">
-              <SettingsBar />
-          </div> */}
+          <QueryProvider>
+            {/* Provider de Thème (Dark/Light) */}
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="dark"
+              enableSystem
+              disableTransitionOnChange
+            >
+              {/* Barre de réglages (Langue + Thème)
+            <div className="fixed top-20 right-4 z-[60]">
+                <SettingsBar />
+            </div> */}
 
             {/* ✅ Navbar globale */}
             <NavBar />
-             <div className="px-4 py-2">
-        <BackButton />
-      </div>
+            <BackButton />
 
             {/* Contenu de la page */}
             {children}
             
           </ThemeProvider>
-
+          </QueryProvider>
         </NextIntlClientProvider>
 
       </body>

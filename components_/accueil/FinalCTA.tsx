@@ -17,7 +17,7 @@ const FinalCTA = () => {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         
         {/* 1. Le Message "Mindset" */}
-        <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase tracking-tighter mb-8 leading-tight">
           {t('title_line1')}<br />
           {/* Utilisation du GRADIENT CENTRALISÉ (bg-hero-gradient) */}
           <span className="text-transparent bg-clip-text bg-hero-gradient">

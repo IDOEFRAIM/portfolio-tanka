@@ -20,7 +20,7 @@ const Philosophy = () => {
         
         {/* Header de section style "Terminal" */}
         <div className="mb-16 flex items-end justify-between border-b border-gray-200 dark:border-white/10 pb-4">
-          <h2 className="text-4xl md:text-5xl font-black tracking-tighter uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tighter uppercase">
             {t('header_title')} 
             {/* Utilisation du Gradient Centralisé */}
             <span className="text-transparent bg-clip-text bg-hero-gradient ml-2">
@@ -36,7 +36,7 @@ const Philosophy = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* BLOC 1 : L'Origine (Couleur PRIMARY / Indigo) */}
-          <div className="group relative p-8 border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:shadow-xl dark:hover:bg-white/10 transition-all duration-300 rounded-2xl">
+          <div className="group relative p-8 border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:shadow-xl dark:hover:bg-white/10 transition-all duration-300 rounded-2xl hover:-translate-y-1">
             <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                <span className="text-6xl font-black text-slate-900 dark:text-white">01</span>
             </div>
@@ -49,7 +49,7 @@ const Philosophy = () => {
           </div>
 
           {/* BLOC 2 : Le Loup (Couleur DATA / Vert) */}
-          <div className="group relative p-8 border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:shadow-xl dark:hover:bg-white/10 transition-all duration-300 rounded-2xl">
+          <div className="group relative p-8 border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:shadow-xl dark:hover:bg-white/10 transition-all duration-300 rounded-2xl hover:-translate-y-1">
             <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                <span className="text-6xl font-black text-slate-900 dark:text-white">02</span>
             </div>
@@ -60,7 +60,7 @@ const Philosophy = () => {
           </div>
 
           {/* BLOC 3 : La Cible (Couleur SECONDARY / Violet) */}
-          <div className="group relative p-8 border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:shadow-xl dark:hover:bg-white/10 transition-all duration-300 rounded-2xl">
+          <div className="group relative p-8 border border-gray-200 dark:border-white/10 bg-white dark:bg-white/5 hover:shadow-xl dark:hover:bg-white/10 transition-all duration-300 rounded-2xl hover:-translate-y-1">
             <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                <span className="text-6xl font-black text-slate-900 dark:text-white">03</span>
             </div>

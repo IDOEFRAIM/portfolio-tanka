@@ -16,9 +16,126 @@ export type Article = {
   toc: ArticleSection[];
   content: string;
   coverImage?: string;
+  // Optional localized fields for mocks
+  title_fr?: string;
+  title_en?: string;
+  subtitle_fr?: string;
+  subtitle_en?: string;
+  summary_fr?: string;
+  summary_en?: string;
+  content_fr?: string;
+  content_en?: string;
+  toc_fr?: ArticleSection[];
+  toc_en?: ArticleSection[];
 };
 
 export const mockArticles: Article[] = [
+  {
+    slug: 'ai-autocorrect-steroids',
+    title: 'AI is Not an Encyclopedia: It\'s Autocorrect on Steroids',
+    subtitle: 'Understanding the probabilistic nature of Large Language Models and why they "guess" instead of "know".',
+    summary: 'Deconstructing the myth of AI knowledge. Learn why LLMs don\'t "know" facts but "guess" sequences, and why this distinction matters for developers building robust architectures like RAG.',
+    date: '2025-12-28',
+    readTime: '4 min',
+    category: 'ai',
+    coverImage: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1000',
+    
+    // English Mock Data
+    title_en: "AI is Not an Encyclopedia: It's Autocorrect on Steroids",
+    subtitle_en: 'Understanding the probabilistic nature of Large Language Models and why they "guess" instead of "know".',
+    summary_en: 'Deconstructing the myth of AI knowledge. Learn why LLMs don\'t "know" facts but "guess" sequences, and why this distinction matters for developers building robust architectures like RAG.',
+    content_en: `
+      <header class="mb-10">
+        <p class="lead text-xl text-gray-600 dark:text-gray-300 font-light italic">
+          "AI doesn't 'know' anything. It 'guesses' everything."
+        </p>
+      </header>
+      <section id="intro" class="mb-12">
+        <h2>The Autocorrect Analogy</h2>
+        <p>Stop treating AI like an encyclopedia. It’s not "Google 2.0." It’s basically your phone’s autocorrect, but on steroids. 💊</p>
+      </section>
+      <section id="tokens" class="mb-12">
+        <h2>Tokens & Probabilities</h2>
+        <p>If there’s one thing I’ve learned by diving deep into LLMs (Large Language Models), it’s this: <strong>AI doesn't "know" anything. It "guesses" everything.</strong></p>
+      </section>
+    `,
+    toc_en: [
+      { id: 'intro', title: 'The Autocorrect Analogy' },
+      { id: 'tokens', title: 'Tokens & Probabilités' },
+    ],
+
+    // French Mock Data
+    title_fr: "L'IA n'est pas une encyclopédie : C'est un correcteur sous stéroïdes",
+    subtitle_fr: 'Comprendre la nature probabiliste des LLM et pourquoi ils "devinent" au lieu de "savoir".',
+    summary_fr: 'Déconstruction du mythe de la connaissance de l\'IA. Découvrez pourquoi les LLM ne "savent" pas les faits mais "devinent" des séquences.',
+    content_fr: `
+      <header class="mb-10">
+        <p class="lead text-xl text-gray-600 dark:text-gray-300 font-light italic">
+          "L'IA ne 'sait' rien. Elle 'devine' tout."
+        </p>
+      </header>
+      <section id="intro" class="mb-12">
+        <h2>L'Analogie du Correcteur</h2>
+        <p>Arrêtez de traiter l'IA comme une encyclopédie. Ce n'est pas "Google 2.0". C'est essentiellement le correcteur automatique de votre téléphone, mais sous stéroïdes. 💊</p>
+      </section>
+      <section id="tokens" class="mb-12">
+        <h2>Tokens & Probabilités</h2>
+        <p>S'il y a une chose que j'ai apprise en plongeant dans les LLM (Large Language Models), c'est ceci : <strong>L'IA ne "sait" rien. Elle "devine" tout.</strong></p>
+      </section>
+    `,
+    toc_fr: [
+      { id: 'intro', title: 'L\'Analogie du Correcteur' },
+      { id: 'tokens', title: 'Tokens & Probabilités' },
+    ],
+
+    // Default / Fallback Content (English)
+    toc: [
+      { id: 'intro', title: 'The Autocorrect Analogy' },
+      { id: 'tokens', title: 'Tokens & Probabilities' },
+      { id: 'hallucinations', title: 'Hallucinations Explained' },
+      { id: 'conclusion', title: 'Why It Matters' },
+    ],
+    content: `
+      <header class="mb-10">
+        <p class="lead text-xl text-gray-600 dark:text-gray-300 font-light italic">
+          "AI doesn't 'know' anything. It 'guesses' everything."
+        </p>
+      </header>
+
+      <section id="intro" class="mb-12">
+        <h2>The Autocorrect Analogy</h2>
+        <p>Stop treating AI like an encyclopedia. It’s not "Google 2.0." It’s basically your phone’s autocorrect, but on steroids. 💊</p>
+        <p>Ever since I was 15, I’ve been obsessed with what happens "under the hood." I spent countless nights deconstructing code just to understand how a few lines of text could turn into complex actions.</p>
+      </section>
+
+      <section id="tokens" class="mb-12">
+        <h2>Tokens & Probabilities</h2>
+        <p>If there’s one thing I’ve learned by diving deep into LLMs (Large Language Models), it’s this: <strong>AI doesn't "know" anything. It "guesses" everything.</strong></p>
+        <p>For a beginner, that might sound disappointing. But for an expert, this is exactly where the power lies.</p>
+        <p>Think about your phone when you type a message. It suggests the next word:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+            <li>You type: "I am..."</li>
+            <li>It suggests: "going" (80%), "happy" (15%), "tired" (5%).</li>
+        </ul>
+        <p>ChatGPT does the exact same thing, but with insane computing power and a "memory" of almost the entire internet.</p>
+        <p>👨‍💻 <strong>The technical bit:</strong> AI doesn't handle truths; it handles probabilities. It calculates the most statistically likely "Token" (a piece of a word) to follow based on the context you gave it.</p>
+      </section>
+
+      <section id="hallucinations" class="mb-12">
+        <h2>Hallucinations Explained</h2>
+        <p>Why is this vital for your projects? Because it explains "hallucinations."</p>
+        <p>If the AI doesn't find the exact answer in its training data, it won't just stop. It will build the most plausible mathematical sequence, even if it’s factually wrong. It isn't lying; it’s just predicting.</p>
+      </section>
+
+      <section id="conclusion" class="mb-12">
+        <h2>Why It Matters</h2>
+        <p>The bottom line: Understanding this nuance is the difference between just using a tool and truly mastering it. It’s what allows us to build robust architectures, like RAG, to make these models reliable.</p>
+        <p>Tech isn't magic; it’s logic. And that’s exactly why I love it.</p>
+        <p>👇 What about you? Have you ever caught an AI inventing very "convincing" facts? Tell me about your best "hallucination" in the comments!</p>
+        <p class="text-sm text-gray-500 mt-4">PS: In my next post, we’ll explore why AI thinks an image, a text, and a sound are actually the same thing (Spoiler: it’s all about Vectors).</p>
+      </section>
+    `
+  },
   {
     slug: 'optimisation-nextjs-ssg',
     title: 'Vitesse Lumière : L\'Architecture de l\'Instantané',
