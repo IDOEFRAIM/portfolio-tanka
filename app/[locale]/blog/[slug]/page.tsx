@@ -22,19 +22,6 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <main className="min-h-screen">
-      {/* BOUTON RETOUR : Rendu côté serveur, parfait pour le SEO */}
-      <div className="max-w-[800px] mx-auto px-6 pt-12">
-        <Link 
-          href="/blog" 
-          className="inline-flex items-center gap-3 font-mono text-[10px] font-bold tracking-[0.2em] uppercase opacity-50 hover:opacity-100 transition-all group"
-        >
-          <span className="text-lg leading-none group-hover:-translate-x-1 transition-transform">
-            ←
-          </span>
-          <span>Back_to_Index</span>
-        </Link>
-      </div>
-
       <ArticleContent article={article} theme={theme} />
     </main>
   );

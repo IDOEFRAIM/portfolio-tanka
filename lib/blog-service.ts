@@ -1,8 +1,9 @@
 import { databases, APPWRITE_CONFIG } from './appwrite';
-import { mockArticles, Article } from './mock-articles';
+import { Article } from './types';
+import { mockArticles } from './mock-articles';
 import { ID, Query } from 'appwrite';
 
-// Helper to map Appwrite document to Article type based on locale
+// Helper to map Appwrite document or Mock object to Article type based on locale
 const mapDocumentToArticle = (doc: any, locale: string): Article => {
     // Determine suffix based on locale (default to 'fr')
     const suffix = locale === 'en' ? '_en' : '_fr';
@@ -12,30 +13,42 @@ const mapDocumentToArticle = (doc: any, locale: string): Article => {
 
     const tocRaw = getField('toc');
 
+    // Populate all localized fields if available in doc
+    const localizedFields = {
+        title_fr: doc.title_fr,
+        title_en: doc.title_en,
+        subtitle_fr: doc.subtitle_fr,
+        subtitle_en: doc.subtitle_en,
+        summary_fr: doc.summary_fr,
+        summary_en: doc.summary_en,
+        content_fr: doc.content_fr,
+        content_en: doc.content_en,
+        toc_fr: doc.toc_fr,
+        toc_en: doc.toc_en
+    };
+
     return {
-        slug: doc.slug, // Slug is usually shared, or you can localize it too if needed
-        title: getField('title'),
-        subtitle: getField('subtitle'),
-        summary: getField('summary'),
+        id: doc.$id, // Map Appwrite Document ID
+        slug: doc.slug,
+        title: getField('title') || 'Untitled',
+        subtitle: getField('subtitle') || '',
+        summary: getField('summary') || '',
         date: doc.date,
-        readTime: doc.readTime,
-        category: doc.category,
+        readTime: doc.readTime || '5 min',
+        category: doc.category || 'web',
         toc: typeof tocRaw === 'string' ? JSON.parse(tocRaw) : (tocRaw || []),
-        content: getField('content'),
+        content: getField('content') || '',
         coverImage: doc.coverImage,
+        ...localizedFields
     };
 };
 
 export const blogService = {
-    getMockArticles(locale: string = 'fr'): Article[] {
-        return mockArticles.map(doc => mapDocumentToArticle(doc, locale));
-    },
-
     async getAllArticles(locale: string = 'fr'): Promise<Article[]> {
         try {
+            // Check if Appwrite is configured
             if (!process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID) {
                 console.warn('⚠️ [BLOG] Appwrite Project ID not set. Using MOCK data.');
-                // Map mocks to localized structure
                 return mockArticles.map(doc => mapDocumentToArticle(doc, locale));
             }
 
@@ -51,24 +64,10 @@ export const blogService = {
 
             console.log(`✅ [BLOG] Successfully fetched ${response.documents.length} articles from Appwrite.`);
 
-            const appwriteArticles = response.documents.map(doc => mapDocumentToArticle(doc, locale));
-            
-            // HYBRID MODE: Merge Appwrite articles with Mock articles
-            // This allows adding new articles locally (mocks) before pushing them to the DB
-            const appwriteSlugs = new Set(appwriteArticles.map(a => a.slug));
-            const missingMocks = mockArticles
-                .filter(mock => !appwriteSlugs.has(mock.slug))
-                .map(mock => mapDocumentToArticle(mock, locale));
-
-            // Combine and sort by date (newest first)
-            const allArticles = [...appwriteArticles, ...missingMocks].sort((a, b) => 
-                new Date(b.date).getTime() - new Date(a.date).getTime()
-            );
-
-            return allArticles;
+            return response.documents.map(doc => mapDocumentToArticle(doc, locale));
         } catch (error) {
-            console.error('❌ [BLOG] Failed to fetch from Appwrite. Fallback to MOCKS.', error);
-            // Map mocks to localized structure on error too
+            console.error('❌ [BLOG] Failed to fetch from Appwrite. Using fallback mocks.', error);
+            // Fallback to mocks on error
             return mockArticles.map(doc => mapDocumentToArticle(doc, locale));
         }
     },
@@ -80,6 +79,8 @@ export const blogService = {
                 return mock ? mapDocumentToArticle(mock, locale) : undefined;
             }
 
+            console.log(`🚀 [BLOG] Fetching article ${slug} from Appwrite...`);
+            
             const response = await databases.listDocuments(
                 APPWRITE_CONFIG.databaseId,
                 APPWRITE_CONFIG.collectionId,
@@ -89,31 +90,57 @@ export const blogService = {
             );
 
             if (response.documents.length === 0) {
-                // Try to find in mocks if not in Appwrite (hybrid approach)
+                console.warn(`⚠️ [BLOG] Article ${slug} not found in Appwrite. Checking mocks...`);
                 const mock = mockArticles.find(a => a.slug === slug);
                 return mock ? mapDocumentToArticle(mock, locale) : undefined;
             }
 
             return mapDocumentToArticle(response.documents[0], locale);
         } catch (error) {
-            console.error(`Failed to fetch article ${slug} from Appwrite:`, error);
+            console.error(`❌ [BLOG] Failed to fetch article ${slug} from Appwrite:`, error);
+            // Fallback to mocks on error
             const mock = mockArticles.find(a => a.slug === slug);
             return mock ? mapDocumentToArticle(mock, locale) : undefined;
         }
     },
 
-    // Updated to accept localized data
-    async createArticle(articleData: any) {
+    async createArticle(data: any): Promise<any> {
         try {
-             const response = await databases.createDocument(
+            return await databases.createDocument(
                 APPWRITE_CONFIG.databaseId,
                 APPWRITE_CONFIG.collectionId,
                 ID.unique(),
-                articleData
+                data
             );
-            return response;
         } catch (error) {
-            console.error('Failed to create article:', error);
+            console.error('❌ [BLOG] Failed to create article:', error);
+            throw error;
+        }
+    },
+
+    async updateArticle(documentId: string, data: any): Promise<any> {
+        try {
+             return await databases.updateDocument(
+                APPWRITE_CONFIG.databaseId,
+                APPWRITE_CONFIG.collectionId,
+                documentId,
+                data
+            );
+        } catch (error) {
+            console.error('❌ [BLOG] Failed to update article:', error);
+            throw error;
+        }
+    },
+
+    async deleteArticle(documentId: string): Promise<any> {
+        try {
+            return await databases.deleteDocument(
+                APPWRITE_CONFIG.databaseId,
+                APPWRITE_CONFIG.collectionId,
+                documentId
+            );
+        } catch (error) {
+            console.error('❌ [BLOG] Failed to delete article:', error);
             throw error;
         }
     }
