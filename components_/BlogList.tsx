@@ -118,12 +118,16 @@ const FeaturedArticle = ({ article }: { article: Article }) => {
     return (
         <div className="mb-12">
              <Link href={`/blog/${article.slug}`} className={`group relative block w-full h-[450px] md:h-[550px] rounded-3xl overflow-hidden bg-gray-900 border border-gray-200 dark:border-white/10 shadow-2xl hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.2)] transition-all duration-500`}>
-                <Image 
-                  src={article.coverImage || ''} 
-                  alt={article.title}
-                  fill
-                  className="object-cover opacity-80 group-hover:opacity-70 transition-all duration-700 group-hover:scale-105"
-                />
+                {article.coverImage ? (
+                  <Image 
+                    src={article.coverImage} 
+                    alt={article.title}
+                    fill
+                    className="object-cover opacity-80 group-hover:opacity-70 transition-all duration-700 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className={`w-full h-full bg-gradient-to-br ${style.gradient} opacity-40`} />
+                )}
                 <div className={`absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90`} />
                 <div className={`absolute inset-0 bg-gradient-to-r ${style.gradient} opacity-0 group-hover:opacity-30 mix-blend-overlay transition-opacity duration-500`} />
                 
