@@ -6,7 +6,7 @@ const config: Config = {
 content: [
   "./app/**/*.{js,ts,jsx,tsx,mdx}", 
   "./components/**/*.{js,ts,jsx,tsx,mdx}", 
-  "./components_/**/*.{js,ts,jsx,tsx,mdx}", // ⬅️ CETTE LIGNE DOIT ÊTRE PRÉSENTE
+  "./components_/**/*.{js,ts,jsx,tsx,mdx}",
 ],
 // ...
   theme: {
@@ -20,23 +20,23 @@ content: [
       colors: {
         // 1. COULEURS GÉNÉRALES (Pour Hero, Boutons, Liens)
         primary: {
-          DEFAULT: '#6366f1', // Indigo (Couleur Principale)
-          400: '#818cf8',     // Nuance plus claire pour les dégradés
-          glow: '#6366f1',    // Pour les effets de néon
+          DEFAULT: '#60a5fa', // Bleu doux (Couleur Principale)
+          400: '#93c5fd',     // Nuance plus claire pour les dégradés
+          glow: '#60a5fa',    // Pour les effets de néon
         },
         secondary: {
-          DEFAULT: '#a855f7', // Purple (Couleur Secondaire du dégradé)
-          400: '#c084fc',
+          DEFAULT: '#64748b', // Gris bleuté naturel (Couleur Secondaire du dégradé)
+          400: '#cbd5e1',
         },
 
         // 2. COULEURS DES 4 PILIERS (Pour le composant Categories)
         web: {
-          DEFAULT: '#6366f1', 
-          dim: 'rgba(99,102,241,0.1)',
+          DEFAULT: '#60a5fa', // Bleu doux
+          dim: 'rgba(96,165,250,0.1)',
         },
         mobile: {
-          DEFAULT: '#a855f7', 
-          dim: 'rgba(168,85,247,0.1)',
+          DEFAULT: '#64748b', // Gris bleuté naturel
+          dim: 'rgba(100,116,139,0.1)',
         },
         ai: {
           DEFAULT: '#eab308', 
@@ -51,7 +51,7 @@ content: [
       // 👇 LE GRADIENT CENTRALISÉ (Pour le texte du Hero)
       // Si tu veux changer ton Hero en Vert/Bleu demain, tu modifies juste ici !
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(to right, theme("colors.primary.400"), theme("colors.secondary.400"), theme("colors.white"))',
+        // 'hero-gradient' retiré pour un fond plus naturel
         // Dark mode variant si nécessaire (mais souvent le même marche bien)
       }
     },
