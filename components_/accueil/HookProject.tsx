@@ -1,96 +1,53 @@
-import Link from 'next/link';
-import Image from 'next/image'; 
+"use client";
+
 import { useTranslations } from 'next-intl';
+import Reveal from '../motion/Reveal';
 
 const HookProject = () => {
-  const t = useTranslations('HookProject');
+  const t = useTranslations('MasteryMatrix');
+  const categories = t.raw('categories') as { name: string; items: string[] }[];
 
   return (
-    <section className="relative flex items-center py-24 lg:py-32 bg-white dark:bg-[#020617] text-slate-900 dark:text-white border-t border-slate-100 dark:border-white/5 overflow-hidden transition-colors duration-300">
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-          
-          {/* COLONNE GAUCHE : TEXTE (8 colonnes pour plus d'espace) */}
-          <div className="order-2 lg:order-1 lg:col-span-7">
-            
-            {/* Badge Minimaliste */}
-            <div className="inline-flex items-center gap-2 mb-10 px-0 py-1 text-slate-400 font-bold text-[10px] tracking-[0.3em] uppercase border-b border-slate-100 dark:border-white/10">
-              <span className="h-1.5 w-1.5 rounded-full bg-slate-900 dark:bg-white"></span>
-              {t('badge')}
-            </div>
+    <section className="relative py-24 sm:py-28">
+      <div className="absolute inset-y-0 left-6 hidden w-px bg-brand-cream/10 sm:block" aria-hidden="true" />
+      <div className="absolute left-[19px] top-24 hidden h-4 w-4 rounded-full border border-brand-cream/40 bg-brand-ink sm:block" aria-hidden="true" />
 
-            {/* Titre : Typographie forte, pas de gradient */}
-            <h2 className="text-5xl sm:text-6xl md:text-8xl font-medium mb-8 tracking-tighter leading-[0.85] uppercase italic">
-              {t('title')}<span className="not-italic font-black text-slate-300 dark:text-slate-800">.sys</span>
-            </h2>
-            
-            <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 mb-12 font-normal max-w-xl leading-relaxed">
-              {t('subtitle')}
-            </p>
+      <div className="relative mx-auto max-w-6xl px-6 sm:pl-16">
+        <Reveal className="max-w-3xl space-y-4">
+          <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-brand-cream/45">
+            03 — {t('title')}
+          </p>
+          <p className="text-base leading-relaxed text-brand-cream/65">{t('subtitle')}</p>
+        </Reveal>
 
-            {/* Stats : Style Liste au lieu de Cartes */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 mb-16 border-l border-slate-100 dark:border-white/10 pl-8">
-              <div>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">{t('stat_1_label')}</p>
-                <p className="text-4xl font-light tracking-tight italic text-slate-900 dark:text-white">30min <span className="text-slate-300 dark:text-slate-700 mx-2">→</span> 2min</p>
-                <p className="text-[10px] font-medium text-slate-400 mt-3 uppercase tracking-wider">{t('stat_1_desc')}</p>
-              </div>
-
-              <div>
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">{t('stat_2_label')}</p>
-                <p className="text-2xl font-bold text-slate-900 dark:text-white uppercase tracking-tighter">Next.js + Tailwind</p>
-                <p className="text-[10px] font-medium text-slate-400 mt-3 uppercase tracking-wider">{t('stat_2_desc')}</p>
-              </div>
-            </div>
-
-            {/* Bouton style "Lien Souligné" ou "Bloc Noir" */}
-            <Link 
-              href="/en/projects" 
-              className="group relative inline-flex items-center gap-6 text-slate-900 dark:text-white"
-            >
-              <span className="text-sm font-bold uppercase tracking-[0.3em] border-b-2 border-slate-900 dark:border-white pb-1 group-hover:pr-4 transition-all duration-300">
-                {t('cta_inspect')}
-              </span>
-              <span className="text-2xl group-hover:translate-x-2 transition-transform duration-300">→</span>
-            </Link>
-          </div>
-
-          {/* COLONNE DROITE : LE VISUEL (5 colonnes) */}
-          <div className="order-1 lg:order-2 lg:col-span-5 relative">
-            
-            {/* Frame Minimaliste sans fioritures */}
-            <div className="relative overflow-hidden bg-slate-50 dark:bg-white/5 p-4 border border-slate-100 dark:border-white/5 transition-all duration-700">
-              
-              {/* Header du Mockup réduit au strict minimum */}
-              <div className="flex justify-between items-center mb-4 px-2">
-                <div className="flex gap-1">
-                  <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-white/10"></div>
-                  <div className="w-1.5 h-1.5 rounded-full bg-slate-200 dark:bg-white/10"></div>
+        <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2">
+          {categories.map((category, index) => (
+            <Reveal key={category.name} delay={index * 0.08}>
+              <div className="flex h-full flex-col gap-4 rounded-2xl border border-brand-cream/10 bg-brand-cream/[0.03] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand-mint/30">
+                <div className="flex items-center justify-between">
+                  <h3 className="font-serif text-xl text-brand-cream">{category.name}</h3>
+                  <span className="rounded-full border border-brand-mint/25 px-2.5 py-0.5 font-mono text-[10px] text-brand-mint">
+                    {category.items.length}
+                  </span>
                 </div>
-                <div className="text-[9px] font-bold text-slate-300 dark:text-slate-600 uppercase tracking-[0.2em]">
-                  agriconnect.sys
+                <div className="flex flex-wrap gap-2">
+                  {category.items.map((skill) => (
+                    <span
+                      key={skill}
+                      className="rounded-full border border-brand-cream/15 bg-brand-ink/40 px-3 py-1.5 text-xs text-brand-cream/75 transition-colors hover:border-brand-mint/40 hover:text-brand-mint"
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
-
-              {/* L'image : Naturelle, sans overlays techniques */}
-              <div className="aspect-[4/5] relative grayscale hover:grayscale-0 transition-all duration-1000 ease-in-out">
-                <Image 
-                  src="/images/agri.png" 
-                  alt="Dashboard AgriConnect" 
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Légende discrète sous l'image */}
-            <p className="mt-4 text-[9px] font-mono text-slate-400 dark:text-slate-600 uppercase text-right tracking-widest">
-              [ Case Study 01 / 2024 ]
-            </p>
-          </div>
-
+            </Reveal>
+          ))}
         </div>
+
+        <Reveal delay={0.1}>
+          <p className="mt-10 max-w-2xl text-sm leading-relaxed text-brand-cream/50">{t('note')}</p>
+        </Reveal>
       </div>
     </section>
   );

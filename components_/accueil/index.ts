@@ -1,6 +1,9 @@
-export {default as Hero} from './Hero'
-export {default as Philosophy} from './Philosophy'
-export {default as Categories} from './Categories'
-export {default as HookProject} from './HookProject'
-export {default as FinalCTA} from './FinalCTA'
-export {default as  SettingsBar} from '../SettingsBar'
+export { default as ExecutiveHero } from './ExecutiveHero';
+export { default as SkillsTicker } from './SkillsTicker';
+export { default as Philosophy } from './Philosophy';
+export { default as ExperienceTimeline } from './ExperienceTimeline';
+export { default as HookProject } from './HookProject';
+export { default as Categories } from './Categories';
+export { default as CertificationsSection } from './CertificationsSection';
+export { default as StatsStrip } from './StatsStrip';
+export { default as FinalCTA } from './FinalCTA';
